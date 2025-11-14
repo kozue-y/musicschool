@@ -1,0 +1,10 @@
+// Foundation
+@use "./foundation/normalize";
+@use "./foundation/variable";
+@use "./foundation/base";
+
+// layout
+@use"./layout/l-header";
+
+// object
+@use"./object/component/site-title";

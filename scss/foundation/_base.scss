@@ -1,0 +1,32 @@
+@use "./variable" as *;
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $font-base;
+    scroll-behavior: smooth;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.pc-only {
+    display: block;
+  }
+  
+  .sp-only {
+    display: none;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .pc-only {
+      display: none;
+    }
+    .sp-only {
+      display: block;
+    }
+  }
