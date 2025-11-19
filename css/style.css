@@ -193,7 +193,16 @@ img {
   height: 100%;
   gap: 0.99rem;
 }
-.c-site-title a {
+.c-site-title h1 {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.c-site-title h1 a {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -204,20 +213,71 @@ img {
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
-.c-site-title a:hover {
-  opacity: 0.7;
-}
-.c-site-title a img {
-  width: 3.203rem;
-  height: 4.935rem;
-}
-.c-site-title a__text {
+.c-site-title h1 a span.c-site-title__text {
   font-size: 2rem;
   font-weight: bold;
   line-height: 1.15;
 }
-.c-site-title a__text--sub {
+.c-site-title h1 a span.c-site-title__text--sub {
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.5333333333;
+}
+.c-site-title h1 a:hover {
+  opacity: 0.7;
+}
+.c-site-title h1 a img {
+  width: 3.203rem;
+  height: 4.935rem;
+}
+
+.c-global-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+.c-global-nav nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  gap: 3.3rem;
+}
+.c-global-nav nav ul.c-global-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  gap: 3.3rem;
+}
+.c-global-nav nav ul.c-global-nav__list li {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.c-global-nav nav ul.c-global-nav__list li a {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.7rem;
+  line-height: 1.9411764706;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
