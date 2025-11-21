@@ -1,0 +1,15 @@
+@use"../../foundation/variable" as*;
+
+.c-btn {
+    background: $main-color;
+    color: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+
+        font-size: min(vw(15), 1.5rem);
+        line-height: calc(33 / 15);
+        width: min(vw(150), 15rem);
+        height: min(vw(45), 4.5rem);
+}

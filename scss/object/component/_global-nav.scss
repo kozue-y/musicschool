@@ -1,3 +1,5 @@
+@use"../../foundation/variable" as*;
+
 .c-global-nav {
     display: flex;
     align-items: center;
@@ -7,13 +9,14 @@
         display: flex;
         align-items: center;
         height: 100%;
-        gap: 3.3rem;
+        gap: min(vw(33), 3.3rem);
 
         ul.c-global-nav__list {
             display: flex;
             align-items: center;
             height: 100%;
-            gap: 3.3rem;
+            gap: min(vw(33), 3.3rem);
+            flex-shrink: 0;
 
             & li {
                 height: 100%;
@@ -24,7 +27,7 @@
                     height: 100%;
                     display: flex;
                     align-items: center;
-                    font-size: 1.7rem;
+                    font-size: min(vw(17), 1.7rem);
                     line-height: calc(33 / 17);
                     font-weight: bold;
                 }

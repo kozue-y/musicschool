@@ -1,10 +1,10 @@
-
+@use"../foundation/variable" as*;
 
   .c-site-title {
     display: flex;
     align-items: center;
     height: 100%;
-    gap: 0.99rem;
+    gap: min(vw(9.9), 0.99rem);
   
     h1 {
       height: 100%;
@@ -19,12 +19,12 @@
 
         span {
           &.c-site-title__text {
-            font-size: 2rem;
+            font-size: min(vw(20), 2rem);
             font-weight: bold;
             line-height: calc(23 / 20);
     
             &--sub {
-              font-size: 1.5rem;
+              font-size: min(vw(15), 1.5rem);
               font-weight: bold;
               line-height: calc(23 / 15);
             }
@@ -34,8 +34,8 @@
           opacity: 0.7;
         }
         img {
-          width: 3.203rem;
-          height: 4.935rem;
+          width: min(vw(32.03), 3.203rem);
+          height: min(vw(49.35), 4.935rem);
         }
       }
     }

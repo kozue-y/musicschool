@@ -1,6 +1,6 @@
 // Foundation
 @use "./foundation/normalize";
-@use "./foundation/variable";
+@use "./foundation/variable" as *;
 @use "./foundation/base";
 
 // layout
@@ -9,3 +9,5 @@
 // object
 @use"./object/component/site-title";
 @use"./object/component/global-nav";
+@use"./object/component/btn";
+@use"./object/project/fv";
