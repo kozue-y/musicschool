@@ -11,7 +11,7 @@
         height: 100%;
         gap: min(vw(33), 3.3rem);
 
-        ul.c-global-nav__list {
+        ul.c-global-nav-list {
             display: flex;
             align-items: center;
             height: 100%;
@@ -35,3 +35,4 @@
         }
     }
 }
+
