@@ -14,19 +14,19 @@ img {
     height: auto;
 }
 
-.pc-only {
-    display: block;
+.u-pc-only {
+    display: block !important;
   }
   
-  .sp-only {
-    display: none;
+  .u-sp-only {
+    display: none !important;
   }
   
   @media screen and (max-width: 767px) {
-    .pc-only {
-      display: none;
+    .u-pc-only {
+      display: none !important;
     }
-    .sp-only {
-      display: block;
+    .u-sp-only {
+      display: block !important;
     }
   }

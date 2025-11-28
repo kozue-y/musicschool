@@ -5,9 +5,11 @@
 
 // layout
 @use"./layout/l-header";
+@use"./layout/l-inner";
 
 // object
 @use"./object/component/site-title";
 @use"./object/component/global-nav";
 @use"./object/component/btn";
 @use"./object/project/fv";
+@use"./object/project/concept";

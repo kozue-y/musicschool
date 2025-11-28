@@ -15,7 +15,7 @@
         z-index: 20;
     }
 
-    .p-fv-text {
+    .p-fv__text {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -24,7 +24,7 @@
         padding-top: min(vw(20), 2rem);
         z-index: 30;
 
-        h2.p-fv-title {
+        h2.p-fv__title {
             font-size: min(vw(40), 4rem);
             font-weight: bold;
             line-height: calc(60 / 40);

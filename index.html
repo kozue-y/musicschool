@@ -20,36 +20,36 @@
             <h1>
               <a href="#">
                 <img src="images/sitetitle_icon.svg" alt="きたむらミュージックスクール">
-                <span class="c-site-title__text">きたむら<br class="pc-only"><span class="c-site-title__text--sub">ミュージックスクール</span></span>
+                <span class="c-site-title__text">きたむら<br class="u-pc-only"><span class="c-site-title__text--sub">ミュージックスクール</span></span>
               </a>
             </h1>
           </div>
           <!-- PC用ナビ -->
-           <div class="c-global-nav">
+           <div class="c-global-nav u-pc-only">
             <nav>
-              <ul class="c-global-nav-list">
+              <ul class="c-global-nav__list">
                 <li><a href="">料金</a></li>
                 <li><a href="">ブログ</a></li>
                 <li><a href="">卒業実績</a></li>
               </ul>
-              <a href="" class="c-btn c-global-nav-contact">お問い合わせ</a>
+              <a href="" class="c-btn c-global-nav__contact">お問い合わせ</a>
             </nav>
            </div>      
         </div>
 
         <!-- ハンバーガーボタンSP用 -->
-         <button id="hamburger-block" class="hamburger">
-          <span class="hamburger-inner">
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
+         <button id="hamburger-block" class="c-hamburger u-sp-only">
+          <span class="c-hamburger__inner">
+            <span class="c-hamburger__line"></span>
+            <span class="c-hamburger__line"></span>
+            <span class="c-hamburger__line"></span>
           </span>
          </button>
 
          <!-- ハンバーガーナビゲーションSP用 -->
-          <div class="drawer-menu" id="js-drawer">
+          <div class="c-drawer-menu u-sp-only" id="js-drawer">
             <nav>
-              <ul class="nav-list">
+              <ul class="c-drawer-menu__list">
                 <li><a href="">料金</a></li>
                 <li><a href="">ブログ</a></li>
                 <li><a href="">卒業実績</a></li>
@@ -62,27 +62,46 @@
      <main class="main">
       <!-- FV -->
       <section id="FV" class="p-fv">
-        <div class="p-fv-image">
+        <div class="p-fv__image">
           <picture>
             <source srcset="images/fv_sp.jpg" media="(max-width: 767px)">
             <img src="images/fv.jpg" alt="きたむらミュージックスクール">
           </picture>
         </div>
-        <div class="p-fv-text">
-          <h2 class="p-fv-title">「音楽で生きる」<br class="sp-only">を叶える<br>ミュージックスクール</h2>
+        <div class="p-fv__text">
+          <h2 class="p-fv__title">「音楽で生きる」<br class="sp-only">を叶える<br>ミュージックスクール</h2>
         </div>
       </section>
 
       <!-- concept -->
       <section id="concept" class="p-concept">
-        <h2 class="p-consept__title">全人類、ミュージシャン計画。</h2>
-        <p class="p-concept__text">私たちは音楽を愛するすべての人が、音楽に熱狂できる世界を目指しています。</p>
-        <div class="p-concept__img">
-          <img src="images/semicircle.png" alt="カーブ画像">
+        <div class="l-inner">
+          <h2 class="p-concept__title">全人類、ミュージシャン計画。</h2>
+          <p class="p-concept__text">私たちは音楽を愛するすべての人が、音楽に熱狂できる世界を目指しています。</p>
+          <div class="p-concept__img">
+            <img src="images/semicircle.png" alt="カーブ画像">
+          </div>
+          <ul class="p-concept__list">
+            <li class="p-concept__item">
+              <span class="p-concept__label">Enthusiasm</span>
+              <span class="p-concept__dot"></span>
+              <span class="p-concept__text-jp">熱狂し</span>
+            </li>
+            <li class="p-concept__item">
+              <span class="p-concept__label">Envision</span>
+              <span class="p-concept__dot"></span>
+              <span class="p-concept__text-jp">想像し</span>
+            </li>
+            <li class="p-concept__item">
+              <span class="p-concept__label">Effulgent</span>
+              <span class="p-concept__dot"></span>
+              <span class="p-concept__text-jp">輝く存在へ</span>
+            </li>
+
+
+            
+          </ul>
         </div>
-        <ul class="concept-list">
-          
-        </ul>
       </section>
 
 
@@ -91,5 +110,6 @@
      </main>
 
   </div>
+  <script src="js/main.js"></script>
 </body>
 </html>

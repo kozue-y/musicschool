@@ -1,0 +1,27 @@
+@use"../../foundation/variable" as*;
+
+.p-concept {
+    padding-top: 6.6rem;
+    .l-inner {
+        padding-inline: 11.1rem;
+    }    
+    &__title {
+            font-size: 3.5rem;
+            line-height: calc(50 / 35);
+            font-weight: bold;
+            color: $main-color;
+            text-align: center;
+        
+        }
+    &-text {
+            font-size: 1.8rem;
+            line-height: calc(30 / 18);
+            font-weight: medium;
+            text-align: center;
+            margin-top: 1.7rem;
+    }
+    &-img {
+        margin-top: 3.4rem;
+    }    
+}
+

@@ -7,10 +7,15 @@
 .l-header-inner {
     width: 100%;
     height: 100%;
-    max-width: 108rem;
+    max-width: 1080px;
     margin: 0 auto;
     padding-inline: min(vw(100), 10rem);
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+@media (max-width: 768px) {
+    .l-header {
+        height: 5rem;
+    }
 }
