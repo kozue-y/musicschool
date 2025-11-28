@@ -1,10 +1,10 @@
 // ハンバガーメニュー開閉
 $("#hamburger-block").click(function() {
-    $(".c-drawer-menu__list").toggle(300);
+    $("#js-drawer").toggleClass("active");
     $(".c-hamburger").toggleClass("active");
 });
 // ドロワークリック時にメニューに戻る
 $(".c-drawer-menu__list a").click(function() {
-    $(".c-drawer-menu__list").hide(300);
+    $("#js-drawer").removeClass("active");
     $(".c-hamburger").removeClass("active");
 });
