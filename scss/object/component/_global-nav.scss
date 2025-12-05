@@ -36,8 +36,11 @@
         }
     }
 }
-
-
+.c-global-nav__contact-wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
 // ハンバーガーメニュー
 @media (max-width: 768px) {
     .c-hamburger {
@@ -48,11 +51,6 @@
         height: 5rem;
         background-color: $main-color;
         cursor: pointer;
-        transition: opacity 0.3s ease;
-
-        &:hover {
-            opacity: 0.8;
-        }
     }
     .c-hamburger__inner {
         position: relative;
