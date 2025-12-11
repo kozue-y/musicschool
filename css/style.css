@@ -486,6 +486,7 @@ img {
 
 .p-concept {
   padding-top: 6.6rem;
+  padding-bottom: 5.5rem;
 }
 .p-concept__title {
   font-size: 3.5rem;
@@ -511,6 +512,21 @@ img {
   height: 100%;
 }
 
+@media (max-width: 768px) {
+  .p-concept {
+    padding-top: 4.6rem;
+    padding-bottom: 3.4rem;
+  }
+  .p-concept__title {
+    font-size: 2.5rem;
+    line-height: 1.6;
+  }
+  .p-concept__img {
+    margin-top: 2rem;
+    width: 33.5rem;
+    height: 3.709rem;
+  }
+}
 .p-concept__list {
   position: relative;
   display: -webkit-box;
@@ -587,4 +603,33 @@ img {
   font-size: 2.3rem;
   line-height: 2.1739130435;
   font-weight: medium;
+}
+
+.p-future {
+  background-color: #CB0000;
+  color: #ffffff;
+  padding-top: 6.8rem;
+  padding-bottom: 6rem;
+}
+
+.p-future__title {
+  font-size: 3rem;
+  line-height: 1.6666666667;
+  font-weight: bold;
+  text-align: center;
+}
+
+.p-future__text {
+  font-size: 1.8rem;
+  line-height: 1.6666666667;
+  font-weight: medium;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .p-future__title {
+    font-size: 2.5rem;
+    line-height: 1.6;
+  }
 }/*# sourceMappingURL=style.css.map */
