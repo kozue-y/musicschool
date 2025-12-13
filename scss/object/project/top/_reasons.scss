@@ -2,7 +2,7 @@
 
 .p-reasons {
     padding-top: 6.4rem;
-    padding-inline: 10rem;
+    padding-bottom: 9rem;
 }
 .p-reasons__title {
     font-size: 3rem;
@@ -16,11 +16,12 @@
     align-items: flex-start;
     margin-top: 2.8rem;
     gap: 5rem;
+    max-width: 88.2rem;
+    margin-inline: auto;
 }
 .p-reasons__item {
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
 }
 .p-reasons__img {
     display: flex;
@@ -28,3 +29,35 @@
     height: 24.7rem;
     aspect-ratio: 35 /24.7;
 }
+.p-reasons__textarea {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    padding-top: 0.7rem;
+    padding-left: 5rem;
+    max-width: 53.2rem;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 5.2rem;
+        left: 0;
+        height: 0.2rem;
+        width: 100%;
+        background-color: $main-color;
+    }
+}
+
+.p-reasons__heading {
+    font-size: 2.2rem;
+    line-height: calc(33 / 22);
+    font-weight: bold;
+}
+.p-reasons__text {
+    font-size: 1.8rem;
+    line-height: calc(33 / 18);
+    margin-top: 4.9rem;
+
+}
+  

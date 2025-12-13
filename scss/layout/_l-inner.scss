@@ -1,4 +1,6 @@
 .l-inner {
-    max-width: 1080px;
+    width: min(100% - 4rem, 1080px);
     margin-inline: auto;
 }
+
+  
