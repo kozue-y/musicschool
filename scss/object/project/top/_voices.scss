@@ -15,7 +15,6 @@
 .p-voices__swiper {
     margin-top: 3.6rem;
     max-width: 88rem;
-    position: relative;
 }
 .p-voices__card {
     max-width: 27rem;
@@ -47,18 +46,40 @@
     color: $color-white;
     text-align: center;
 }
+.p-voices__swiperbutton-wrapper {
+    position: relative;
+    max-width: 104rem;
+    z-index: 10;
+}
 .p-voices__prev,
 .p-voices__next {
     width: 2.984rem;
     height: 2.024rem;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    margin-top: 0 !important;
+    transition: transform 0.3s ease;
+    cursor: pointer;
     svg {
         display: none;
-    }
-    
+    }    
 }
+.p-voices__prev {
+    left: 4.1rem !important;
+    right: auto !important;
+    &:hover {
+        transform: translateY(-50%)translateX(-0.7rem) !important;
+    } 
+}
+.p-voices__next {
+    right: 4.1rem !important;
+    left: auto !important;
+    &:hover {
+        transform: translateY(-50%)translateX(0.7rem) !important;
+    } 
+}
+
 
 
 

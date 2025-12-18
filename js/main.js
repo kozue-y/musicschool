@@ -12,9 +12,10 @@ $(".c-drawer-menu__list a").click(function() {
 // スワイパーを初期化
 const swiper = new Swiper(".js-voices-swiper", {
     loop: true,
+    speed: 600,
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".p-voices__next",
+        prevEl: ".p-voices__prev",
     },
     // SP1枚、PC3枚
     breakpoints: {
