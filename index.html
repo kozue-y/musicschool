@@ -8,6 +8,8 @@
   <link rel="icon" href="images/sitetitle_icon.svg" type="image/svg">
   <meta name="description" content="ミュージックスクールご紹介サイトです">
   <meta name="keywords" content="ミュージックスクール, レッスン">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -111,10 +113,10 @@
 
       <!-- future -->
        <section id="future" class="p-future">
-        <div class="l-inner">
+        <!-- <div class="l-inner"> -->
           <h2 class="p-future__title">音楽業界初！<br>収益化までサポートする<br class="u-sp-only">ミュージックスクール</h2>
           <p class="p-future__text">楽器や作詞作曲などの技術・知識はもちろんのこと<br>自分で稼ぎつづけるためのビジネス面もサポートします！</p>
-        </div>
+        <!-- </div> -->
        </section>
 
       <!-- reasons -->
@@ -157,6 +159,77 @@
         </div>
        </section>
 
+       <!-- voices -->
+        <section id="voices" class="p-voices">
+          <div class="l-inner">
+            <h2 class="p-voices__title">生徒さんたちの声</h2>
+
+            <div class="swiper p-voices__swiper js-voices-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <article class="p-voices__card">
+                    <div class="p-voices__img">
+                      <img src="images/voice01.jpg" alt="証券会社勤務の丸山さんの写真">
+                    </div>
+                      <p class="p-voices__name">
+                        <span class="p-voices__job">証券会社勤務</span>
+                        <span class="p-voices__person">丸山さん</span>
+                      </p>
+                      <p class="p-voices__text">昔やっていた音楽活動で、副収入が得られるようになったので、毎日充実するようになりました。</p>
+                  </article>
+                </div>
+
+                <div class="swiper-slide">
+                  <article class="p-voices__card">
+                    <div class="p-voices__img">
+                      <img src="images/voice02.jpg" alt="IT会社勤務のS.Eさんの写真">
+                    </div>
+                      <p class="p-voices__name">
+                        <span class="p-voices__job">IT会社勤務</span>
+                        <span class="p-voices__person">S.Eさん</span>
+                      </p>
+                      <p class="p-voices__text">プロの指導が受けられるので、技術が確実に上がるし、音楽への考え方とかも勉強できて最高です。</p>
+                  </article>
+                </div>
+
+                <div class="swiper-slide">
+                  <article class="p-voices__card">
+                    <div class="p-voices__img">
+                      <img src="images/voice03.jpg" alt="都内大学生の田森さんの写真">
+                    </div>
+                      <p class="p-voices__name">
+                        <span class="p-voices__job">都内大学生</span>
+                        <span class="p-voices__person">田森さん</span>
+                      </p>
+                      <p class="p-voices__text">就職する前にビジネスの事が学べるし、好きな音楽で稼げるようになったので選択肢が増えました。</p>
+                  </article>
+                </div>
+
+                <div class="swiper-slide">
+                  <article class="p-voices__card">
+                    <div class="p-voices__img">
+                      <img src="images/voice01.jpg" alt="証券会社勤務の丸山さんの写真">
+                    </div>
+                      <p class="p-voices__name">
+                        <span class="p-voices__job">証券会社勤務</span>
+                        <span class="p-voices__person">丸山さん</span>
+                      </p>
+                      <p class="p-voices__text">昔やっていた音楽活動で、副収入が得られるようになったので、毎日充実するようになりました。</p>
+                  </article>
+                </div>
+
+              </div>
+              <div class="swiper-button-prev p-voices__prev">
+                <img src="images/arrow-l.svg" alt="左矢印">
+              </div>
+              <div class="swiper-button-next p-voices__next">
+                <img src="images/arrow-r.svg" alt="右矢印">
+              </div>
+            </div>
+
+          </div>
+        </section>
+
 
 
 
@@ -164,6 +237,7 @@
      </main>
 
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="js/main.js"></script>
 </body>

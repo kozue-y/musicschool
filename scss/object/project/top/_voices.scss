@@ -1,0 +1,66 @@
+@use"../../../foundation/variable" as*;
+
+.p-voices {
+    padding-top: 4.4rem;
+    padding-bottom: 8rem;
+    background-color: $main-color;
+}
+.p-voices__title {
+    font-size: 3rem;
+    line-height: calc(50 / 30);
+    font-weight: bold;
+    text-align: center;
+    color: $color-white;
+}
+.p-voices__swiper {
+    margin-top: 3.6rem;
+    max-width: 88rem;
+    position: relative;
+}
+.p-voices__card {
+    max-width: 27rem;
+}
+.p-voices__img {
+    width: 100%;
+    height: 19rem;
+    overflow: hidden;
+
+    img {
+        object-fit: cover;
+    }
+}
+.p-voices__name {
+    font-size: 2.2rem;
+    line-height: calc(33 / 22);
+    font-weight: bold;
+    color: $color-white;
+    text-align: center;
+    margin-top: 1.7rem;
+}
+.p-voices__job {
+    margin-right: 2.2rem;
+}
+.p-voices__text {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    line-height: calc(30 /18);
+    color: $color-white;
+    text-align: center;
+}
+.p-voices__prev,
+.p-voices__next {
+    width: 2.984rem;
+    height: 2.024rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    svg {
+        display: none;
+    }
+    
+}
+
+
+
+
+
