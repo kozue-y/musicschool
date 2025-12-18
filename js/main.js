@@ -21,6 +21,7 @@ const swiper = new Swiper(".js-voices-swiper", {
     breakpoints: {
         0: {
             slidesPerView: 1,
+            spaceBetween: 0,
         },
         768: {
             slidesPerView: 3,

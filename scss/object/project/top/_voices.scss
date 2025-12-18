@@ -49,7 +49,6 @@
 .p-voices__swiperbutton-wrapper {
     position: relative;
     max-width: 104rem;
-    z-index: 10;
 }
 .p-voices__prev,
 .p-voices__next {
@@ -79,7 +78,45 @@
         transform: translateY(-50%)translateX(0.7rem) !important;
     } 
 }
+@media (max-width: 768px) {
+    .p-voices {
+        padding-top: 4.6rem;
+        padding-bottom: 5rem;
+    }
+    .p-voices__title {
+        font-size: 2.5rem;
+        line-height: calc(40 / 25);
+    }
+    .p-voices__swiper {
+        margin-top: 3.9rem;
+        max-width: none;
+    }
+    .p-voices__card {
+        max-width: none;
+    }
+    .p-voices__img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 335 / 200;
+    }
+    .p-voices__name {
+        margin-top: 2.7rem;
+    }
+    .p-voices__prev,
+    .p-voices__next {
+        top: 37% !important;
+    }
 
+    .p-voices__prev {
+        left: 0 !important;
+        right: auto !important;
+    }
+    .p-voices__next {
+        right: 0 !important;
+        left: auto !important;
+    }
+       
+}
 
 
 
