@@ -6,10 +6,6 @@
     background-color: $main-color;
 }
 .p-voices__title {
-    font-size: 3rem;
-    line-height: calc(50 / 30);
-    font-weight: bold;
-    text-align: center;
     color: $color-white;
 }
 .p-voices__swiper {
@@ -82,10 +78,6 @@
     .p-voices {
         padding-top: 4.6rem;
         padding-bottom: 5rem;
-    }
-    .p-voices__title {
-        font-size: 2.5rem;
-        line-height: calc(40 / 25);
     }
     .p-voices__swiper {
         margin-top: 3.9rem;

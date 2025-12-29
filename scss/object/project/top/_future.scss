@@ -6,23 +6,10 @@
     padding-top: 6.8rem;
     padding-bottom: 6rem;
 }
-.p-future__title {
-    font-size: 3rem;
-    line-height: calc(50 / 30);
-    font-weight: bold;
-    text-align: center;
-}
 .p-future__text {
     font-size: 1.8rem;
     line-height: calc(30 / 18);
     font-weight: medium;
     text-align: center;
     margin-top: 3rem;
-}
-@media (max-width: 768px) {
-    .p-future__title {
-        font-size: 2.5rem;
-        line-height: calc(40 / 25);
-    }
-    
 }
