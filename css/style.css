@@ -432,6 +432,19 @@ img {
     background-color: #000000;
   }
 }
+.c-section-title {
+  font-size: 3rem;
+  line-height: 1.6666666667;
+  font-weight: bold;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .c-section-title {
+    font-size: 2.5rem;
+    line-height: 1.6;
+  }
+}
+
 .c-btn {
   background: #CB0000;
   color: #ffffff;
@@ -858,8 +871,8 @@ img {
 
 .p-voices__prev,
 .p-voices__next {
-  width: 2.984rem;
-  height: 2.024rem;
+  width: 2.9rem;
+  height: 3.9rem;
   position: absolute;
   top: 50% !important;
   -webkit-transform: translateY(-50%) !important;
