@@ -1052,4 +1052,25 @@ img {
   -webkit-transform-origin: 50% calc(100% - 0.15rem);
           transform-origin: 50% calc(100% - 0.15rem);
   border-radius: 9999px;
+}
+
+@media (max-width: 768px) {
+  .p-flow__list-wrapper {
+    padding-right: 0;
+  }
+  .p-flow__list {
+    row-gap: 3.6rem;
+  }
+  .p-flow__item {
+    grid-template-columns: 2rem 1fr;
+  }
+  .p-flow__step-title {
+    grid-column: 2;
+  }
+  .p-flow__text {
+    grid-column: 2;
+    font-size: 1.6rem;
+    line-height: 1.875;
+    margin-top: 0.9rem;
+  }
 }/*# sourceMappingURL=style.css.map */
