@@ -5,17 +5,18 @@
 .p-blog__list {
     margin-top: 3.8rem;
     display: grid;
-    grid-template-columns: repeat(3, 26rem);
+    grid-template-columns: repeat(3, minmax(0, 26rem));
     justify-content: center;
     column-gap: 5rem;
 }
 .p-blog__item {
-    width: 26rem;
+    width: 100%;
 }
 .p-blog__img-wrapper {
     position: relative;
-    width: 26rem;
-    height: 20rem;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 260 / 200;
 
     img {
         height: 100%;

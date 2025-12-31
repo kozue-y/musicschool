@@ -617,8 +617,8 @@ img {
 .p-concept__label {
   grid-column: 1;
   justify-self: end;
-  font-size: 2.5rem;
-  line-height: 2;
+  font-size: 2rem;
+  line-height: 2.5;
   font-weight: bold;
   color: #CB0000;
 }
@@ -641,8 +641,8 @@ img {
 
 .p-concept__text-jp {
   grid-column: 3;
-  font-size: 2.3rem;
-  line-height: 2.1739130435;
+  font-size: 2rem;
+  line-height: 2.5;
   font-weight: medium;
 }
 
@@ -1187,7 +1187,7 @@ img {
 .p-blog__list {
   margin-top: 3.8rem;
   display: grid;
-  grid-template-columns: repeat(3, 26rem);
+  grid-template-columns: repeat(3, minmax(0, 26rem));
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1197,13 +1197,14 @@ img {
 }
 
 .p-blog__item {
-  width: 26rem;
+  width: 100%;
 }
 
 .p-blog__img-wrapper {
   position: relative;
-  width: 26rem;
-  height: 20rem;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 260/200;
 }
 .p-blog__img-wrapper img {
   height: 100%;
