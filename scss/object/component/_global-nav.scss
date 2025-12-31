@@ -33,6 +33,25 @@
             font-size: min(vw(17), 1.7rem);
             line-height: calc(33 / 17);
             font-weight: bold;
+            position: relative;
+
+            @media (min-width: 769px) {
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 2.5rem;
+                    right: 0;
+                    left: 0;
+                    width: 0;
+                    height: 0.2rem;
+                    background-color: $main-color;
+                    transition: width 0.3s ease;
+                }
+                &:hover::after {
+                    width: 100%;
+                }
+                
+            }
         }
     }
 }
