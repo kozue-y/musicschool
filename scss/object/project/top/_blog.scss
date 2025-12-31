@@ -16,7 +16,6 @@
     position: relative;
     width: 26rem;
     height: 20rem;
-    aspect-ratio: 1/ 1;
 
     img {
         height: 100%;
@@ -64,4 +63,34 @@
     font-size: 1.8rem;
     line-height: calc(30 / 18);
     text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .p-blog {
+        margin-top: 5rem;
+    }
+    .p-blog__list {
+        margin-top: 3.9rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 4.1rem;
+    }
+    .p-blog__item {
+        width: 100%;
+    }
+    .p-blog__img-wrapper {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 335 / 200;
+    }
+    .p-blog__category {
+        width: 9rem;
+    }
+    .p-blog__subtitle {
+        line-height: calc(30 / 20);
+    }
+    .p-blog__link-text {
+        text-align: center;
+    }
 }

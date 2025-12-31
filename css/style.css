@@ -1204,7 +1204,6 @@ img {
   position: relative;
   width: 26rem;
   height: 20rem;
-  aspect-ratio: 1/1;
 }
 .p-blog__img-wrapper img {
   height: 100%;
@@ -1262,4 +1261,41 @@ img {
   font-size: 1.8rem;
   line-height: 1.6666666667;
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .p-blog {
+    margin-top: 5rem;
+  }
+  .p-blog__list {
+    margin-top: 3.9rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 4.1rem;
+  }
+  .p-blog__item {
+    width: 100%;
+  }
+  .p-blog__img-wrapper {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 335/200;
+  }
+  .p-blog__category {
+    width: 9rem;
+  }
+  .p-blog__subtitle {
+    line-height: 1.5;
+  }
+  .p-blog__link-text {
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */
