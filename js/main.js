@@ -39,3 +39,5 @@ $(function() {
       $(this).parent('.p-accordion__item').toggleClass('is-open');
     });
   });
+
+  

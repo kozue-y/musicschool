@@ -13,3 +13,63 @@
         width: min(vw(150), 15rem);
         height: min(vw(45), 4.5rem);
 }
+
+// TOPへ戻るボタン
+.c-page-top__link {
+    position: fixed;
+    bottom: 9.1rem;
+    right: 9.16rem;
+    width: 6.8rem;
+    height: 6.8rem;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    background-color: rgba(0,0,0,0.502);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.is-show {
+        opacity: 1;
+        visibility: visible;
+    }
+    &:hover {
+        opacity: 0.8;
+    }
+}
+.c-page-top {
+    width: 3.3rem;
+    height: 2.2rem;
+}
+// お問合せボタン
+.c-contact-btn__link {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: $main-color;
+    width: 30rem;
+    height: 6rem;
+    color: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+
+    &.is-show {
+        opacity: 1;
+        visibility: visible;
+    }
+    &:hover {
+        opacity: 0.8;
+    }
+}
+.c-contact-btn__text {
+    font-size: 2rem;
+    line-height: calc(33 / 20);
+    font-weight: bold;
+}
