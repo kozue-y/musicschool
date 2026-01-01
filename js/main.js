@@ -40,4 +40,36 @@ $(function() {
     });
   });
 
-  
+// お問合せ・トップへ戻るボタン
+$(window).on("scroll", function() {
+    const scrollPos = $(this).scrollTop();
+    const winHeight = $(window).height();
+    const docHeight = $(document).height();
+    const footerHeight = $(".c-footer").outerHeight();
+
+    const $pageTop = $("#js-page-top");
+    const $contactBtn = $("#js-contact-btn");
+
+    // FV超えたらの指示
+    if (scrollPos > winHeight) {
+        $pageTop.addClass("is-show");
+        $contactBtn.addClass("is-show");
+    } else {
+        $pageTop.removeClass("is-show");
+        $contactBtn.removeClass("is-show");
+    }
+    // Footerで止める指示
+    const scrollBottom = scrollPos + winHeight;
+    const footerTop = docHeight - footerHeight;
+
+    if(scrollBottom > footerTop) {
+        const overlap = scrollBottom - footerTop;
+        // 上にずらす
+        $pageTop.css("transform", `translateY(-${overlap}px)`);
+        $contactBtn.css("transform", `translateY(-${overlap}px)`);
+    } else {
+        $pageTop.css("transform", `translateY(0)`);
+        $contactBtn.css("transform", `translateY(0)`);
+    }
+
+});
