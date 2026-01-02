@@ -62,8 +62,11 @@
 }
 // ハンバーガーメニュー
 @media (max-width: 768px) {
+    .l-header {
+        position: relative;
+    }
     .c-hamburger {
-        position: fixed;
+        position: absolute;
         right: 0;
         top: 0;
         width: 7.1rem;
