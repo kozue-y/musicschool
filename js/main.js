@@ -41,17 +41,27 @@ $(function() {
   });
 
 // お問合せ・トップへ戻るボタン
+// TOPに戻るスムーススクロール
+$(function() {
+    $('#js-page-top').on('click', function(e) {
+        e.preventDefault();
+        $("html, body").animate({ scrollTop: 0}, 500, "swing");
+        return false;
+    });
+});
+
 $(window).on("scroll", function() {
     const scrollPos = $(this).scrollTop();
     const winHeight = $(window).height();
     const docHeight = $(document).height();
-    const footerHeight = $(".c-footer").outerHeight();
+    const fvHeight = $(".p-fv").outerHeight() || 0;
+    const footerHeight = $(".c-footer").outerHeight() || 0;
 
     const $pageTop = $("#js-page-top");
     const $contactBtn = $("#js-contact-btn");
 
     // FV超えたらの指示
-    if (scrollPos > winHeight) {
+    if (scrollPos > fvHeight) {
         $pageTop.addClass("is-show");
         $contactBtn.addClass("is-show");
     } else {
@@ -66,7 +76,7 @@ $(window).on("scroll", function() {
         const overlap = scrollBottom - footerTop;
         // 上にずらす
         $pageTop.css("transform", `translateY(-${overlap}px)`);
-        $contactBtn.css("transform", `translateY(-${overlap}px)`);
+        $contactBtn.css("transform", `translateY(-${overlap -1}px)`);
     } else {
         $pageTop.css("transform", `translateY(0)`);
         $contactBtn.css("transform", `translateY(0)`);
