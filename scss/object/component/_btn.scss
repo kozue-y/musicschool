@@ -51,6 +51,14 @@
     width: 3.3rem;
     height: 2.2rem;
 }
+@media (max-width: 768px) {
+    .c-page-top__link {
+        right: 2rem;
+        bottom: 7.9rem;
+    }
+    
+}
+
 // お問合せボタン
 .c-contact-btn__link {
     position: fixed;
@@ -82,4 +90,14 @@
     font-size: 2rem;
     line-height: calc(33 / 20);
     font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .c-contact-btn__link {
+        width: 33.5rem;
+        right: 0;
+        left: 0;
+        margin-inline: auto;
+    }
+    
 }
