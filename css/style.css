@@ -480,6 +480,13 @@ img {
   line-height: 2.2;
   width: min(13.8888888889vw, 15rem);
   height: min(4.1666666667vw, 4.5rem);
+  border: solid 1px #CB0000;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.c-btn:hover {
+  background-color: #ffffff;
+  color: #CB0000;
 }
 
 .c-page-top__link {
@@ -538,15 +545,17 @@ img {
           align-items: center;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: opacity 0.3s ease, visibility 0.3s ease;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
+  border: 1px solid #CB0000;
+  -webkit-transition: opacity 0.3s ease, visibility 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  transition: opacity 0.3s ease, visibility 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 .c-contact-btn__link.is-show {
   opacity: 1;
   visibility: visible;
 }
 .c-contact-btn__link:hover {
-  opacity: 0.8;
+  background-color: #ffffff;
+  color: #CB0000;
 }
 
 .c-contact-btn__text {

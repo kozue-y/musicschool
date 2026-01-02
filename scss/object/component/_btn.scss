@@ -12,6 +12,14 @@
         line-height: calc(33 / 15);
         width: min(vw(150), 15rem);
         height: min(vw(45), 4.5rem);
+
+        border: solid 1px $main-color;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      
+        &:hover {
+            background-color: $color-white;
+            color: $main-color;
+        }
 }
 
 // TOPへ戻るボタン
@@ -58,14 +66,16 @@
     align-items: center;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    border: 1px solid $main-color;
+    transition: opacity 0.3s ease, visibility 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 
     &.is-show {
         opacity: 1;
         visibility: visible;
     }
     &:hover {
-        opacity: 0.8;
+        background-color: $color-white;
+        color: $main-color;
     }
 }
 .c-contact-btn__text {
