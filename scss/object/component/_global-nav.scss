@@ -34,31 +34,22 @@
             line-height: calc(33 / 17);
             font-weight: bold;
             position: relative;
-            transition: opacity 0.3s ease;
+            transition: opacity 0.3s ease, text-decoration 0.3s ease;
+
+            &:hover {
+                opacity: 0.7;
+            }
 
             @media (min-width: 769px) {
-                &::after {
-                    content: "";
-                    position: absolute;
-                    bottom: 2.5rem;
-                    right: 0;
-                    left: 0;
-                    width: 0;
-                    height: 0.1rem;
-                    background-color: $main-color;
-                    transition: width 0.3s ease;
-                }
                 &:hover {
-                    opacity: 0.8;
-                    &:hover::after {
-                        width: 100%;
-                    }
+                    text-decoration: underline;
+                    
                 }
                 
             }
         }
     }
-}
+
 .c-global-nav__contact-wrap {
     height: 100%;
     display: flex;
