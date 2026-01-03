@@ -8,17 +8,30 @@
 .p-voices__title {
     color: $color-white;
 }
-.p-voices__swiper {
+.p-voices__container {
     margin-top: 3.6rem;
+    max-width: 104rem;
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: 6rem;
+    position: relative;
+}
+
+.p-voices__swiper {
     max-width: 88rem;
+    margin-inline: auto;
+    overflow: visible;
+}
+.swiper-wrapper {
+    overflow: hidden !important;
 }
 .p-voices__card {
+    width: 100%;
     max-width: 27rem;
 }
 .p-voices__img {
-    width: 100%;
+    width: 27rem;
     height: 19rem;
-    overflow: hidden;
 
     img {
         object-fit: cover;
@@ -42,17 +55,12 @@
     color: $color-white;
     text-align: center;
 }
-.p-voices__swiperbutton-wrapper {
-    position: relative;
-    max-width: 104rem;
-    margin-inline: auto;
-}
 .p-voices__prev,
 .p-voices__next {
     width: 2.9rem;
     height: 3.9rem;
     position: absolute;
-    top: 50% !important;
+    top: 44% !important;
     transform: translateY(-50%) !important;
     margin-top: 0 !important;
     transition: transform 0.3s ease;
@@ -62,14 +70,14 @@
     }    
 }
 .p-voices__prev {
-    left: calc((36 / 1040) * 100%) !important;
+    left: 4rem !important;
     right: auto !important;
     &:hover {
         transform: translateY(-50%)translateX(-0.7rem) !important;
     } 
 }
 .p-voices__next {
-    right: calc((36 / 1040) * 100%) !important;
+    right: 4rem !important;
     left: auto !important;
     &:hover {
         transform: translateY(-50%)translateX(0.7rem) !important;
