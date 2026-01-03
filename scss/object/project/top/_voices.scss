@@ -45,6 +45,7 @@
 .p-voices__swiperbutton-wrapper {
     position: relative;
     max-width: 104rem;
+    margin-inline: auto;
 }
 .p-voices__prev,
 .p-voices__next {
@@ -61,14 +62,14 @@
     }    
 }
 .p-voices__prev {
-    left: 4.1rem !important;
+    left: calc((36 / 1040) * 100%) !important;
     right: auto !important;
     &:hover {
         transform: translateY(-50%)translateX(-0.7rem) !important;
     } 
 }
 .p-voices__next {
-    right: 4.1rem !important;
+    right: calc((36 / 1040) * 100%) !important;
     left: auto !important;
     &:hover {
         transform: translateY(-50%)translateX(0.7rem) !important;

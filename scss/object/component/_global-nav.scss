@@ -34,6 +34,7 @@
             line-height: calc(33 / 17);
             font-weight: bold;
             position: relative;
+            transition: opacity 0.3s ease;
 
             @media (min-width: 769px) {
                 &::after {
@@ -43,12 +44,15 @@
                     right: 0;
                     left: 0;
                     width: 0;
-                    height: 0.2rem;
+                    height: 0.1rem;
                     background-color: $main-color;
                     transition: width 0.3s ease;
                 }
-                &:hover::after {
-                    width: 100%;
+                &:hover {
+                    opacity: 0.8;
+                    &:hover::after {
+                        width: 100%;
+                    }
                 }
                 
             }
