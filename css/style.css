@@ -137,6 +137,8 @@ html {
 body {
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "Yu Gothic", "Meiryo", "メイリオ", sans-serif;
   scroll-behavior: smooth;
+  line-height: 1.6;
+  letter-spacing: normal;
 }
 
 img {
@@ -306,23 +308,18 @@ img {
   line-height: 1.9411764706;
   font-weight: bold;
   position: relative;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
+  -webkit-transition: opacity 0.3s ease, -webkit-text-decoration 0.3s ease;
+  transition: opacity 0.3s ease, -webkit-text-decoration 0.3s ease;
+  transition: opacity 0.3s ease, text-decoration 0.3s ease;
+  transition: opacity 0.3s ease, text-decoration 0.3s ease, -webkit-text-decoration 0.3s ease;
 }
 .c-global-nav__list li a:hover {
   opacity: 0.7;
 }
 @media (min-width: 769px) {
-  .c-global-nav__list li a {
-    -webkit-transition: -webkit-text-decoration 0.3s ease;
-    transition: -webkit-text-decoration 0.3s ease;
-    transition: text-decoration 0.3s ease;
-    transition: text-decoration 0.3s ease, -webkit-text-decoration 0.3s ease;
+  .c-global-nav__list li a:hover {
+    text-decoration: underline;
   }
-}
-.c-global-nav__list li a:hover {
-  opacity: 0.7;
-  text-decoration: underline;
 }
 
 .c-global-nav__contact-wrap {
@@ -612,25 +609,14 @@ img {
           align-items: center;
   height: 100%;
   position: relative;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
-}
-.c-footer__nav a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -0.2rem;
-  width: 0;
-  height: 0.1rem;
-  background-color: #ffffff;
-  -webkit-transition: width 0.3s ease;
-  transition: width 0.3s ease;
+  -webkit-transition: opacity 0.3s ease, -webkit-text-decoration 0.3s ease;
+  transition: opacity 0.3s ease, -webkit-text-decoration 0.3s ease;
+  transition: opacity 0.3s ease, text-decoration 0.3s ease;
+  transition: opacity 0.3s ease, text-decoration 0.3s ease, -webkit-text-decoration 0.3s ease;
 }
 .c-footer__nav a:hover {
-  opacity: 0.8;
-}
-.c-footer__nav a:hover::after {
-  width: 100%;
+  opacity: 0.7;
+  text-decoration: underline;
 }
 
 .c-footer__logo {
@@ -732,6 +718,15 @@ img {
   text-decoration: underline;
 }
 
+@media (max-width: 768px) {
+  .c-breadcrumb {
+    padding-top: 0.3rem;
+    padding-bottom: 0;
+  }
+  .c-breadcrumb__list {
+    padding-left: 2rem;
+  }
+}
 .p-fv {
   position: relative;
   z-index: 10;
@@ -1604,4 +1599,104 @@ img {
   line-height: 2.4;
   font-weight: bold;
   padding-top: 0.8rem;
+}
+
+.p-plan-system {
+  margin-top: 6.7rem;
+}
+
+.p-plan__title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.p-plan-system__wrapper {
+  margin-top: 4rem;
+  margin-inline: auto;
+}
+
+.p-plan-system__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+}
+
+.p-plan-system__card {
+  background-color: #CB0000;
+  width: 21rem;
+  height: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.p-plan-system__card-title {
+  font-size: 2rem;
+  line-height: 1.65;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.p-plan-system__plus {
+  display: block;
+  position: relative;
+  width: 1.85rem;
+  height: 1.85rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.p-plan-system__plus::before, .p-plan-system__plus::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #000;
+}
+.p-plan-system__plus::before {
+  width: 100%;
+  height: 0.3rem;
+}
+.p-plan-system__plus::after {
+  width: 0.3rem;
+  height: 100%;
+}
+
+.p-plan-system__text {
+  font-size: 1.8rem;
+  line-height: 1.6666666667;
+  margin-top: 4.8rem;
+  padding-inline: 7.6rem;
+}
+
+@media (max-width: 768px) {
+  .p-plan-system__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .p-plan-system__text {
+    font-size: 1.6rem;
+    line-height: 1.875;
+    padding-inline: 0;
+  }
+}
+.p-plan-table {
+  margin-top: 5.7rem;
 }/*# sourceMappingURL=style.css.map */

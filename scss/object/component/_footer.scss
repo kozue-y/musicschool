@@ -21,24 +21,11 @@
         align-items: center;
         height: 100%;
         position: relative;
-        transition: opacity 0.3s ease;
+        transition: opacity 0.3s ease, text-decoration 0.3s ease;
 
-        &::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: -0.2rem;
-            width: 0;
-            height: 0.1rem;
-            background-color: $color-white;
-            transition: width 0.3s ease;
-        }
         &:hover {
-            opacity: 0.8;
-
-            &::after {
-                width: 100%;
-            }
+            opacity: 0.7;
+            text-decoration: underline;
         }
     }
 }

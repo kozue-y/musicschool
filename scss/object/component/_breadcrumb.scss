@@ -30,3 +30,13 @@
         }
     }
 }
+@media (max-width: 768px) {
+    .c-breadcrumb {
+        padding-top: 0.3rem;
+        padding-bottom: 0;
+    }
+    .c-breadcrumb__list {
+        padding-left: 2rem;
+    }
+    
+}
