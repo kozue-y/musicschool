@@ -2,3 +2,115 @@
 .p-plan-table{
     margin-top: 5.7rem;
 }
+
+.p-plan-table__wrapper {
+    margin-top: 5rem;
+    max-width: 88rem;
+    margin-inline: auto;
+}
+.p-plan-table__list {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    tbody tr:nth-child(even) {
+        background-color: rgba(50, 50, 50, 0.149);
+    }
+}
+.p-plan-table__list tbody td {
+    text-align: center;
+    border-left: 0.5px solid #000;
+    font-size: 1.7rem;
+    line-height: calc(25 / 17);
+    vertical-align: middle;
+}
+.p-plan-table__list tbody tr {
+    height: 8.5rem;
+    box-sizing: border-box;
+}
+.p-plan-table__list tbody th {
+    padding-left: 1.95rem;
+    font-size: 1.7rem;
+    line-height: calc(25 / 17);
+    vertical-align: middle;
+}
+.p-plan-table__list tbody tr:last-child {
+    border-bottom: 0.5px solid #000;
+}
+.p-plan-table__row--price th {
+    font-size: 1.7rem;
+    line-height: calc(30 / 17);
+    font-weight: bold;
+    vertical-align: middle;
+}
+.p-plan-table__row--price td {
+    font-size: 2.2rem;
+    line-height: calc(33 / 22);
+    font-weight: bold;
+    vertical-align: middle;
+}
+.p-plan-table__td--recommend {
+    color: $main-color;
+}
+.p-plan-table__mark-border {
+    display: inline-block;
+    width: 3rem;
+    height: 0.1rem;
+    background-color: #707070;
+    vertical-align: middle;
+
+}
+.p-plan-table__mark {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: #000;
+
+}
+
+.p-plan-table__head {
+    height: 8rem;
+    padding-top: 3rem;
+    box-sizing: border-box;
+    background-color: transparent;
+    font-weight: bold;
+    color: $color-white;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.8rem; 
+    line-height: 1;
+    position: relative;
+    // fz2rem,lh1.65にすると高さが変わるため、fz1.8rem,lh1にする
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 5rem;
+        background-color: #000;
+        z-index: -1;
+
+    }
+}
+.p-plan-table__recommend-label {
+    font-size: 1.7rem;
+    line-height: calc(33 / 17);
+    background-color: $main-color;
+}
+.p-plan-table__head--recommend {
+    background-color: $main-color;
+    padding-top: 0;
+}
+.p-plan-table__head-empty {
+    background-color: transparent;
+    border-bottom: 0.5px solid #000;
+}
+
+.p-plan-table__text {
+    font-size: 1.7rem;
+    line-height: calc(25 / 17);
+    margin-top: 2.85rem;
+}
+
+
