@@ -1831,27 +1831,48 @@ img {
   }
   .p-plan-table__wrapper {
     margin-top: 3.6rem;
-    width: auto;
     max-width: none;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     overscroll-behavior-x: contain;
   }
   .p-plan-table__list {
-    width: 100%;
-    min-width: 88rem;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    min-width: 100%;
     table-layout: fixed;
   }
-  .p-plan-table__list tbody td:nth-child(3),
-  .p-plan-table__list tbody td:nth-child(4) {
-    border-left: none;
+  .p-plan-table__list tbody th {
+    width: 22rem;
+    max-width: 22rem;
   }
-  .p-plan-table__head {
-    font-weight: medium;
+  .p-plan-table__list tbody td {
+    width: 22rem;
+    max-width: 22rem;
   }
   .p-plan-table__list tbody th {
     font-size: 1.6rem;
     line-height: 1.5625;
     padding-left: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .p-plan-table__list {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    --col2: calc((100vw - 4rem) / 2);
+    min-width: calc(var(--col2) * 4);
+  }
+  .p-plan-table__list th:first-child,
+  .p-plan-table__list td:first-child,
+  .p-plan-table__list th:nth-child(2),
+  .p-plan-table__list td:nth-child(2) {
+    width: var(--col2);
+  }
+  .p-plan-table__list th:nth-child(n+3),
+  .p-plan-table__list td:nth-child(n+3) {
+    width: var(--col2);
   }
 }/*# sourceMappingURL=style.css.map */
