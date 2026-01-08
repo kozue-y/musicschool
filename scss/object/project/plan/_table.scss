@@ -66,6 +66,10 @@
     border-radius: 50%;
     background-color: #000;
 
+    &--recommend {
+        background-color: $main-color;
+    }
+ 
 }
 
 .p-plan-table__head {
@@ -113,4 +117,34 @@
     margin-top: 2.85rem;
 }
 
+@media (max-width: 768px) {
+    .p-plan-table{
+        margin-top: 3.8rem;    
+    }
+    .p-plan-table__wrapper {
+        margin-top: 3.6rem;
+        width: auto;
+        max-width: none;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior-x: contain;
+    }
+    .p-plan-table__list {
+        width: 100%;
+        min-width: 88rem;
+        table-layout: fixed;
+    }
+    .p-plan-table__list tbody td:nth-child(3),
+    .p-plan-table__list tbody td:nth-child(4) {
+        border-left: none;
+    }
+    .p-plan-table__head {
+        font-weight: medium;
+    }
+    .p-plan-table__list tbody th {
+        font-size: 1.6rem;
+        line-height: calc(25 /16);
+        padding-left: 1rem;
+    }
+}
 
