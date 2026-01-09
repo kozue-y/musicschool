@@ -83,3 +83,71 @@ $(window).on("scroll", function() {
     }
 
 });
+
+// スクロールバー
+$(function() {
+    const $wrap = $(".p-plan-table__scroll-area");
+    const $track = $(".p-plan-table__scrollbar-track");
+    const $thumb = $(".p-plan-table__scrollbar-thumb");
+
+    if (!$wrap.length || !$track.length || !$thumb.length) return;
+
+    function updateThumb() {
+        const cw = $wrap[0].clientWidth;
+        const sw = $wrap[0].scrollWidth;
+        // //スクロールが必要ない状態の時に表示・非表示
+        // if (sw <= cw) {
+        //     $track.closest(".p-plan-table__scrollbar").hide();
+        //     return;
+        // }
+        // $track.closest(".p-plan-table__scrollbar").show();
+
+        const trackW = $track.width();
+        const thumbW = $thumb.outerWidth();
+        const maxThumbX = Math.max(0, trackW - thumbW);
+        const maxScroll = sw - cw;
+        const x = (maxScroll <= 0 || maxThumbX === 0)
+        ? 0 
+        : ($wrap.scrollLeft() / maxScroll) * maxThumbX;
+
+        $thumb.css("left", Math.max(0, Math.min(maxThumbX, x)) + "px");
+    }
+    $wrap.on("scroll", updateThumb);
+    $(window).on("resize", updateThumb);
+
+    let dragging = false;
+    let startX = 0;
+    let startLeft =0;
+
+    $thumb.on("mousedown touchstart", function(e) {
+        dragging = true;
+        const pageX = e.pageX ?? e.originalEvent.touches?.[0]?.pageX ?? 0;
+        startX = pageX;
+        startLeft = parseFloat($thumb.css("left")) || 0;
+
+        e.preventDefault();
+    });
+
+    $(document).on("mousemove touchmove", function(e) {
+        if(!dragging) return;
+        const pageX = e.pageX ?? e.originalEvent.touches?.[0]?.pageX ?? 0;
+        const trackW = $track.width();
+        const thumbW = $thumb.outerWidth();
+        const maxThumbX = Math.max(0, trackW - thumbW);
+
+        const dx = pageX - startX;
+        const newLeft = Math.max(0, Math.min(maxThumbX, startLeft + dx));
+        $thumb.css("left", newLeft + "px");
+
+        const maxScroll = $wrap[0].scrollWidth - $wrap[0].clientWidth;
+        if (maxThumbX > 0 && maxScroll > 0) {
+            $wrap.scrollLeft((newLeft / maxThumbX) * maxScroll);
+        }
+    });
+
+    $(document).on("mouseup touchend touchcancel", function() {
+        dragging = false;
+    });
+
+    updateThumb();
+});
