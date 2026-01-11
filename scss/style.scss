@@ -14,6 +14,7 @@
 @use"./object/component/btn";
 @use"./object/component/footer";
 @use"./object/component/breadcrumb";
+@use"./object/component/mv";
 @use"./object/project/top/fv";
 @use"./object/project/top/concept";
 @use"./object/project/top/future";
@@ -22,6 +23,5 @@
 @use"./object/project/top/flow";
 @use"./object/project/top/faq";
 @use"./object/project/top/blog";
-@use"./object/project/plan/mv";
 @use"./object/project/plan/system";
 @use"./object/project/plan/table";

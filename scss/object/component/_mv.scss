@@ -1,6 +1,6 @@
-@use"../../../foundation/variable" as*;
+@use"../../foundation/variable" as*;
 
-.p-plan-mv__image {
+.c-page-mv__image {
 position: relative;
 z-index: 10;
 
@@ -15,7 +15,7 @@ z-index: 10;
     z-index: 20;
 }
 }
-.p-plan-mv__title {
+.c-page-mv__title {
     position: absolute;
     top: 50%;
     left: 50%;
