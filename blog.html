@@ -1,56 +1,68 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>きたむらミュージックスクール</title>
-  <link rel="icon" href="images/sitetitle_icon.svg" type="image/svg">
-  <meta name="description" content="ミュージックスクールご紹介サイトです">
-  <meta name="keywords" content="ミュージックスクール, レッスン">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <div class="container">
-    <!-- header -->
-     <header>
-      <div class="l-header" id="header">
-        <div class="l-header-inner">
-          <div class="c-site-title">
-            <h1>
-              <a href="index.html">
-                <img src="images/sitetitle_icon.svg" alt="きたむらミュージックスクール">
-                <span class="c-site-title__text">きたむら<br class="u-pc-only"><span class="c-site-title__text--sub">ミュージックスクール</span></span>
-              </a>
-            </h1>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>きたむらミュージックスクール</title>
+    <link rel="icon" href="images/sitetitle_icon.svg" type="image/svg" />
+    <meta name="description" content="ミュージックスクールご紹介サイトです" />
+    <meta name="keywords" content="ミュージックスクール, レッスン" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <header>
+        <div class="l-header" id="header">
+          <div class="l-header-inner">
+            <div class="c-site-title">
+              <h1>
+                <a href="index.html">
+                  <img
+                    src="images/sitetitle_icon.svg"
+                    alt="きたむらミュージックスクール"
+                  />
+                  <span class="c-site-title__text"
+                    >きたむら<br class="u-pc-only" /><span
+                      class="c-site-title__text--sub"
+                      >ミュージックスクール</span
+                    ></span
+                  >
+                </a>
+              </h1>
+            </div>
+            <!-- PC用ナビ -->
+            <div class="c-global-nav u-pc-only">
+              <nav>
+                <ul class="c-global-nav__list">
+                  <li><a href="plan.html">料金</a></li>
+                  <li><a href="blog.html">ブログ</a></li>
+                  <li><a href="">卒業実績</a></li>
+                </ul>
+                <div class="c-global-nav__contact-wrap">
+                  <a href="" class="c-btn c-global-nav__contact"
+                    >お問い合わせ</a
+                  >
+                </div>
+              </nav>
+            </div>
           </div>
-          <!-- PC用ナビ -->
-           <div class="c-global-nav u-pc-only">
-            <nav>
-              <ul class="c-global-nav__list">
-                <li><a href="plan.html">料金</a></li>
-                <li><a href="blog.html">ブログ</a></li>
-                <li><a href="">卒業実績</a></li>
-              </ul>
-              <div class="c-global-nav__contact-wrap">
-                <a href="" class="c-btn c-global-nav__contact">お問い合わせ</a>
-              </div>
-            </nav>
-           </div>      
-        </div>
 
-        <!-- ハンバーガーボタンSP用 -->
-         <button id="hamburger-block" class="c-hamburger u-sp-only">
-          <span class="c-hamburger__inner">
-            <span class="c-hamburger__line"></span>
-            <span class="c-hamburger__line"></span>
-            <span class="c-hamburger__line"></span>
-          </span>
-         </button>
+          <!-- ハンバーガーボタンSP用 -->
+          <button id="hamburger-block" class="c-hamburger u-sp-only">
+            <span class="c-hamburger__inner">
+              <span class="c-hamburger__line"></span>
+              <span class="c-hamburger__line"></span>
+              <span class="c-hamburger__line"></span>
+            </span>
+          </button>
 
-         <!-- ハンバーガーナビゲーションSP用 -->
+          <!-- ハンバーガーナビゲーションSP用 -->
           <div class="c-drawer-menu u-sp-only" id="js-drawer">
             <nav>
               <ul class="c-drawer-menu__list">
@@ -60,173 +72,311 @@
               </ul>
             </nav>
           </div>
-      </div>
-     </header>
-
-     <main class="main">
-      <!-- mv -->
-      <section class="c-page-mv" id="mv">
-        <div class="c-plan-mv__image">
-          <picture>
-            <source media="(min-width: 768px)" srcset="images/about.jpg">
-            <img src="images/about_sp.jpg" alt="音楽制作画像">
-          </picture>
-          <h2 class="c-page-mv__title">プラン・料金</h2>
         </div>
-        <nav class="c-breadcrumb" aria-label="breadcrumb">
-          <div class="l-inner">
-            <ol class="c-breadcrumb__list">
-              <li class="c-breadcrumb__item"><a href="index.html">ホーム</a></li>
-              <li class="c-breadcrumb__item">プラン・料金</li>
-            </ol>
-          </div>
-        </nav>
-      </section>
+      </header>
 
-      <!-- system -->
-       <section class="p-plan-system" id="system">
-        <div class="l-inner">
-          <h2 class="p-plan__title">料金体系</h2>
-          <div class="p-plan-system__wrapper">
-            <div class="p-plan-system__item">
-              <div class="p-plan-system__card">
-                <p class="p-plan-system__card-title">入会金 39,000円</p>
-              </div>
-              <span class="p-plan-system__plus"></span>
-              <div class="p-plan-system__card">
-                <p class="p-plan-system__card-title">月額料金</p>
-              </div>
-            </div>
-              <p class="p-plan-system__text">
-                きたむらミュージックスクールでは、個人に合わせたサポートを行う完全オーダーメイドのプランを用意しており、サポート内容により月額料金が異なります。
-                担当者があなたに最適なプランを提案いたしますので、お気軽にお問い合わせください。※すべての料金は税込価格となります。  
-              </p>
+      <main class="main">
+        <!-- mv -->
+        <section class="c-page-mv" id="mv">
+          <div class="c-page-mv__image">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/blog.jpg" />
+              <img src="images/blog_sp.jpg" alt="楽譜画像" />
+            </picture>
+            <h2 class="c-page-mv__title">ブログ</h2>
           </div>
-        </div>
-       </section>
-
-       <!-- table -->
-        <section class="p-plan-table" id="table">
-          <div class="l-inner">
-            <h2 class="p-plan__title">プラン内容・月額料金</h2>
-            <div class="p-plan-table__wrapper">
-              <!-- スクロール範囲 -->
-              <div class="p-plan-table__scroll-area">
-                <table class="p-plan-table__list">
-                  <thead>
-                    <tr>
-                      <th class="p-plan-table__head-empty"></th>
-                      <th class="p-plan-table__head">ベーシック<br class="u-sp-only">プラン</th>
-                      <th class="p-plan-table__head p-plan-table__head--recommend">
-                        <span class="p-plan-table__recommend-label">おすすめ</span>
-                        <br>スタンダード<br class="u-sp-only">プラン
-                      </th>
-                      <th class="p-plan-table__head">プレミアム<br class="u-sp-only">プラン</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr class="p-plan-table__row--price">
-                      <th>月額料金</th>
-                      <td>39,000円</td>
-                      <td class="p-plan-table__td--recommend">59,000円</td>
-                      <td>128,000円</td>
-                    </tr>
-                    <tr>
-                      <th>マンツーマン授業</th>
-                      <td><span class="p-plan-table__mark"></span>
-                      <br>週１回</td>
-                      <td><span class="p-plan-table__mark p-plan-table__mark--recommend"></span>
-                      <br>週２回</td>
-                      <td><span class="p-plan-table__mark"></span>
-                      <br>無制限</td>
-                    </tr>
-                    <tr>
-                      <th>ビジネス基本講座</th>
-                      <td><span class="p-plan-table__mark"></span></td>
-                      <td><span class="p-plan-table__mark p-plan-table__mark--recommend"></span></td>
-                      <td><span class="p-plan-table__mark"></span></td>
-                    </tr>
-                    <tr>
-                      <th>練習ROOM利用</th>
-                      <td><span class="p-plan-table__mark"></span>
-                      <br>月10時間</td>
-                      <td><span class="p-plan-table__mark p-plan-table__mark--recommend"></span>
-                      <br>月20時間</td>
-                      <td><span class="p-plan-table__mark"></span>
-                      <br>無制限</td>
-                    </tr>
-                    <tr>
-                      <th>ビジネスコンサル</th>
-                      <td><span class="p-plan-table__mark-border"></span></td>
-                      <td><span class="p-plan-table__mark p-plan-table__mark--recommend"></span>
-                      <br>月２回</td>
-                      <td><span class="p-plan-table__mark"></span>
-                      <br>月３回</td>
-                    </tr>
-                    <tr>
-                      <th>コミュニティ<br class="u-sp-only">サポート</th>
-                      <td><span class="p-plan-table__mark-border"></span></td>
-                      <td><span class="p-plan-table__mark-border"></span></td>
-                      <td><span class="p-plan-table__mark"></span></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!-- スクロールバー -->
-              <div class="p-plan-table__scrollbar u-sp-only" aria-hidden="true">
-                <div class="p-plan-table__scrollbar-track">
-                  <div class="p-plan-table__scrollbar-thumb"></div>
-                </div>
-              </div>
-              <p class="p-plan-table__text">
-                ※各サービスは１回ごとのオプション追加が可能です。詳しくは事務局までお問い合わせください。
-              </p>
+          <nav class="c-breadcrumb" aria-label="breadcrumb">
+            <div class="l-inner">
+              <ol class="c-breadcrumb__list">
+                <li class="c-breadcrumb__item">
+                  <a href="index.html">ホーム</a>
+                </li>
+                <li class="c-breadcrumb__item">ブログ</li>
+              </ol>
             </div>
-          </div>
+          </nav>
         </section>
 
-          </main>
+        <!-- blog -->
+        <section class="p-blog-list" id="blog">
+          <div class="l-inner">
+            <h2 class="p-blog-list__title">ブログ一覧</h2>
 
-           <!-- footer -->
-            <footer id="footer" class="c-footer">
-              <div class="l-inner">
-                <nav>
-                  <ul class="c-footer__nav">
-                    <li><a href="index.html">ホーム</a></li>
-                    <li><a href="plan.html">料金</a></li>
-                    <li><a href="">ブログ</a></li>
-                    <li><a href="">卒業実績</a></li>
-                  </ul>
-                </nav>
-                <div class="c-footer__logo">
-                  <img src="images/logo_white.svg" alt="サイトロゴ">
-                </div>
-                <div class="c-footer__copyright">
-                  <small>Copyright &copy; 0000 KITAMURA music school Inc. All Rights</small>
-                </div>
-                <ul class="c-footer__sns">
-                  <li><a href=""><img src="images/icon_twitter.svg" alt="twitterアイコン"></a></li>
-                  <li><a href=""><img src="images/icon_facebook.svg" alt="facebookアイコン"></a></li>
-                  <li><a href=""><img src="images/icon_youtube.svg" alt="youtubeアイコン"></a></li>
-                  <li><a href=""><img src="images/icon_instagram.svg" alt="instagramアイコン"></a></li>
-                </ul>
-              </div>
-            </footer>
-  </div>
-<!-- TOPへ戻るボタン -->
-   <a href="#" class="c-page-top__link" id="js-page-top">
-    <div class="c-page-top">
-      <img src="images/top-arrows.svg" alt="TOPへ戻る矢印">
+            <ul class="p-blog-list__list">
+              <!-- 記事1 -->
+              <li class="p-blog-list__item">
+                <a href="blog_details.html" class="p-blog-list__link">
+                  <div class="p-blog-list__img-wrapper">
+                    <img src="images/blog01.jpg" alt="blog画像" />
+                    <span class="p-blog-list__category">ギター</span>
+                  </div>
+                  <div class="p-blog-list__content">
+                    <h3 class="p-blog-list__subtitle">
+                      アルペジオが劇的に向上する3つの習慣
+                    </h3>
+                    <time datetime="0000-00-00" class="p-blog-list__date"
+                      >0000.00.00</time
+                    >
+                    <p class="p-blog-list__text">
+                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <!-- 記事2 -->
+              <li class="p-blog-list__item">
+                <a href="blog_details.html" class="p-blog-list__link">
+                  <div class="p-blog-list__img-wrapper">
+                    <img src="images/blog02.jpg" alt="blog画像" />
+                    <span class="p-blog-list__category">集客方法</span>
+                  </div>
+                  <div class="p-blog-list__content">
+                    <h3 class="p-blog-list__subtitle">
+                      集客してる間は売れないという法則
+                    </h3>
+                    <time datetime="0000-00-00" class="p-blog-list__date"
+                      >0000.00.00</time
+                    >
+                    <p class="p-blog-list__text">
+                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <!-- 記事3 -->
+              <li class="p-blog-list__item">
+                <a href="blog_details.html" class="p-blog-list__link">
+                  <div class="p-blog-list__img-wrapper">
+                    <img src="images/blog03.jpg" alt="blog画像" />
+                    <span class="p-blog-list__category">SNS</span>
+                  </div>
+                  <div class="p-blog-list__content">
+                    <h3 class="p-blog-list__subtitle">
+                      フォロワーではなくファンを増やせとは？
+                    </h3>
+                    <time datetime="0000-00-00" class="p-blog-list__date"
+                      >0000.00.00</time
+                    >
+                    <p class="p-blog-list__text">
+                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <!-- 記事1 -->
+              <li class="p-blog-list__item">
+                <a href="blog_details.html" class="p-blog-list__link">
+                  <div class="p-blog-list__img-wrapper">
+                    <img src="images/blog01.jpg" alt="blog画像" />
+                    <span class="p-blog-list__category">ギター</span>
+                  </div>
+                  <div class="p-blog-list__content">
+                    <h3 class="p-blog-list__subtitle">
+                      アルペジオが劇的に向上する3つの習慣
+                    </h3>
+                    <time datetime="0000-00-00" class="p-blog-list__date"
+                      >0000.00.00</time
+                    >
+                    <p class="p-blog-list__text">
+                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <!-- 記事2 -->
+              <li class="p-blog-list__item">
+                <a href="blog_details.html" class="p-blog-list__link">
+                  <div class="p-blog-list__img-wrapper">
+                    <img src="images/blog02.jpg" alt="blog画像" />
+                    <span class="p-blog-list__category">集客方法</span>
+                  </div>
+                  <div class="p-blog-list__content">
+                    <h3 class="p-blog-list__subtitle">
+                      集客してる間は売れないという法則
+                    </h3>
+                    <time datetime="0000-00-00" class="p-blog-list__date"
+                      >0000.00.00</time
+                    >
+                    <p class="p-blog-list__text">
+                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <!-- 記事3 -->
+              <li class="p-blog-list__item">
+                <a href="blog_details.html" class="p-blog-list__link">
+                  <div class="p-blog-list__img-wrapper">
+                    <img src="images/blog03.jpg" alt="blog画像" />
+                    <span class="p-blog-list__category">SNS</span>
+                  </div>
+                  <div class="p-blog-list__content">
+                    <h3 class="p-blog-list__subtitle">
+                      フォロワーではなくファンを増やせとは？
+                    </h3>
+                    <time datetime="0000-00-00" class="p-blog-list__date"
+                      >0000.00.00</time
+                    >
+                    <p class="p-blog-list__text">
+                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <!-- 記事1 -->
+              <li class="p-blog-list__item">
+                <a href="blog_details.html" class="p-blog-list__link">
+                  <div class="p-blog-list__img-wrapper">
+                    <img src="images/blog01.jpg" alt="blog画像" />
+                    <span class="p-blog-list__category">ギター</span>
+                  </div>
+                  <div class="p-blog-list__content">
+                    <h3 class="p-blog-list__subtitle">
+                      アルペジオが劇的に向上する3つの習慣
+                    </h3>
+                    <time datetime="0000-00-00" class="p-blog-list__date"
+                      >0000.00.00</time
+                    >
+                    <p class="p-blog-list__text">
+                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <!-- 記事2 -->
+              <li class="p-blog-list__item">
+                <a href="blog_details.html" class="p-blog-list__link">
+                  <div class="p-blog-list__img-wrapper">
+                    <img src="images/blog02.jpg" alt="blog画像" />
+                    <span class="p-blog-list__category">集客方法</span>
+                  </div>
+                  <div class="p-blog-list__content">
+                    <h3 class="p-blog-list__subtitle">
+                      集客してる間は売れないという法則
+                    </h3>
+                    <time datetime="0000-00-00" class="p-blog-list__date"
+                      >0000.00.00</time
+                    >
+                    <p class="p-blog-list__text">
+                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <!-- 記事3 -->
+              <li class="p-blog-list__item">
+                <a href="blog_details.html" class="p-blog-list__link">
+                  <div class="p-blog-list__img-wrapper">
+                    <img src="images/blog03.jpg" alt="blog画像" />
+                    <span class="p-blog-list__category">SNS</span>
+                  </div>
+                  <div class="p-blog-list__content">
+                    <h3 class="p-blog-list__subtitle">
+                      フォロワーではなくファンを増やせとは？
+                    </h3>
+                    <time datetime="0000-00-00" class="p-blog-list__date"
+                      >0000.00.00</time
+                    >
+                    <p class="p-blog-list__text">
+                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <!-- 記事1 -->
+              <li class="p-blog-list__item">
+                <a href="blog_details.html" class="p-blog-list__link">
+                  <div class="p-blog-list__img-wrapper">
+                    <img src="images/blog01.jpg" alt="blog画像" />
+                    <span class="p-blog-list__category">ギター</span>
+                  </div>
+                  <div class="p-blog-list__content">
+                    <h3 class="p-blog-list__subtitle">
+                      アルペジオが劇的に向上する3つの習慣
+                    </h3>
+                    <time datetime="0000-00-00" class="p-blog-list__date"
+                      >0000.00.00</time
+                    >
+                    <p class="p-blog-list__text">
+                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <!-- footer -->
+      <footer id="footer" class="c-footer">
+        <div class="l-inner">
+          <nav>
+            <ul class="c-footer__nav">
+              <li><a href="index.html">ホーム</a></li>
+              <li><a href="plan.html">料金</a></li>
+              <li><a href="">ブログ</a></li>
+              <li><a href="">卒業実績</a></li>
+            </ul>
+          </nav>
+          <div class="c-footer__logo">
+            <img src="images/logo_white.svg" alt="サイトロゴ" />
+          </div>
+          <div class="c-footer__copyright">
+            <small
+              >Copyright &copy; 0000 KITAMURA music school Inc. All
+              Rights</small
+            >
+          </div>
+          <ul class="c-footer__sns">
+            <li>
+              <a href=""
+                ><img src="images/icon_twitter.svg" alt="twitterアイコン"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="images/icon_facebook.svg" alt="facebookアイコン"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="images/icon_youtube.svg" alt="youtubeアイコン"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="images/icon_instagram.svg" alt="instagramアイコン"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
     </div>
-   </a>
+    <!-- TOPへ戻るボタン -->
+    <a href="#" class="c-page-top__link" id="js-page-top">
+      <div class="c-page-top">
+        <img src="images/top-arrows.svg" alt="TOPへ戻る矢印" />
+      </div>
+    </a>
 
- <!-- お問合せボタン -->
-  <a href="" class="c-contact-btn__link" id="js-contact-btn">
+    <!-- お問合せボタン -->
+    <a href="" class="c-contact-btn__link" id="js-contact-btn">
       <span class="c-contact-btn__text">お問い合わせ</span>
-  </a>
+    </a>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

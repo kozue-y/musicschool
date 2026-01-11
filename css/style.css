@@ -1906,4 +1906,13 @@ img {
   .p-plan-table__list td:nth-child(n+3) {
     width: var(--col2);
   }
+}
+.p-blog-list {
+  margin-top: 6.7rem;
+}
+
+.p-blog-list__title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
