@@ -7,3 +7,15 @@
     font-weight: bold;
     text-align: center;
 }
+.p-blog-list__list {
+    margin-top: 3.8rem;
+    display: grid;
+    row-gap: 7rem;
+}
+.p-blog-list__item {
+    width: 100%;
+}
+.p-blog-list__link {
+    display: grid;
+    grid-template-columns: 26rem 1fr;
+}
