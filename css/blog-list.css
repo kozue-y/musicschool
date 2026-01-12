@@ -9,9 +9,11 @@
 }
 
 .p-blog-list__list {
+  max-width: 88rem;
   margin-top: 3.8rem;
   display: grid;
   row-gap: 7rem;
+  margin-inline: auto;
 }
 
 .p-blog-list__item {
@@ -21,4 +23,60 @@
 .p-blog-list__link {
   display: grid;
   grid-template-columns: 26rem 1fr;
+  -webkit-column-gap: 5rem;
+     -moz-column-gap: 5rem;
+          column-gap: 5rem;
+}
+
+.p-blog-list__img-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 260/184;
+}
+.p-blog-list__img-wrapper img {
+  height: 100%;
+}
+
+.p-blog-list__category {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8rem;
+  height: 3rem;
+  background-color: #CB0000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.p-blog-list__content {
+  padding-top: 0.2rem;
+}
+
+.p-blog-list__subtitle {
+  font-size: 2rem;
+  line-height: 1.25;
+  font-weight: bold;
+}
+
+.p-blog-list__date {
+  font-size: 1.7rem;
+  line-height: 1.7647058824;
+  margin-top: 0.3rem;
+}
+
+.p-blog-list__text {
+  font-size: 1.8rem;
+  line-height: 1.6666666667;
+  margin-top: 1.1rem;
 }/*# sourceMappingURL=blog-list.css.map */
