@@ -63,6 +63,7 @@
       </div>
      </header>
 
+     <!-- メイン -->
      <main class="main">
         <nav class="c-breadcrumb" aria-label="breadcrumb">
           <div class="l-inner">
@@ -82,38 +83,40 @@
                 <article class="p-blog-detail__article">
                   <header class="p-blog-detail__header">
                     <h1 class="p-blog-detail__title">アルペジオが劇的に向上する３つの習慣</h1>
-                    <time class="p-blog-detail__date" datetime="0000-00-00">0000.00.00</time>
+                    <time class="p-blog-detail__date" datetime="2026-01-15">0000.00.00</time>
                     <div class="p-blog-detail__img-wrapper">
                       <img src="images/blog01.jpg" alt="ギター練習画像">
                       <span class="p-blog-detail__category">ギター</span>
                     </div>
-                    <ul class="p-blog-detail__sns" aria-label="SNSでシェア">
-                      <li class="p-blog-detail__sns-item">
-                        <a href="#" aria-label="facebookでシェア">
-                          <img src="images/facebook_color.svg" alt="">
-                        </a>
-                      </li>
-                      <li class="p-blog-detail__sns-item">
-                        <a href="#" aria-label="Xでシェア">
-                          <img src="images/twitter_color.svg" alt="">
-                        </a>
-                      </li>
-                      <li class="p-blog-detail__sns-item">
-                        <a href="#" aria-label="hatenaでシェア">
-                          <img src="images/hatena_color.svg" alt="">
-                        </a>
-                      </li>
-                      <li class="p-blog-detail__sns-item">
-                        <a href="#" aria-label="LINEでシェア">
-                          <img src="images/line_color.svg" alt="">
-                        </a>
-                      </li>
-                      <li class="p-blog-detail__sns-item">
-                        <a href="#" aria-label="pocketでシェア">
-                          <img src="images/pocket_color.svg" alt="">
-                        </a>
-                      </li>
-                    </ul>
+                    <nav class="p-blog-detail__sns" aria-label="SNSでシェア">
+                      <ul class="p-blog-detail__sns-list">
+                        <li class="p-blog-detail__sns-item">
+                          <a href="#" aria-label="facebookでシェア">
+                            <img src="images/facebook_color.svg" alt="">
+                          </a>
+                        </li>
+                        <li class="p-blog-detail__sns-item">
+                          <a href="#" aria-label="Xでシェア">
+                            <img src="images/twitter_color.svg" alt="">
+                          </a>
+                        </li>
+                        <li class="p-blog-detail__sns-item">
+                          <a href="#" aria-label="hatenaでシェア">
+                            <img src="images/hatena_color.svg" alt="">
+                          </a>
+                        </li>
+                        <li class="p-blog-detail__sns-item">
+                          <a href="#" aria-label="LINEでシェア">
+                            <img src="images/line_color.svg" alt="">
+                          </a>
+                        </li>
+                        <li class="p-blog-detail__sns-item">
+                          <a href="#" aria-label="pocketでシェア">
+                            <img src="images/pocket_color.svg" alt="">
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
                   </header>
                   <div class="p-blog-detail__body">
                     <p>
@@ -148,7 +151,7 @@
                       <a href="#">テキストリンク</a>
                     </div>
                   </div>
-                  <nav class="p-blog-detail__post-nav">
+                  <nav class="p-blog-detail__post-nav" aria-label="前後の記事">
                     <ul class="p-blog-detail__post-nav-list">
                       <li class="p-blog-detail__post-nav-item">
                         <a href="#" class="p-blog-detail__post-nav-link">
@@ -195,7 +198,7 @@
                             <span class="p-blog-detail__related-subtitle">
                               タイトルが入ります。タイトルが入ります。タイトルが入ります。
                             </span>
-                            <time class="p-blog-detail__related-date" datetime="0000-00-00">0000.00.00</time>
+                            <time class="p-blog-detail__related-date" datetime="2026-01-15">0000.00.00</time>
                           </span>
                         </a>
                       </li>
@@ -209,7 +212,7 @@
                             <span class="p-blog-detail__related-subtitle">
                               タイトルが入ります。タイトルが入ります。タイトルが入ります。
                             </span>
-                            <time class="p-blog-detail__related-date" datetime="0000-00-00">0000.00.00</time>
+                            <time class="p-blog-detail__related-date" datetime="2026-01-15">0000.00.00</time>
                           </span>
                         </a>
                       </li>
@@ -223,42 +226,103 @@
                             <span class="p-blog-detail__related-subtitle">
                               タイトルが入ります。タイトルが入ります。タイトルが入ります。
                             </span>
-                            <time class="p-blog-detail__related-date" datetime="0000-00-00">0000.00.00</time>
+                            <time class="p-blog-detail__related-date" datetime="2026-01-15">0000.00.00</time>
                           </span>
                         </a>
                       </li>
                     </ul>
                   </section>
                 </article>
-
               </div>
+
+              <!-- サイドバー -->
               <aside class="p-blog-detail__side">
                 <div class="p-sidebar">
-                  <section class="p-wiget p-wiget--magazine">
-                    <h2 class="p-wiget__title">無料メールマガジン</h2>
-                    <div class="p-wiget__body">
-                      <a class="p-wiget__body-inner" aria-label="無料メールマガジンのバナー">
-                        <span class="p-wiget__text">バナー広告</span>
+                  <section class="p-widget p-widget--magazine">
+                    <h3 class="p-widget__title">無料メールマガジン</h3>
+                    <div class="p-widget__body">
+                      <a href="#" class="p-widget__body-inner" aria-label="無料メールマガジンのバナー">
+                        <span class="p-widget__text">バナー広告</span>
                       </a>
                     </div>
                   </section>
 
-                  <section class="p-wiget p-wiget--search">
-                    <h2 class="p-wiget__title">ブログ内を検索</h2>
+                  <section class="p-widget p-widget--search">
+                    <h3 class="p-widget__title">ブログ内を検索</h3>
+                    <form class="p-widget__search-form" action="#" method="get">
+                      <label class="p-widget__search-label">
+                        <span class="u-visually-hidden">検索キーワード</span>
+                        <input type="search"
+                        name="s"
+                        class="p-widget__search-input"
+                        />
+                      </label>
+                      <button type="submit" class="p-widget__search-button" aria-label="検索">
+                        <img src="images/icon-search.svg" alt="">
+                      </button>
+                    </form>
+                  </section>
 
+                  <section class="p-widget p-widget--recommend">
+                    <h3 class="p-widget__title">おすすめの記事</h3>
+                    <ul class="p-widget__list">
+                      <li class="p-widget__item">
+                        <a href="#" class="p-widget__link">
+                          <span class="p-widget__thumb"></span>
+                          <span class="p-widget__subtitle">タイトルが入ります。タイトルが入ります。</span>
+                        </a>
+                      </li>
+                      <li class="p-widget__item">
+                        <a href="#" class="p-widget__link">
+                          <span class="p-widget__thumb"></span>
+                          <span class="p-widget__subtitle">タイトルが入ります。タイトルが入ります。</span>
+                        </a>
+                      </li>
+                      <li class="p-widget__item">
+                        <a href="#" class="p-widget__link">
+                          <span class="p-widget__thumb"></span>
+                          <span class="p-widget__subtitle">タイトルが入ります。タイトルが入ります。</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </section>
+                  
+                  <section class="p-widget p-widget--category">
+                    <h3 class="p-widget__title">カテゴリー</h3>
+                    <ul class="p-widget__category-list">
+                      <li class="p-widget__category-item">
+                        <a href="#" class="p-widget__category-link">
+                          <span class="p-widget__category-label">カテゴリー</span>
+                        </a>
+                      </li>
+                      <li class="p-widget__category-item">
+                        <a href="#" class="p-widget__category-link">
+                          <span class="p-widget__category-label">カテゴリー</span>
+                        </a>
+                      </li>
+                      <li class="p-widget__category-item">
+                        <a href="#" class="p-widget__category-link">
+                          <span class="p-widget__category-label">カテゴリー</span>
+                        </a>
+                      </li>
+                      <li class="p-widget__category-item">
+                        <a href="#" class="p-widget__category-link">
+                          <span class="p-widget__category-label">カテゴリー</span>
+                        </a>
+                      </li>
+                      <li class="p-widget__category-item">
+                        <a href="#" class="p-widget__category-link">
+                          <span class="p-widget__category-label">カテゴリー</span>
+                        </a>
+                      </li>
+                    </ul>
                   </section>
                 </div>
-
               </aside>
-
             </div>
-
           </div>
         </section>
-      
-
-
-          </main>
+      </main>
 
            <!-- footer -->
             <footer id="footer" class="c-footer">
