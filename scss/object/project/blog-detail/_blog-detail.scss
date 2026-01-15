@@ -1,0 +1,104 @@
+@use"../../../foundation/variable" as*;
+.p-blog-detail {
+    margin-top: 7rem;
+}
+.p-blog-detail__layout {
+    max-width: 88.1rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 3.1rem;
+    margin-inline: auto;
+}
+.p-blog-detail__header {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        font-size: 2.5rem;
+        line-height: calc(40 / 25);
+        font-weight: bold;
+        margin-top: 4.6rem;
+    }
+}
+.p-blog-detail__date {
+    font-size: 1.7rem;
+    line-height: calc(30 / 17);
+    margin-top: 0.5rem;
+}
+.p-blog-detail__img-wrapper {
+    position: relative;
+    order: -1;
+    width: 100%;
+}
+.p-blog-detail__img-wrapper img {
+    aspect-ratio: 600 / 350;
+}
+.p-blog-detail__category {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8rem;
+    height: 3rem;
+    background-color: $main-color;
+    font-size: 1.5rem;
+    line-height: calc(25 / 15);
+    color: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p-blog-detail__sns {
+    margin-top: 2.1rem;
+    display: flex;
+}
+.p-blog-detail__sns-list {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+.p-blog-detail__sns-item {
+    height: 4rem;
+}
+.p-blog-detail__sns-item a {
+    display: inline-block;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+.p-blog-detail__sns-item a img {
+    height: 100%;
+}
+.p-blog-detail__body {
+    margin-top: 4.8rem;
+
+    p {
+        font-size: 1.8rem;
+        line-height: calc(30 / 18);
+    }
+
+    h2 {
+        font-size: 2rem;
+        line-height: calc(40 / 20);
+        font-weight: bold;
+        margin-top: 3.3rem;
+    }    
+}
+.p-blog-detail__body h2 + p {
+    margin-top: 1.5rem;
+}
+.p-blog-detail__img {
+    margin-top: 1.7rem;
+    width: 100%;
+    max-width: 33.5rem;   
+}
+.p-blog-detail__img img {
+    aspect-ratio: 335 / 200;
+}
+.p-blog-detail__list {
+    margin-top: 2.8rem;
+    font-size: 1.8rem;
+    line-height: calc(30 / 18);
+}
+    

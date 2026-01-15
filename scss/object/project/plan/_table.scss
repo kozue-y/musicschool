@@ -18,7 +18,7 @@
 }
 .p-plan-table__list tbody td {
     text-align: center;
-    border-left: 0.5px solid #000;
+    border-left: 0.5px solid $color-black;
     font-size: 1.7rem;
     line-height: calc(25 / 17);
     vertical-align: middle;
@@ -34,7 +34,7 @@
     vertical-align: middle;
 }
 .p-plan-table__list tbody tr:last-child {
-    border-bottom: 0.5px solid #000;
+    border-bottom: 0.5px solid $color-black;
 }
 .p-plan-table__row--price th {
     font-size: 1.7rem;
@@ -64,7 +64,7 @@
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 50%;
-    background-color: #000;
+    background-color: $color-black;
 
     &--recommend {
         background-color: $main-color;
@@ -92,7 +92,7 @@
         left: 0;
         right: 0;
         height: 5rem;
-        background-color: #000;
+        background-color: $color-black;
         z-index: -1;
 
     }
@@ -108,7 +108,7 @@
 }
 .p-plan-table__head-empty {
     background-color: transparent;
-    border-bottom: 0.5px solid #000;
+    border-bottom: 0.5px solid $color-black;
 }
 
 .p-plan-table__text {

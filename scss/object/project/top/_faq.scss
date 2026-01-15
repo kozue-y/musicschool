@@ -5,10 +5,10 @@
    margin-inline: auto; 
 }
 .p-accordion__item {
-    border-top: 0.05rem solid #000;
+    border-top: 0.05rem solid $color-black;
 }
 .p-accordion__item:last-child {
-    border-bottom: 0.05rem solid #000;
+    border-bottom: 0.05rem solid $color-black;
 }
 .p-accordion__question {
     display: flex;
@@ -26,7 +26,7 @@
     flex-shrink: 0;
     width: 3.5rem;
     height: 3.5rem;
-    background-color: #000;
+    background-color: $color-black;
     color: $color-white;
     border-radius: 50%;
     font-size: 2rem;
@@ -41,8 +41,8 @@
     top: 50%;
     width: 1.25rem;
     height: 1.25rem;
-    border-right: 0.1rem solid #000;
-    border-bottom: 0.1rem solid #000;
+    border-right: 0.1rem solid $color-black;
+    border-bottom: 0.1rem solid $color-black;
     transform: translateY(-50%) rotate(45deg);
     transition: transform 0.3s ease;
 }
