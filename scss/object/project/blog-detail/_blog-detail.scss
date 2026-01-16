@@ -83,7 +83,13 @@
         line-height: calc(40 / 20);
         font-weight: bold;
         margin-top: 3.3rem;
-    }    
+    }  
+    h3 {
+        font-size: 2rem;
+        line-height: calc(40 / 20);
+        font-weight: bold;
+        margin-top: 4.35rem;
+    }  
 }
 .p-blog-detail__body h2 + p {
     margin-top: 1.5rem;
@@ -100,5 +106,80 @@
     margin-top: 2.8rem;
     font-size: 1.8rem;
     line-height: calc(30 / 18);
+    padding-bottom: 4.5rem;
+    border-bottom: solid 0.5px $color-black;
 }
+.p-blog-detail__list li {
+    position: relative;
+    padding-left: 1.8rem;
+
+}
+.p-blog-detail__list li::before {
+    content: "・";
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.8rem;
+    line-height: calc(30 /18);
+}
+.p-blog-detail__blockquote {
+    position: relative;
+    margin-top: 1.7rem;
+    padding: 1.8rem 3rem 1rem 6.7rem;
+    background-color: #e8e8e8;
+}
+.p-blog-detail__blockquote-icon {
+    position: absolute;
+    width: 2.704rem;
+    height: 2.328rem;
+    top: 2rem;
+    left: 3rem;
+}
+.p-blog-detail__text-link {
+    margin-top: 2.7rem;
+    font-size: 2rem;
+    line-height: calc(33 / 20);
+    font-weight: bold;
+    color: $main-color;
+}
+.p-blog-detail__text-link a {
+    display: inline-block;
+    border-bottom: solid 1px $main-color;
+}
+.p-blog-detail__post-nav {
+    margin-top: 6rem;
+}
+.p-blog-detail__post-nav-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 7.2rem;
+}
+.p-blog-detail__post-nav-item {
+    display: flex;
+    align-items: center;
+}
+.p-blog-detail__post-nav-label {
+    font-size: 1.7rem;
+    line-height: calc(30 / 17);
+    background-color: $color-black;
+    color: $color-white;
+}
+.p-blog-detail__post-nav-label--prev{
+    padding: 0.4rem 15rem 0.3rem 2rem;
+}
+.p-blog-detail__post-nav-label--next {
+    padding: 0.4rem 2rem 0.3rem 15rem;
+}
+.p-blog-detail__post-nav-body {
+    display: flex;
+}
+.p-blog-detail__post-nav-thumb{
+    width: 100%;
+    max-width: 9.8rem;
+
+    img {
+        aspect-ratio: 98 / 68;
+    }
+}
+
     
