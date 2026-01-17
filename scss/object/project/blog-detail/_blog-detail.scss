@@ -9,6 +9,10 @@
     gap: 3.1rem;
     margin-inline: auto;
 }
+.p-blog-detail__main {
+    width: 100%;
+    max-width: 60rem;
+}
 .p-blog-detail__header {
     display: flex;
     flex-direction: column;
@@ -159,6 +163,7 @@
     align-items: center;
 }
 .p-blog-detail__post-nav-label {
+    display: inline-block;
     font-size: 1.7rem;
     line-height: calc(30 / 17);
     background-color: $color-black;
@@ -172,6 +177,8 @@
 }
 .p-blog-detail__post-nav-body {
     display: flex;
+    gap: 1.6rem;
+    margin-top: 1.5rem;
 }
 .p-blog-detail__post-nav-thumb{
     width: 100%;
@@ -180,6 +187,79 @@
     img {
         aspect-ratio: 98 / 68;
     }
+}
+.p-blog-detail__post-nav-title {
+    flex: 1 1 14.7rem;
+    min-width: 0;
+    overflow: hidden;
+    display: block;
+    max-height: calc(1.6rem * 1.5625 * 3);
+    // display: -webkit-box;
+    // -webkit-box-orient: vertical;
+    // -webkit-line-clamp: 3;
+    font-size: 1.6rem;
+    line-height: calc(25 / 16);
+    font-weight: bold;
+}
+.p-blog-detail__related {
+    margin-top: 10.1rem;
+}
+.p-blog-detail__related-title {
+    font-size: 1.8rem;
+    line-height: calc(33 / 18);
+    font-weight: bold;
+    background-color: $color-black;
+    color: $color-white;
+    padding: 0.9rem 49.8rem 0.8rem 3rem;
+}
+.p-blog-detail__related-list {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.p-blog-detail__related-link {
+    display: flex;
+    gap: 3rem;
+}
+.p-blog-detail__related-thumb {
+    display: block;
+    width: 100%;
+    max-width: 20rem;
+    position: relative;
+
+    img {
+        aspect-ratio: 200 / 140;
+    }
+}
+.p-blog-detail__related-category {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $main-color;
+    color: $color-white;
+    font-size: 1.5rem;
+    line-height: calc(25 / 15);
+    font-weight: bold;
+    width: 8rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p-blog-detail__related-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+.p-blog-detail__related-subtitle {
+    font-size: 2rem;
+    line-height: calc(25 / 20);
+    font-weight: bold;
+}
+.p-blog-detail__related-date {
+    font-size: 1.7rem;
+    line-height: calc(30 / 17);
 }
 
     
