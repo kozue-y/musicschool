@@ -1,0 +1,41 @@
+@use"../../../foundation/variable" as*;
+.p-blog-detail__side {
+    width: 100%;
+    max-width: 25rem;
+}
+.p-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.p-widget__title {
+    font-size: 1.8rem;
+    line-height: calc(33 / 18);
+    font-weight: bold;
+    background-color: $color-black;
+    color: $color-white;
+    width: 100%;
+    padding-top: 0.9rem;
+    padding-bottom: 0.8rem;
+    text-align: center;
+}
+.p-widget__body {
+    background-color: $color-white;
+    padding: 1.5rem;
+    border: solid 0.5px $color-black;
+}
+.p-widget__body-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8e8e8;
+    padding: 6.8rem 6.5rem 6.9rem;
+}
+.p-widget__text {
+    display: inline-block;
+    text-wrap: nowrap;
+    font-size: 1.8rem;
+    line-height: calc(33 / 18);
+    font-weight: bold;
+
+}
