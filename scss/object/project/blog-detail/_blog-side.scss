@@ -20,16 +20,25 @@
     text-align: center;
 }
 .p-widget__body {
-    background-color: $color-white;
+    box-sizing: border-box;
+    width: 100%;
+    aspect-ratio: 250 / 200;
     padding: 1.5rem;
+    background-color: $color-white;
     border: solid 0.5px $color-black;
+    // outline: solid 0.5px $color-black;
+    // outline-offset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .p-widget__body-inner {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #e8e8e8;
-    padding: 6.8rem 6.5rem 6.9rem;
+    width: 100%;
+    aspect-ratio: 220 / 170;
 }
 .p-widget__text {
     display: inline-block;

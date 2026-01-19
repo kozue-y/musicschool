@@ -2497,9 +2497,22 @@ img {
 }
 
 .p-widget__body {
-  background-color: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  aspect-ratio: 250/200;
   padding: 1.5rem;
+  background-color: #ffffff;
   border: solid 0.5px #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .p-widget__body-inner {
@@ -2513,7 +2526,8 @@ img {
       -ms-flex-align: center;
           align-items: center;
   background-color: #e8e8e8;
-  padding: 6.8rem 6.5rem 6.9rem;
+  width: 100%;
+  aspect-ratio: 220/170;
 }
 
 .p-widget__text {
