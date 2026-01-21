@@ -2497,8 +2497,6 @@ img {
 }
 
 .p-widget__body {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   width: 100%;
   aspect-ratio: 250/200;
   padding: 1.5rem;
@@ -2536,4 +2534,108 @@ img {
   font-size: 1.8rem;
   line-height: 1.8333333333;
   font-weight: bold;
+}
+
+.p-widget__search-form {
+  width: 100%;
+  background-color: #ffffff;
+  border: solid 0.5px #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem;
+}
+
+.p-widget__search-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #e8e8e8;
+}
+
+.p-widget__search-input {
+  width: 100%;
+  padding: 0.6rem;
+  font-size: 1.7rem;
+  line-height: 1.6470588235;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.p-widget__search-button {
+  width: 4rem;
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000000;
+  cursor: pointer;
+}
+
+.p-widget__search-icon {
+  width: 1.9rem;
+  height: 1.9rem;
+}
+
+.p-widget__list {
+  margin-top: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+
+.p-widget__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.p-widget__thumb {
+  display: block;
+  width: 100%;
+  padding-top: 0.1rem;
+  max-width: 9.5rem;
+  height: 7.5rem;
+  background-color: #e8e8e8;
+}
+
+.p-widget__subtitle {
+  font-size: 1.7rem;
+  line-height: 1.6470588235;
+}
+
+.p-widget__category-item {
+  margin-top: 1.2rem;
+}
+
+.p-widget__category-label {
+  display: block;
+  width: 100%;
+  font-size: 1.7rem;
+  line-height: 1.6470588235;
+  border-bottom: solid 0.5px #000000;
+  padding-bottom: 0.7rem;
 }/*# sourceMappingURL=style.css.map */
