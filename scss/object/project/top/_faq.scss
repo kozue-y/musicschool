@@ -84,7 +84,7 @@
 .p-accordion__item.is-open .p-accordion__question::after {
     transform: translateY(-70%) rotate(225deg);
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .p-accordion__question {
         font-size: 1.6rem;
         line-height: calc(30 / 16);

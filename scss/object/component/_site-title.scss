@@ -39,7 +39,7 @@
     line-height: calc(23 / 15);
   }
 }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .c-site-title {
       gap: min(vw(6.32, 375), 0.632rem);
     }
