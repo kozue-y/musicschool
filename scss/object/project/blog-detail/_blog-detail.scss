@@ -261,5 +261,33 @@
     font-size: 1.7rem;
     line-height: calc(30 / 17);
 }
+@media (max-width: 767px) {
+    .p-blog-detail {
+        margin-top: 5rem;
+    }
+    .p-blog-detail__layout {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .p-blog-detail__main {
+        max-width: none;
+    }
+    .p-blog-detail__header {    
+        h1 {
+            font-size: 2rem;
+            line-height: calc(30 / 20);
+            font-weight: bold;
+            margin-top: 3rem;
+        }
+    }
+    .p-blog-detail__date {
+        margin-top: 0.6rem;
+    }
+    .p-blog-detail__sns-list {
+        display: grid;
+    }
+    
+}
 
     
