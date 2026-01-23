@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>きたむらミュージックスクール</title>
+  <link rel="icon" href="images/sitetitle_icon.svg" type="image/svg">
+  <meta name="description" content="ミュージックスクールご紹介サイトです">
+  <meta name="keywords" content="ミュージックスクール, レッスン">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- header -->
+     <header>
+      <div class="l-header" id="header">
+        <div class="l-header-inner">
+          <div class="c-site-title">
+            <h1>
+              <a href="index.html">
+                <img src="images/sitetitle_icon.svg" alt="きたむらミュージックスクール">
+                <span class="c-site-title__text">きたむら<br class="u-pc-only"><span class="c-site-title__text--sub">ミュージックスクール</span></span>
+              </a>
+            </h1>
+          </div>
+          <!-- PC用ナビ -->
+           <div class="c-global-nav u-pc-only">
+            <nav>
+              <ul class="c-global-nav__list">
+                <li><a href="plan.html">料金</a></li>
+                <li><a href="blog.html">ブログ</a></li>
+                <li><a href="">卒業実績</a></li>
+              </ul>
+              <div class="c-global-nav__contact-wrap">
+                <a href="contact_form.html" class="c-header-btn c-global-nav__contact">お問い合わせ</a>
+              </div>
+            </nav>
+           </div>      
+        </div>
+
+        <!-- ハンバーガーボタンSP用 -->
+         <button id="hamburger-block" class="c-hamburger u-sp-only">
+          <span class="c-hamburger__inner">
+            <span class="c-hamburger__line"></span>
+            <span class="c-hamburger__line"></span>
+            <span class="c-hamburger__line"></span>
+          </span>
+         </button>
+
+         <!-- ハンバーガーナビゲーションSP用 -->
+          <div class="c-drawer-menu u-sp-only" id="js-drawer">
+            <nav>
+              <ul class="c-drawer-menu__list">
+                <li><a href="plan.html">料金</a></li>
+                <li><a href="blog.html">ブログ</a></li>
+                <li><a href="">卒業実績</a></li>
+              </ul>
+            </nav>
+          </div>
+      </div>
+     </header>
+
+     <!-- メイン -->
+     <main class="main">
+      <!-- mv -->
+      <section class="c-page-mv" id="mv">
+        <div class="c-page-mv__image">
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/mv404.jpg" />
+            <img src="images/mv404_sp.jpg" alt="楽譜画像" />
+          </picture>
+          <h2 class="c-page-mv__title">404 not found</h2>
+        </div>
+      </section>
+
+      <section class="p-404">
+        <div class="l-inner">
+          <p class="p-404__text">
+            申し訳ございませんが、お探しのページが見つかりませんでした。<br>
+            お探しのページは一時的に表示ができない状態にあるか、移動または削除された可能性があります。
+          </p>
+          <div class="p-404__btn">
+            <button type="submit" class="c-btn c-btn--block">ホームへ戻る</button>
+          </div>
+        </div>
+      </section>
+
+      </main>
+
+           <!-- footer -->
+            <footer id="footer" class="c-footer">
+              <div class="l-inner">
+                <nav>
+                  <ul class="c-footer__nav">
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="plan.html">料金</a></li>
+                    <li><a href="blog.html">ブログ</a></li>
+                    <li><a href="">卒業実績</a></li>
+                  </ul>
+                </nav>
+                <div class="c-footer__logo">
+                  <img src="images/logo_white.svg" alt="サイトロゴ">
+                </div>
+                <div class="c-footer__copyright">
+                  <small>Copyright &copy; 0000 KITAMURA music school Inc. All Rights</small>
+                </div>
+                <ul class="c-footer__sns">
+                  <li><a href=""><img src="images/icon_twitter.svg" alt="twitterアイコン"></a></li>
+                  <li><a href=""><img src="images/icon_facebook.svg" alt="facebookアイコン"></a></li>
+                  <li><a href=""><img src="images/icon_youtube.svg" alt="youtubeアイコン"></a></li>
+                  <li><a href=""><img src="images/icon_instagram.svg" alt="instagramアイコン"></a></li>
+                </ul>
+              </div>
+            </footer>
+  </div>
+<!-- TOPへ戻るボタン -->
+   <a href="#" class="c-page-top__link" id="js-page-top">
+    <div class="c-page-top">
+      <img src="images/top-arrows.svg" alt="TOPへ戻る矢印">
+    </div>
+   </a>
+
+ <!-- お問合せボタン -->
+  <a href="contact_form.html" class="c-contact-btn__link" id="js-contact-btn">
+      <span class="c-contact-btn__text">お問い合わせ</span>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
