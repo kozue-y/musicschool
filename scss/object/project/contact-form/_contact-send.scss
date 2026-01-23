@@ -1,0 +1,29 @@
+@use"../../../foundation/variable" as*;
+.p-contact-complete {
+    padding-top: 6.7rem;
+    padding-bottom: 9rem;
+}
+.p-contact-complete__text {
+    font-size: 1.8rem;
+    line-height: calc(30 / 18);
+    text-align: center;
+}
+.p-contact-form__btn {
+    margin-top: 4rem;
+}
+
+@media (max-width: 767px) {
+    .p-contact-complete {
+        padding-top: 4.7rem;
+        padding-bottom: 5rem;
+    }
+    .p-contact-complete__text {
+        font-size: 1.6rem;
+        line-height: calc(30 / 16);
+        text-align: start;
+    }
+    .p-contact-form__btn {
+        margin-top: 3.9rem;
+    }
+    
+}
