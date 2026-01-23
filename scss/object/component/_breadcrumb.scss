@@ -42,11 +42,12 @@
         gap: 0;
     }
     .c-breadcrumb__item {
+        padding-left: 2rem;
         white-space: nowrap;
     }
-    .c-breadcrumb__item:last-child {
-        white-space: normal;
-        flex-basis: 100%;
-    }
+    // .c-breadcrumb__item:last-child {
+    //     white-space: normal;
+    //     flex-basis: 100%;
+    // }
     
 }

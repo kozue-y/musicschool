@@ -1,6 +1,6 @@
 @use"../../foundation/variable" as*;
 
-.c-btn {
+.c-header-btn {
     background: $main-color;
     color: $color-white;
     display: flex;
@@ -100,4 +100,29 @@
         margin-inline: auto;
     }
     
+}
+// 送信・ホームへ戻るボタン
+.c-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background-color: $main-color;
+    color: $color-white;
+    border: solid 1px $main-color;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+        background-color: $color-white;
+        color: $main-color;
+    }
+}
+.c-btn--block {
+    height: 5rem;
+    width: 25rem;
+}
+@media (max-width: 767px) {
+    .c-btn--block {
+        width: 100%;
+    }    
 }

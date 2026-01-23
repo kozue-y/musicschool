@@ -35,7 +35,7 @@
                 <li><a href="">卒業実績</a></li>
               </ul>
               <div class="c-global-nav__contact-wrap">
-                <a href="contact_form.html" class="c-btn c-global-nav__contact">お問い合わせ</a>
+                <a href="contact_form.html" class="c-header-btn c-global-nav__contact">お問い合わせ</a>
               </div>
             </nav>
            </div>      
@@ -88,14 +88,14 @@
 
       <!-- contact -->
        <section class="p-contact">
+         <div class="l-inner">
         <form class="p-contact-form" action="#" method="post">
-          <div class="l-inner">
             <p class="p-contact-form__text">
               当校に関するご質問・ご相談・資料請求は下記のフォームからお気軽にお問い合わせください。<br>
               通常３営業日以内にメールにてご連絡させていただきます。
             </p>
             <dl class="p-contact-form__list">
-              <div class="p-contact-form__row">
+              <div class="p-contact-form__row p-contact-form__row--end">
                 <dt class="p-contact-form__term">
                   <label for="company">会社名</label>
                 </dt>
@@ -104,7 +104,7 @@
                 </dd>
               </div>
 
-              <div class="p-contact-form__row">
+              <div class="p-contact-form__row p-contact-form__row--end">
                 <dt class="p-contact-form__term">
                   <label for="name">お名前</label>
                 </dt>
@@ -113,7 +113,7 @@
                 </dd>
               </div>
 
-              <div class="p-contact-form__row">
+              <div class="p-contact-form__row p-contact-form__row--end">
                 <dt class="p-contact-form__term">
                   <label for="email">メールアドレス</label>
                 </dt>
@@ -122,7 +122,7 @@
                 </dd>
               </div>
 
-              <div class="p-contact-form__row">
+              <div class="p-contact-form__row p-contact-form__row--end">
                 <dt class="p-contact-form__term">
                   <label for="tel">電話番号</label>
                 </dt>
@@ -133,7 +133,7 @@
 
               <div class="p-contact-form__row">
                 <dt class="p-contact-form__term">
-                  目&#12288;的<br class="u-pc-only">(複数選択可)
+                  目&#12288;的<br class="u-pc-only"><span class="p-contact-form__term__note"></span>(複数選択可)
                 </dt>
                 <dd class="p-contact-form__desc">
                   <div class="p-contact-form__checkbox">
@@ -162,9 +162,12 @@
                 </dd>
               </div>
             </dl>
+            <div class="p-contact-form__btn">
+              <button type="submit" class="c-btn c-btn--block">送 信</button>
+            </div>
 
+          </form>
           </div>
-        </form>
        </section>
 
 

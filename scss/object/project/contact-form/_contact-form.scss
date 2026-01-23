@@ -1,0 +1,148 @@
+@use"../../../foundation/variable" as*;
+.p-contact {
+    padding-top: 6.8rem;
+    padding-bottom: 10rem;
+}
+.p-contact-form {
+    max-width: 88rem;
+    margin-inline: auto;
+}
+.p-contact-form__text {
+    font-size: 1.8rem;
+    line-height: calc(30 / 18);
+    text-align: center;
+}
+.p-contact-form__list {
+    margin-top: 6.5rem;
+    display: grid;
+    gap: 3rem;
+}
+.p-contact-form__row {
+    display: grid;
+    grid-template-columns: 14rem 1fr;
+    gap: 2.9rem;
+    align-items: start;
+}
+.p-contact-form__row--end {
+    align-items: end;
+}
+.p-contact-form__term {
+    font-size: 2rem;
+    line-height: calc(33 / 20);
+}
+.p-contact-form__desc {
+    width: 100%;
+}
+.p-contact-form__input,
+.p-contact-form__textarea {
+    width: 100%;
+    padding: 0.6rem 2rem 0.2rem;
+    border: 0.5px solid $color-black;
+    font-size: 1.8rem;
+    line-height: calc(30 / 18);
+}
+.p-contact-form__textarea {
+    height: 30rem;
+    padding-top: 1.3rem;
+    resize: vertical;
+}
+.p-contact-form__input::placeholder,
+.p-contact-form__textarea::placeholder {
+    color: #b2b2b2;
+    font-size: 1.5rem;
+    line-height: calc(33/ 15);
+}
+.p-contact-form__checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.p-contact-form__check {
+    display: inline-flex;
+    align-items: flex-start;
+    cursor: pointer;
+    font-size: 1.8rem;
+    line-height: calc(30 / 18);
+}
+.p-contact-form__check span {
+    position: relative;
+    padding-left: 4rem;
+}
+.p-contact-form__check span::before {
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0.3rem;
+    width: 2rem;
+    height: 2rem;
+    border: 0.5px solid $color-black;
+}
+.p-contact-form__check span::after {
+    content: "";
+    position: absolute;
+    left: 0.5rem;
+    top: 0.8rem;
+    width: 0.9rem;
+    height: 0.5rem;
+    border-left: 0.5px solid $color-black;
+    border-bottom: 0.5px solid $color-black;
+    transform: rotate(-45deg);
+    opacity: 0;
+}
+.p-contact-form__check input[type="checkbox"]:checked + span::after {
+    opacity: 1;
+}
+
+.p-contact-form__btn {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+.c-btn {
+    font-size: 2.5rem;
+    line-height: calc(33 / 25);
+}
+
+@media (max-width: 767px) {
+    .p-contact {
+        padding-top: 4.7rem;
+        padding-bottom: 10.8rem;
+    }
+    .p-contact-form__text {
+        font-size: 1.6rem;
+        line-height: calc(30 / 16);
+        text-align: start;
+    }
+    .p-contact-form__list {
+        margin-top: 3.2rem;
+        display: grid;
+        gap: 1.4rem;
+    }
+    .p-contact-form__row {
+        grid-template-columns: 1fr;
+        gap: 0.2rem;
+        align-items: start;
+    }
+    .p-contact-form__term__note {
+        padding-left: 1.6rem;
+    }
+    .p-contact-form__term {
+        font-size: 1.6rem;
+        line-height: calc(33 / 16);
+    }
+    .p-contact-form__input,
+    .p-contact-form__textarea {
+        font-size: 1.6rem;
+        line-height: calc(33 / 16);
+    }
+    .p-contact-form__check {
+        font-size: 1.6rem;
+        line-height: calc(30 / 16);
+    }
+    
+    
+    
+    
+
+    
+}
