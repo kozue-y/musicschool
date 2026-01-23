@@ -1,0 +1,33 @@
+@use"../../../foundation/variable" as*;
+
+.p-search-result {
+    max-width: 88rem;
+    margin-inline: auto;
+}
+.p-search-result__title {
+    font-size: 1.8rem;
+    line-height: calc(30 / 18);    
+}
+.p-search-result__keyword {
+    font-weight: bold;
+}
+.p-search-result__count {
+    font-size: 1.8rem;
+    line-height: calc(30 / 18);
+    text-align: end;
+}
+.p-search-pagination {
+    margin-top: 7rem;
+}
+@media (max-width: 767px) {
+    .p-search-list {
+        padding-top: 3.6rem;
+    }
+    .p-search-result {
+        display: flex;
+        justify-content: space-between;
+    }
+    .p-search-result__count {
+        margin-left: auto;
+    }    
+}

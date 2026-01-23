@@ -76,31 +76,24 @@
       </header>
 
       <main class="main">
-        <!-- mv -->
-        <section class="c-page-mv" id="mv">
-          <div class="c-page-mv__image">
-            <picture>
-              <source media="(min-width: 768px)" srcset="images/blog.jpg" />
-              <img src="images/blog_sp.jpg" alt="楽譜画像" />
-            </picture>
-            <h2 class="c-page-mv__title">ブログ</h2>
-          </div>
           <nav class="c-breadcrumb" aria-label="breadcrumb">
             <div class="l-inner">
               <ol class="c-breadcrumb__list">
                 <li class="c-breadcrumb__item">
                   <a href="index.html">ホーム</a>
                 </li>
-                <li class="c-breadcrumb__item">ブログ</li>
+                <li class="c-breadcrumb__item">検索</li>
               </ol>
             </div>
           </nav>
-        </section>
 
         <!-- blog -->
-        <section class="p-blog-list" id="blog">
+        <section class="p-blog-list p-search-list" id="blog">
           <div class="l-inner">
-            <h2 class="p-blog-list__title">ブログ一覧</h2>
+            <div class="p-search-result">
+              <p class="p-search-result__title">「<span class="p-search-result__keyword">キーワード</span>」の検索結果</p>
+              <p class="p-search-result__count">28件</p>
+            </div>
 
             <ul class="p-blog-list__list">
               <!-- 記事1 -->
@@ -304,7 +297,7 @@
                 </a>
               </li>
             </ul>
-            <nav class="c-pagination p-blog-pagination" aria-label="ページネーション">
+            <nav class="c-pagination p-search-pagination" aria-label="ページネーション">
               <ul class="c-pagination__list">
                 <li class="c-pagination__item" aria-current="page">
                   <a href="" class="c-pagination__link c-pagination__link--current">1</a>
@@ -315,10 +308,10 @@
                 <li class="c-pagination__item">
                   <a href="" class="c-pagination__link">3</a>
                 </li>
-                <li class="c-pagination__ellipsis">…</li>
+                <!-- <li class="c-pagination__ellipsis">…</li>
                 <li class="c-pagination__item">
                   <a href="" class="c-pagination__link">9</a>
-                </li>
+                </li> -->
               </ul>
             </nav>
 
