@@ -1,0 +1,49 @@
+@use"../../../foundation/variable" as*;
+.p-result-details {
+    padding-top: 7rem;
+    padding-bottom: 15.7rem;
+    max-width: 88rem;
+    margin-inline: auto;
+}
+.p-result-details__header {
+    display: flex;
+    flex-direction: column;
+}
+.p-result-details__img-wrapper {
+    position: relative;
+    order: -1;
+    width: 100%;
+}
+.p-result-details__category {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.5rem;
+    line-height: calc(25 / 15);
+    font-weight: bold;
+    background-color: $main-color;
+    color: $color-white;
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.p-result-details__title {
+    margin-top: 5rem;
+    font-size: 2.5rem;
+    line-height: calc(40 / 25);
+    font-weight: bold;
+}
+.p-result-details__related-date {
+    font-size: 1.7rem;
+    line-height: calc(30 / 17);
+    margin-top: 1.5rem;
+}
+.p-result-details__profile {
+    margin-top: 5.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}

@@ -779,7 +779,7 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(50, 50, 50, 0.486);
-  z-index: 30;
+  z-index: 20;
 }
 
 .c-page-mv__image--no-mask::after {
@@ -793,7 +793,7 @@ img {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   color: #ffffff;
-  z-index: 20;
+  z-index: 30;
   font-size: 2.5rem;
   line-height: 2.4;
   font-weight: bold;
@@ -3292,4 +3292,76 @@ img {
   .p-result-list__text {
     line-height: 1.5;
   }
+}
+.p-result-details {
+  padding-top: 7rem;
+  padding-bottom: 15.7rem;
+  max-width: 88rem;
+  margin-inline: auto;
+}
+
+.p-result-details__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.p-result-details__img-wrapper {
+  position: relative;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  width: 100%;
+}
+
+.p-result-details__category {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.5rem;
+  line-height: 1.6666666667;
+  font-weight: bold;
+  background-color: #CB0000;
+  color: #ffffff;
+  width: 10rem;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.p-result-details__title {
+  margin-top: 5rem;
+  font-size: 2.5rem;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+.p-result-details__related-date {
+  font-size: 1.7rem;
+  line-height: 1.7647058824;
+  margin-top: 1.5rem;
+}
+
+.p-result-details__profile {
+  margin-top: 5.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }/*# sourceMappingURL=style.css.map */
