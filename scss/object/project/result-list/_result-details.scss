@@ -1,20 +1,22 @@
 @use"../../../foundation/variable" as*;
-.p-result-details {
+.p-result-detail {
     padding-top: 7rem;
     padding-bottom: 15.7rem;
+}
+.p-result-detail__inner {
     max-width: 88rem;
     margin-inline: auto;
 }
-.p-result-details__header {
+.p-result-detail__header {
     display: flex;
     flex-direction: column;
 }
-.p-result-details__img-wrapper {
+.p-result-detail__img-wrapper {
     position: relative;
     order: -1;
     width: 100%;
 }
-.p-result-details__category {
+.p-result-detail__category {
     position: absolute;
     top: 0;
     left: 0;
@@ -30,20 +32,164 @@
     align-items: center;
 
 }
-.p-result-details__title {
+.p-result-detail__title {
     margin-top: 5rem;
     font-size: 2.5rem;
     line-height: calc(40 / 25);
     font-weight: bold;
 }
-.p-result-details__related-date {
+.p-result-detail__date {
     font-size: 1.7rem;
     line-height: calc(30 / 17);
     margin-top: 1.5rem;
 }
-.p-result-details__profile {
+.p-result-detail__profile {
     margin-top: 5.7rem;
+    display: grid;
+    grid-template-columns: 40rem 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+.p-result-detail__table {
+    border-collapse: collapse;
+    width: auto;
+}
+.p-result-detail__table th,
+.p-result-detail__table td {
+    border: 0.5px solid #707070;
+    font-size: 1.8rem;
+    line-height: calc(30 / 18);
+    vertical-align: middle;
+    height: 3.8rem;
+    padding-left: 2rem;
+}
+.p-result-detail__table th {
+    background-color: #e5e5e5;
+    width: 14rem;
+    font-weight: bold;
+}
+.p-result-detail__table td {
+    width: 26rem;
+}
+.p-result-detail__text {
+    font-size: 1.8rem;
+    line-height: calc(30 / 18);
+}
+
+.p-result-detail__post-nav {
+    margin-top: 6rem;
+}
+.p-result-detail__post-nav-list {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    gap: calc(199 / 880 * 100%);
+}
+.p-result-detail__post-nav-item {
+    flex: 1 1 34rem;
+    max-width: 34rem;
+}
+.p-result-detail__post-nav-link {
+    display: block;
+}
+.p-result-detail__post-nav-label {
+    display: flex;
+    align-items: center;
+    padding: 0.4rem 2rem 0.3rem;
+    font-size: 1.7rem;
+    line-height: calc(30 / 17);
+    background-color: $color-black;
+    color: $color-white;
+}
+.p-result-detail__post-nav-label--prev{
+    justify-content: flex-start;
+}
+.p-result-detail__post-nav-label--next {
+    justify-content: flex-end;
+}
+.p-result-detail__post-nav-body {
+    display: flex;
+    gap: 1.6rem;
+    margin-top: 1.6rem;
+}
+.p-result-detail__post-nav-thumb{
+    width: 100%;
+    max-width: 9.8rem;
+
+    img {
+        aspect-ratio: 98 / 68;
+    }
+}
+.p-result-detail__post-nav-title {
+    flex: 1 1 14.7rem;
+    min-width: 0;
+    overflow: hidden;
+    display: block;
+    max-height: calc(1.6rem * 1.5625 * 2);
+    font-size: 1.6rem;
+    line-height: calc(25 / 16);
+    font-weight: bold;
+}
+.p-result-detail__related {
+    margin-top: 10.1rem;
+}
+.p-result-detail__related-inner {
+    max-width: 88rem;
+    margin-inline: auto;
+}
+.p-result-detail__related-title {
+    font-size: 1.8rem;
+    line-height: calc(33 / 18);
+    font-weight: bold;
+    background-color: $color-black;
+    color: $color-white;
+    padding: 0.9rem 3rem 0.8rem;
+}
+.p-result-detail__related-list {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.p-result-detail__related-link {
+    display: flex;
+    gap: 3rem;
+}
+.p-result-detail__related-thumb {
+    display: block;
+    width: 100%;
+    max-width: 26rem;
+    position: relative;
+
+    img {
+        aspect-ratio: 260 / 183;
+    }
+}
+.p-result-detail__related-category {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $main-color;
+    color: $color-white;
+    font-size: 1.5rem;
+    line-height: calc(25 / 15);
+    font-weight: bold;
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p-result-detail__related-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+.p-result-detail__related-subtitle {
+    font-size: 2rem;
+    line-height: calc(25 / 20);
+    font-weight: bold;
+}
+.p-result-detail__related-date {
+    font-size: 1.7rem;
+    line-height: calc(30 / 17);
 }
