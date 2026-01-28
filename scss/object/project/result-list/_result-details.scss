@@ -1,7 +1,7 @@
 @use"../../../foundation/variable" as*;
 .p-result-detail {
     padding-top: 7rem;
-    padding-bottom: 15.7rem;
+    // padding-bottom: 15.7rem;
 }
 .p-result-detail__inner {
     max-width: 88rem;
@@ -90,6 +90,11 @@
 }
 .p-result-detail__post-nav-link {
     display: block;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+        opacity: 0.7;
+    }
 }
 .p-result-detail__post-nav-label {
     display: flex;
@@ -131,6 +136,7 @@
 }
 .p-result-detail__related {
     margin-top: 10.1rem;
+    padding-bottom: 15.7rem;
 }
 .p-result-detail__related-inner {
     max-width: 88rem;
@@ -153,6 +159,11 @@
 .p-result-detail__related-link {
     display: flex;
     gap: 3rem;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+        opacity: 0.7;
+    }
 }
 .p-result-detail__related-thumb {
     display: block;
@@ -192,4 +203,73 @@
 .p-result-detail__related-date {
     font-size: 1.7rem;
     line-height: calc(30 / 17);
+}
+@media (max-width: 767px) {
+    .p-result-detail {
+        padding-top: 5rem;
+    }
+    .p-result-detail__title {
+        margin-top: 3rem;
+        font-size: 2rem;
+        line-height: calc(30 / 20);
+        font-weight: bold;
+    }
+    .p-result-detail__date {
+        margin-top: 0.6rem;
+    }
+    .p-result-detail__profile {
+        margin-top: 2.1rem;
+        grid-template-columns: 1fr;
+        gap: 2.8rem;
+    }
+    .p-result-detail__post-nav {
+        margin-top: 4rem;
+    }
+    .p-result-detail__post-nav-list {
+        gap: 2.2rem;
+    }
+    .p-result-detail__post-nav-title {
+        max-height: calc(1.6rem * 1.5625 * 3);
+    }
+    .p-result-detail__related {
+        margin-top: 7.1rem;
+        padding-bottom: 19.7rem;
+    }
+    
+    .p-result-detail__related-thumb {
+        display: flex;
+        flex: 1 1 calc(160 / 335 * 100%);
+        max-width: none;
+
+        img {
+            aspect-ratio: 160 / 113;
+        }
+
+    }
+    .p-result-detail__related-body {
+        flex: 1 1 calc(155 / 335 * 100%);
+        gap: 1.3rem;
+    }
+    .p-result-detail__related-link {
+        gap: 2rem;
+    }
+    .p-result-detail__related-subtitle {
+        font-size: 1.7rem;
+        line-height: calc(28 / 17);
+        max-height: calc(1.7rem * 1.647 * 2);
+        overflow: hidden;
+    }
+    .p-result-detail__related-date {
+        margin-top: 0.39rem;
+    }
+    .p-result-detail__related-category {
+        width: 8rem;
+    }    
+
+    
+    
+    
+    
+    
+    
 }
