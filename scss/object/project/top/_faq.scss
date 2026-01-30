@@ -32,7 +32,7 @@
     font-size: 2rem;
     font-weight: bold;
     line-height: calc(30 / 20);
-    margin-right: 1rem;
+    gap: 1rem;
 }
 .p-accordion__question::after {
     content: "";
@@ -85,12 +85,14 @@
     padding-top: 0.5rem;
 }
 .p-accordion__item.is-open .p-accordion__question::after {
-    transform: translateY(-70%) rotate(225deg);
+    transform: translateY(-50%) rotate(225deg);
 }
 @media (max-width: 767px) {
     .p-accordion__question {
         font-size: 1.6rem;
         line-height: calc(30 / 16);
+        padding: 2.654rem 0;
+        gap: 2.025rem;
     }
     .p-accordion__answer-inner {
         font-size: 1.6rem;

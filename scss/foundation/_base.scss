@@ -7,6 +7,11 @@ html {
   src: local('Helvetica Neue'), local('Arial');
   unicode-range: U+0030-0039;
 }
+@font-face {
+  font-family: 'CustomAlphabet';
+  src: local('Helvetica Neue'), local('Arial');
+  unicode-range: U+0041-005A, U+0061-007A; /* A-Z, a-z */
+}
 
 body {
     font-family: 'YuGothicCustom', $font-base;
