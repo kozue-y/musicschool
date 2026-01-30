@@ -134,8 +134,13 @@ html {
   font-size: 62.5%;
 }
 
+@font-face {
+  font-family: "YuGothicCustom";
+  src: local("Helvetica Neue"), local("Arial");
+  unicode-range: U+0030-0039;
+}
 body {
-  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "Yu Gothic", "Meiryo", "メイリオ", sans-serif;
+  font-family: "YuGothicCustom", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "Yu Gothic", "Meiryo", "メイリオ", sans-serif;
   scroll-behavior: smooth;
   line-height: 1.6;
   letter-spacing: normal;
@@ -493,7 +498,7 @@ img {
 .c-page-top__link {
   position: fixed;
   bottom: 9.1rem;
-  right: 9.16rem;
+  right: 11.6rem;
   width: 6.8rem;
   height: 6.8rem;
   z-index: 999;
@@ -569,6 +574,7 @@ img {
   font-size: 2rem;
   line-height: 1.65;
   font-weight: bold;
+  letter-spacing: 0.2em;
 }
 
 @media (max-width: 767px) {
@@ -1125,10 +1131,13 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 0.7rem;
   --indent: 5rem;
   padding-left: var(--indent);
   max-width: 53.2rem;
+}
+
+.p-reasons__item:first-child .p-reasons__textarea {
+  padding-top: 0.9rem;
 }
 
 .p-reasons__heading {
@@ -1152,7 +1161,7 @@ img {
 .p-reasons__text {
   font-size: 1.8rem;
   line-height: 1.8333333333;
-  margin-top: 4.9rem;
+  margin-top: 3.7rem;
 }
 
 @media (max-width: 767px) {
@@ -1251,7 +1260,7 @@ img {
 }
 
 .p-voices__job {
-  margin-right: 2.2rem;
+  margin-right: 1.2rem;
 }
 
 .p-voices__text {
@@ -1259,7 +1268,7 @@ img {
   font-size: 1.8rem;
   line-height: 1.6666666667;
   color: #ffffff;
-  text-align: center;
+  text-align: left;
 }
 
 .p-voices__prev,
@@ -1347,7 +1356,8 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-right: 3rem;
+  padding-right: 1rem;
+  padding-bottom: 1.8rem;
 }
 
 .p-flow__list {
@@ -1364,8 +1374,8 @@ img {
 .p-flow__list::before {
   content: "";
   position: absolute;
-  top: 1rem;
-  bottom: 0.4rem;
+  top: 2.5rem;
+  bottom: -1.5rem;
   left: 0.85rem;
   width: 0.3rem;
   background-color: #CB0000;
@@ -1373,10 +1383,7 @@ img {
 
 .p-flow__item {
   display: grid;
-  grid-template-columns: 2rem 15.4rem 1fr;
-  -webkit-column-gap: 4.38rem;
-     -moz-column-gap: 4.38rem;
-          column-gap: 4.38rem;
+  grid-template-columns: 2rem 4.998rem 15.4rem 3.8rem 1fr;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
@@ -1396,10 +1403,12 @@ img {
   height: 2rem;
   background-color: #CB0000;
   border-radius: 50%;
+  -webkit-transform: translateY(0.739rem);
+          transform: translateY(0.739rem);
 }
 
 .p-flow__step-title {
-  grid-column: 2;
+  grid-column: 3;
   font-size: 2.2rem;
   line-height: 1.5;
   font-weight: bold;
@@ -1407,7 +1416,7 @@ img {
 }
 
 .p-flow__text {
-  grid-column: 3;
+  grid-column: 5;
   font-size: 1.8rem;
   line-height: 1.6666666667;
 }
@@ -1423,7 +1432,7 @@ img {
 .p-flow__arrow::before {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -1.8rem;
   left: 0;
   width: 0.3rem;
   height: 2.66rem;
@@ -1437,7 +1446,7 @@ img {
 .p-flow__arrow::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -1.8rem;
   left: 0;
   width: 0.3rem;
   height: 2.66rem;
@@ -1470,7 +1479,7 @@ img {
   }
 }
 .p-accordion {
-  margin-top: 3.8rem;
+  margin-top: 3rem;
   max-width: 88rem;
   margin-inline: auto;
 }
@@ -1493,7 +1502,7 @@ img {
   font-size: 1.7rem;
   line-height: 1.7647058824;
   position: relative;
-  padding: 1.5rem 0;
+  padding: 1.5rem 1.95rem;
 }
 
 .p-accordion__icon-q {
@@ -1542,6 +1551,7 @@ img {
       -ms-flex: 1;
           flex: 1;
   padding-right: 5.5rem;
+  padding-top: 0.5rem;
 }
 
 .p-accordion__answer {
@@ -1560,7 +1570,7 @@ img {
   font-weight: bold;
   color: #CB0000;
   background-color: rgba(203, 0, 0, 0.098);
-  padding: 1.5rem 0;
+  padding: 1.5rem 1.9rem;
 }
 
 .p-accordion__icon-a {
@@ -1586,6 +1596,10 @@ img {
   margin-right: 1rem;
 }
 
+.p-accordion__answer-text {
+  padding-top: 0.5rem;
+}
+
 .p-accordion__item.is-open .p-accordion__question::after {
   -webkit-transform: translateY(-70%) rotate(225deg);
           transform: translateY(-70%) rotate(225deg);
@@ -1607,7 +1621,7 @@ img {
 }
 
 .p-blog__list {
-  margin-top: 3.8rem;
+  margin-top: 3rem;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 26rem));
   -webkit-box-pack: center;

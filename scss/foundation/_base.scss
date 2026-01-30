@@ -2,9 +2,14 @@
 html {
     font-size: 62.5%;
 }
+@font-face {
+  font-family: 'YuGothicCustom';
+  src: local('Helvetica Neue'), local('Arial');
+  unicode-range: U+0030-0039;
+}
 
 body {
-    font-family: $font-base;
+    font-family: 'YuGothicCustom', $font-base;
     scroll-behavior: smooth;
     line-height: 1.6;
     letter-spacing: normal;

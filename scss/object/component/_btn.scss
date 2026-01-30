@@ -26,7 +26,7 @@
 .c-page-top__link {
     position: fixed;
     bottom: 9.1rem;
-    right: 9.16rem;
+    right: 11.6rem;
     width: 6.8rem;
     height: 6.8rem;
     z-index: 999;
@@ -90,6 +90,7 @@
     font-size: 2rem;
     line-height: calc(33 / 20);
     font-weight: bold;
+    letter-spacing: 0.2em;
 }
 
 @media (max-width: 767px) {
