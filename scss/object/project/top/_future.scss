@@ -9,7 +9,16 @@
 .p-future__text {
     font-size: 1.8rem;
     line-height: calc(30 / 18);
-    font-weight: medium;
     text-align: center;
     margin-top: 3rem;
+}
+@media (max-width: 767px) {
+    .p-future {
+        padding-top: 4.9rem;
+        padding-bottom: 4rem;
+    }
+    .p-future__text {
+        margin-top: 1.4rem;
+    }
+    
 }

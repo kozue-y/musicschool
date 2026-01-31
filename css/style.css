@@ -145,7 +145,7 @@ html {
   unicode-range: U+0041-005A, U+0061-007A; /* A-Z, a-z */
 }
 body {
-  font-family: "YuGothicCustom", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "Yu Gothic", "Meiryo", "メイリオ", sans-serif;
+  font-family: "YuGothicCustom", "游ゴシック体", "Yu Gothic", "YuGothic", "游ゴシック Medium", "Yu Gothic Medium", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
   scroll-behavior: smooth;
   line-height: 1.6;
   letter-spacing: normal;
@@ -968,6 +968,7 @@ img {
   }
   .p-concept__text {
     margin-top: 0.7rem;
+    text-align: start;
   }
   .p-concept__img {
     margin-top: 2rem;
@@ -1088,6 +1089,24 @@ img {
     font-size: 2rem;
     line-height: 2.5;
   }
+  .p-concept__list-wrapper {
+    margin-top: 1.069rem;
+  }
+  .p-concept__list-wrapper::before {
+    top: 0rem;
+  }
+  .p-concept__list-wrapper::after {
+    top: 0rem;
+  }
+  .p-concept__list {
+    row-gap: 1.7rem;
+  }
+  .p-concept__list::before {
+    top: -2.496rem;
+  }
+  .p-concept__item:last-child {
+    margin-top: 0.3rem;
+  }
 }
 .p-future {
   background-color: #CB0000;
@@ -1099,11 +1118,19 @@ img {
 .p-future__text {
   font-size: 1.8rem;
   line-height: 1.6666666667;
-  font-weight: medium;
   text-align: center;
   margin-top: 3rem;
 }
 
+@media (max-width: 767px) {
+  .p-future {
+    padding-top: 4.9rem;
+    padding-bottom: 4rem;
+  }
+  .p-future__text {
+    margin-top: 1.4rem;
+  }
+}
 .p-reasons {
   padding-top: 6.4rem;
   padding-bottom: 9rem;
@@ -1137,12 +1164,11 @@ img {
 }
 
 .p-reasons__img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 35rem;
-  height: 24.7rem;
-  aspect-ratio: 35/24.7;
+  width: 33.5rem;
+  aspect-ratio: 335/247;
+}
+.p-reasons__img img {
+  height: 100%;
 }
 
 .p-reasons__textarea {
@@ -1206,6 +1232,9 @@ img {
             flex-direction: column-reverse;
     width: 100%;
   }
+  .p-reasons__item:first-child .p-reasons__textarea {
+    padding-top: 3rem;
+  }
   .p-reasons__textarea {
     padding-top: 3rem;
     padding-left: 0;
@@ -1229,7 +1258,8 @@ img {
   }
   .p-reasons__img {
     width: 100%;
-    height: auto;
+    aspect-ratio: 335/200;
+    overflow: hidden;
   }
 }
 .p-voices {

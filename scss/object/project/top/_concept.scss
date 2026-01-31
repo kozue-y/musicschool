@@ -38,6 +38,7 @@
         }
         &__text {
             margin-top: 0.7rem;
+            text-align: start;
         }
         &__img {
             margin-top: 2rem;
@@ -141,6 +142,26 @@
     .p-concept__text-jp {
         font-size: 2rem;
         line-height: calc(50 / 20);
+    }
+    .p-concept__list-wrapper {
+        margin-top: 1.069rem;
+    
+        &::before {
+            top: 0rem;
+        }
+        &::after {
+            top: 0rem;
+        }
+    }
+    .p-concept__list {
+        row-gap: 1.7rem;
+    
+        &::before {
+            top: -2.496rem;
+        }
+    }
+    .p-concept__item:last-child {
+        margin-top: 0.3rem;
     }
     
 }
