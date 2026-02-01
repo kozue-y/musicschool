@@ -145,7 +145,7 @@ html {
   unicode-range: U+0041-005A, U+0061-007A; /* A-Z, a-z */
 }
 body {
-  font-family: "YuGothicCustom", "游ゴシック体", "Yu Gothic", "YuGothic", "游ゴシック Medium", "Yu Gothic Medium", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  font-family: "YuGothicCustom", "游ゴシック体", "Yu Gothic", "YuGothic", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
   scroll-behavior: smooth;
   line-height: 1.6;
   letter-spacing: normal;
@@ -1054,7 +1054,6 @@ img {
   line-height: 2;
   font-weight: bold;
   color: #CB0000;
-  letter-spacing: -0.045em;
 }
 
 .p-concept__center {
@@ -1518,14 +1517,17 @@ img {
 
 @media (max-width: 767px) {
   .p-flow {
-    padding-top: 4.6rem;
+    padding-top: 4.7rem;
     padding-bottom: 5.5rem;
   }
   .p-flow__list-wrapper {
+    margin-top: 3.6rem;
     padding-right: 0;
+    padding-left: 0.802rem;
+    padding-bottom: 0;
   }
   .p-flow__list::before {
-    bottom: 0;
+    bottom: 1.008rem;
   }
   .p-flow__list {
     row-gap: 3.6rem;
@@ -1542,41 +1544,8 @@ img {
     line-height: 1.875;
     margin-top: 0.9rem;
   }
-  .p-flow__arrow {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0.85rem;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-  }
-  .p-flow__arrow::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0.3rem;
-    height: 2.66rem;
-    background-color: #CB0000;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-    -webkit-transform-origin: 50% calc(100% - 0.15rem);
-            transform-origin: 50% calc(100% - 0.15rem);
-    border-radius: 9999px;
-  }
-  .p-flow__arrow::after {
-    content: "";
-    position: absolute;
-    bottom: 0rem;
-    left: 0;
-    width: 0.3rem;
-    height: 2.66rem;
-    background-color: #CB0000;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-    -webkit-transform-origin: 50% calc(100% - 0.15rem);
-            transform-origin: 50% calc(100% - 0.15rem);
-    border-radius: 9999px;
+  .p-flow__arrow::before, .p-flow__arrow::after {
+    bottom: 1.008rem;
   }
 }
 .p-accordion {
@@ -1707,15 +1676,31 @@ img {
 }
 
 @media (max-width: 767px) {
+  .p-accordion {
+    margin-top: 3.9rem;
+  }
   .p-accordion__question {
     font-size: 1.6rem;
     line-height: 1.875;
-    padding: 2.654rem 0;
+    padding: 1.7rem 0 0.9rem;
     gap: 2.025rem;
+  }
+  .p-accordion__question::after {
+    right: 1.457rem;
+  }
+  .p-accordion__question-text {
+    padding-top: 0;
+  }
+  .p-accordion__icon-q {
+    padding-top: 0.208rem;
   }
   .p-accordion__answer-inner {
     font-size: 1.6rem;
     line-height: 1.875;
+    padding: 1.7rem 4.7rem 0.9rem 0;
+  }
+  .p-accordion__icon-a {
+    margin-right: 2.025rem;
   }
 }
 .p-blog {
