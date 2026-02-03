@@ -1,10 +1,11 @@
 @use"../../../foundation/variable" as*;
 .p-plan-table{
-    margin-top: 5.7rem;
+    padding-top: 5.7rem;
+    padding-bottom: 22.3rem;
 }
 
 .p-plan-table__wrapper {
-    margin-top: 5rem;
+    margin-top: 4.6rem;
     max-width: 88rem;
     margin-inline: auto;
 }
@@ -42,7 +43,7 @@
     font-weight: bold;
     vertical-align: middle;
 }
-.p-plan-table__row--price td {
+.p-plan-table__list tbody .p-plan-table__row--price td {
     font-size: 2.2rem;
     line-height: calc(33 / 22);
     font-weight: bold;
@@ -81,7 +82,7 @@
     color: $color-white;
     text-align: center;
     vertical-align: middle;
-    font-size: 1.8rem; 
+    font-size: 2rem; 
     line-height: 1;
     position: relative;
     // fz2rem,lh1.65にすると高さが変わるため、fz1.8rem,lh1にする
@@ -119,7 +120,7 @@
 
 @media (max-width: 767px) {
     .p-plan-table{
-        margin-top: 3.8rem;    
+        padding-top: 3.8rem;    
     }
     .p-plan-table__wrapper {
         margin-top: 3.6rem;

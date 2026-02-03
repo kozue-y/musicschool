@@ -693,7 +693,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 1.2rem;
+  gap: 1.23rem;
 }
 .c-footer__sns li a {
   display: -webkit-box;
@@ -725,6 +725,9 @@ img {
 @media (max-width: 767px) {
   .c-footer__copyright {
     line-height: 1.3333333333;
+  }
+  .c-footer__sns {
+    margin-top: 1.6rem;
   }
 }
 .c-breadcrumb {
@@ -1168,6 +1171,8 @@ img {
 }
 .p-reasons__img img {
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-reasons__textarea {
@@ -1258,7 +1263,6 @@ img {
   .p-reasons__img {
     width: 100%;
     aspect-ratio: 335/200;
-    overflow: hidden;
   }
 }
 .p-voices {
@@ -1573,6 +1577,7 @@ img {
   line-height: 1.7647058824;
   position: relative;
   padding: 1.5rem 1.95rem;
+  gap: 1rem;
 }
 
 .p-accordion__icon-q {
@@ -1694,9 +1699,6 @@ img {
   .p-accordion__question-text {
     padding-top: 0;
   }
-  .p-accordion__icon-q {
-    margin-top: 0.208rem;
-  }
   .p-accordion__answer-inner {
     font-size: 1.6rem;
     line-height: 1.875;
@@ -1735,9 +1737,12 @@ img {
   width: 100%;
   height: auto;
   aspect-ratio: 260/200;
+  overflow: hidden;
 }
 .p-blog__img-wrapper img {
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-blog__category {
@@ -1824,15 +1829,21 @@ img {
   .p-blog__category {
     width: 9rem;
   }
+  .p-blog__content {
+    margin-top: 3rem;
+  }
   .p-blog__subtitle {
     line-height: 1.5;
   }
   .p-blog__link-text {
     text-align: center;
   }
+  .p-blog__date {
+    margin-top: 0.6rem;
+  }
 }
 .p-plan-system {
-  margin-top: 6.7rem;
+  padding-top: 6.7rem;
 }
 
 .p-plan__title {
@@ -1928,11 +1939,12 @@ img {
   }
 }
 .p-plan-table {
-  margin-top: 5.7rem;
+  padding-top: 5.7rem;
+  padding-bottom: 22.3rem;
 }
 
 .p-plan-table__wrapper {
-  margin-top: 5rem;
+  margin-top: 4.6rem;
   max-width: 88rem;
   margin-inline: auto;
 }
@@ -1978,7 +1990,7 @@ img {
   vertical-align: middle;
 }
 
-.p-plan-table__row--price td {
+.p-plan-table__list tbody .p-plan-table__row--price td {
   font-size: 2.2rem;
   line-height: 1.5;
   font-weight: bold;
@@ -2018,7 +2030,7 @@ img {
   color: #ffffff;
   text-align: center;
   vertical-align: middle;
-  font-size: 1.8rem;
+  font-size: 2rem;
   line-height: 1;
   position: relative;
 }
@@ -2057,7 +2069,7 @@ img {
 
 @media (max-width: 767px) {
   .p-plan-table {
-    margin-top: 3.8rem;
+    padding-top: 3.8rem;
   }
   .p-plan-table__wrapper {
     margin-top: 3.6rem;

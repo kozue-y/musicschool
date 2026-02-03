@@ -23,6 +23,7 @@
 
     img {
         height: 100%;
+        object-fit: cover;
     }
 }
 .p-reasons__textarea {
@@ -103,7 +104,6 @@
     .p-reasons__img {
         width: 100%;
         aspect-ratio: 335 / 200;
-        overflow: hidden;
     }
 
     

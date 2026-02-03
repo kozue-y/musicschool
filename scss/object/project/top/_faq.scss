@@ -17,6 +17,7 @@
     line-height: calc(30 / 17);
     position: relative;
     padding: 1.5rem 1.95rem;
+    gap: 1rem;
 
 }
 .p-accordion__icon-q {
@@ -103,9 +104,6 @@
     }
     .p-accordion__question-text {
         padding-top: 0;
-    }
-    .p-accordion__icon-q {
-        margin-top: 0.208rem;
     }
     .p-accordion__answer-inner {
         font-size: 1.6rem;

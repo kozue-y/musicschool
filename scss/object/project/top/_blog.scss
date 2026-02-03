@@ -18,9 +18,11 @@
     width: 100%;
     height: auto;
     aspect-ratio: 260 / 200;
+    overflow: hidden;
 
     img {
         height: 100%;
+        object-fit: cover;
     }
 }
 
@@ -90,10 +92,16 @@
     .p-blog__category {
         width: 9rem;
     }
+    .p-blog__content {
+        margin-top: 3rem;
+    }
     .p-blog__subtitle {
         line-height: calc(30 / 20);
     }
     .p-blog__link-text {
         text-align: center;
+    }
+    .p-blog__date {
+        margin-top: 0.6rem;
     }
 }
