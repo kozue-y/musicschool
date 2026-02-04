@@ -67,8 +67,13 @@
 }
 
 @media (max-width: 767px) {
+    .p-plan-system {
+        padding-top: 4.6rem;
+    }
+    
     .p-plan-system__item {
         flex-direction: column;
+        gap: 1.9rem;
     }
     .p-plan-system__text {
         font-size: 1.6rem;

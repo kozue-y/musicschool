@@ -120,11 +120,22 @@
 
 @media (max-width: 767px) {
     .p-plan-table{
-        padding-top: 3.8rem;    
+        padding-top: 3.8rem;
+        padding-bottom: 18.6rem;    
     }
     .p-plan-table__wrapper {
-        margin-top: 3.6rem;
+        margin-top: 2.2rem;
         max-width: none;
+    }
+    .p-plan-table__head {
+        
+        &::after {
+            height: 6.6rem;
+        }
+    }
+    .p-plan-table__head-text {
+        display: block;
+        transform: translateY(-0.5em);
     }
     .p-plan-table__scroll-area {
         overflow-x: auto;
@@ -148,13 +159,19 @@
     .p-plan-table__list tbody td {
         width: 22rem;
         max-width: 22rem;
+        padding-top: 0.4rem;
     }
     .p-plan-table__list tbody th {
         font-size: 1.6rem;
         line-height: calc(25 /16);
         padding-left: 1rem;
+        padding-top: 0.4rem;
     }
-}
+    .p-plan-table__text {
+        margin-top: 1.7rem;
+        font-size: 1.6rem;
+        line-height: calc(30 / 16);   
+    }
     .p-plan-table__scrollbar {
         margin-top: 1.75rem;
     }
@@ -174,6 +191,7 @@
         background-color: rgba(50, 50, 50, 0.251);
         touch-action: none;
     }
+}
 @media (max-width: 480px) {
     .p-plan-table__list {
         width: max-content;

@@ -41,6 +41,10 @@
     .c-pagination__list {
         gap: 0.5rem;
     }
+    .c-pagination__item {
+        width: 4.4rem;
+        height: 4.4rem;
+    }
     .c-pagination__link {
         font-size: 1.6rem;
         line-height: calc(28 / 16);

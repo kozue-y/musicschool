@@ -67,10 +67,17 @@
     }
 }
 @media(max-width: 767px) {
+    .c-footer {
+        padding-bottom: 5.067rem;
+    }
+    .c-footer__nav {
+        gap: 3rem;
+    }
     .c-footer__copyright {
         line-height: calc(20 / 15);
+        margin-top: 2.891rem;
     }
     .c-footer__sns {
-        margin-top: 1.6rem;
+        margin-top: 1.3rem;
     }
 }
