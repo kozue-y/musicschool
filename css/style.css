@@ -2380,6 +2380,9 @@ img {
   .p-search-result__count {
     margin-left: auto;
   }
+  .p-search-pagination {
+    margin-top: 5.9rem;
+  }
 }
 .p-blog-detail {
   margin-top: 7rem;
