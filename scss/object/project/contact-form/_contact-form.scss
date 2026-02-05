@@ -123,7 +123,7 @@
     }
     .p-contact-form__row {
         grid-template-columns: 1fr;
-        gap: 0.2rem;
+        gap: 0rem;
         align-items: start;
     }
     .p-contact-form__term__note {
@@ -133,18 +133,41 @@
         font-size: 1.6rem;
         line-height: calc(33 / 16);
     }
-    .p-contact-form__input,
+    .p-contact-form__term--lineheight-s {
+        line-height: calc(33 / 16);
+    }
+    
+    .p-contact-form__input {
+        font-size: 1.6rem;
+        line-height: calc(33 / 16);
+        padding: 0.6rem 2rem 0;
+    }
     .p-contact-form__textarea {
+        padding: 1.2rem 2rem;
         font-size: 1.6rem;
         line-height: calc(33 / 16);
     }
+
     .p-contact-form__check {
         font-size: 1.6rem;
         line-height: calc(30 / 16);
     }
+    .p-contact-form__check span {
+        padding-left: 3rem;
+    }
+    .p-contact-form__textarea {
+        height: 19rem;
+    }
+    .p-contact-form__textarea::placeholder {
+        font-size: 1.5rem;
+        line-height: calc(25 / 15);
+    }
     .c-btn {
         font-size: 2rem;
         line-height: calc(26 / 20);
+    }
+    .p-contact-form__btn {
+        margin-top: 4.5rem;
     }
     
     

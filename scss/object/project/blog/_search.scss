@@ -3,6 +3,8 @@
 .p-search-result {
     max-width: 88rem;
     margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
 }
 .p-search-result__title {
     font-size: 1.8rem;
@@ -14,7 +16,9 @@
 .p-search-result__count {
     font-size: 1.8rem;
     line-height: calc(30 / 18);
-    text-align: end;
+}
+.p-search-list__list {
+    margin-top: 4.2rem;
 }
 .p-search-pagination {
     margin-top: 7rem;

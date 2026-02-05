@@ -59,6 +59,10 @@
     .c-page-top__link {
         right: 2rem;
         bottom: 7.9rem;
+
+        .no-contact-btn & {
+            bottom: 1.8rem;
+        }
     }
     
 }
