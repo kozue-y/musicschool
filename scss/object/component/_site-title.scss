@@ -31,7 +31,7 @@
   font-size: min(vw(20), 2rem);
   font-weight: bold;
   line-height: calc(23 / 20);
-  margin-left: 0.97rem;
+  margin-left: 0.997rem;
 
   &--sub {
     font-size: min(vw(15), 1.5rem);
@@ -54,9 +54,9 @@
       font-size: 1.3rem;
       line-height: calc(14 / 13);
     }
-  }
-  .c-site-title__text {
-    margin-left: 0.632rem;
-    padding-top: 0.1rem;
+    .c-site-title__text {
+      margin-left: 0.632rem;
+      padding-top: 0.1rem;
+    }
   }
 
