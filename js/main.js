@@ -42,7 +42,12 @@ $(function() {
 
 // お問合せ・トップへ戻るボタン
 // TOPに戻るスムーススクロール
+// お問合せボタンが存在しない場合クラス追加
+
 $(function() {
+    if ($("#js-contact-btn").length === 0) {
+        $("body").addClass("no-contact-btn");
+    }
     $('#js-page-top').on('click', function(e) {
         e.preventDefault();
         $("html, body").animate({ scrollTop: 0}, 500, "swing");
@@ -59,6 +64,9 @@ $(window).on("scroll", function() {
 
     const $pageTop = $("#js-page-top");
     const $contactBtn = $("#js-contact-btn");
+
+    // お問合せボタンがあるかチェックする
+    const hasContactBtn = $contactBtn.length > 0;
 
     // FV超えたらの指示
     if (scrollPos > fvHeight) {

@@ -537,7 +537,10 @@ img {
   visibility: visible;
 }
 .c-page-top__link:hover {
-  opacity: 0.8;
+  opacity: 0.7;
+}
+.no-contact-btn .c-page-top__link {
+  bottom: 3.1rem;
 }
 
 .c-page-top {
@@ -1701,14 +1704,19 @@ img {
             align-items: flex-start;
     font-size: 1.6rem;
     line-height: 1.875;
-    padding: 1.7rem 0 0.9rem;
+    padding: 0;
     gap: 2.025rem;
+  }
+  .p-accordion__icon-q {
+    -ms-flex-item-align: center;
+        align-self: center;
   }
   .p-accordion__question::after {
     right: 1.457rem;
   }
   .p-accordion__question-text {
     padding-top: 0;
+    padding: 1.7rem 5rem 0.9rem 0;
   }
   .p-accordion__answer-inner {
     font-size: 1.6rem;
@@ -1816,7 +1824,7 @@ img {
     padding-bottom: 19.1rem;
   }
   .p-blog__list {
-    margin-top: 3.9rem;
+    margin-top: 3.7rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

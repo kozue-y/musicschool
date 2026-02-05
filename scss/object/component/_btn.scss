@@ -44,7 +44,11 @@
         visibility: visible;
     }
     &:hover {
-        opacity: 0.8;
+        opacity: 0.7;
+    }
+    // お問合せボタンがないページでは位置を下げる
+    .no-contact-btn & {
+        bottom: 3.1rem;
     }
 }
 .c-page-top {
