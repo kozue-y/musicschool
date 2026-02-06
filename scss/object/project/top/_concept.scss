@@ -135,11 +135,11 @@
 }
 @media (max-width: 767px) {
     .p-concept__label {
-        font-size: 2rem;
+        font-size: clamp(1.6rem, vw-sp(20), 2rem);
         line-height: calc(50 / 20);
     }
     .p-concept__text-jp {
-        font-size: 2rem;
+        font-size: clamp(1.6rem, vw-sp(20), 2rem);
         line-height: calc(50 / 20);
     }
     .p-concept__list-wrapper {
@@ -161,6 +161,9 @@
     }
     .p-concept__item:last-child {
         margin-top: 0.3rem;
+    }
+    .p-concept__item {
+        column-gap: clamp(1.6rem, vw-sp(28), 2.8rem);
     }
     
 }

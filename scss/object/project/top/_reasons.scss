@@ -18,7 +18,8 @@
     flex-direction: row-reverse;
 }
 .p-reasons__img {
-    width: 35rem;
+    flex: 0 0 clamp(28rem, 35vw, 35rem);
+    width: auto;
     aspect-ratio: 350 / 247;
 
     img {
@@ -30,6 +31,7 @@
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    flex: 1;
     --indent: 5rem;
     padding-left: var(--indent);
     max-width: 53.2rem;
@@ -104,6 +106,12 @@
     .p-reasons__img {
         width: 100%;
         aspect-ratio: 335 / 200;
+        flex: none;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
     }
 
     
