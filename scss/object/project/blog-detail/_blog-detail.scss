@@ -311,7 +311,7 @@
     }
     .p-blog-detail__sns-list {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(5, minmax(0, 1fr));
     }
     .p-blog-detail__sns-item {
         width: 100%;
