@@ -6,3 +6,7 @@ $font-base:"游ゴシック体", "Yu Gothic", "YuGothic", "Hiragino Kaku Gothic 
 @function vw($pixelSize, $baseWidth: 1080) {
     @return calc($pixelSize / $baseWidth * 100vw)
 }
+
+@function vw-sp($px, $base: 375) {
+    @return calc($px / $base * 100vw);
+}

@@ -71,7 +71,8 @@
         padding-bottom: 5.067rem;
     }
     .c-footer__nav {
-        gap: 3rem;
+        gap: clamp(1.6rem, vw-sp(30), 3rem);
+        font-size: clamp(1.4rem, vw-sp(17), 1.7rem);
     }
     .c-footer__copyright {
         line-height: calc(20 / 15);

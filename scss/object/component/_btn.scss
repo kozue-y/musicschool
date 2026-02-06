@@ -103,7 +103,7 @@
 
 @media (max-width: 767px) {
     .c-contact-btn__link {
-        width: 33.5rem;
+        width: clamp(20rem, vw-sp(335), 33.5rem);
         right: 0;
         left: 0;
         margin-inline: auto;

@@ -598,7 +598,7 @@ img {
 
 @media (max-width: 767px) {
   .c-contact-btn__link {
-    width: 33.5rem;
+    width: clamp(20rem, 89.3333333333vw, 33.5rem);
     right: 0;
     left: 0;
     margin-inline: auto;
@@ -732,7 +732,8 @@ img {
     padding-bottom: 5.067rem;
   }
   .c-footer__nav {
-    gap: 3rem;
+    gap: clamp(1.6rem, 8vw, 3rem);
+    font-size: clamp(1.4rem, 4.5333333333vw, 1.7rem);
   }
   .c-footer__copyright {
     line-height: 1.3333333333;
