@@ -61,6 +61,7 @@
     line-height: calc(30 / 18);
     vertical-align: middle;
     height: 3.8rem;
+    padding-top: 0.6rem;
     padding-left: 2rem;
 }
 .p-result-detail__table th {
@@ -173,6 +174,7 @@
 
     img {
         aspect-ratio: 260 / 183;
+        object-fit: cover;
     }
 }
 .p-result-detail__related-category {
@@ -203,6 +205,7 @@
 .p-result-detail__related-date {
     font-size: 1.7rem;
     line-height: calc(30 / 17);
+    padding-left: 0.4rem;
 }
 @media (max-width: 767px) {
     .p-result-detail {
@@ -222,6 +225,11 @@
         grid-template-columns: 1fr;
         gap: 2.8rem;
     }
+    .p-result-detail__table th,
+    .p-result-detail__table td {
+        padding-top: 0.75rem;
+        padding-left: 1rem;
+    }    
     .p-result-detail__post-nav {
         margin-top: 4rem;
     }
@@ -232,8 +240,15 @@
         max-height: calc(1.6rem * 1.5625 * 3);
     }
     .p-result-detail__related {
-        margin-top: 7.1rem;
+        margin-top: 6.1rem;
         padding-bottom: 19.7rem;
+    }
+    .p-result-detail__related-title {
+        text-align: center;
+    }
+    .p-result-detail__related-list {
+        margin-top: 2rem;
+        gap: 2rem;
     }
     
     .p-result-detail__related-thumb {
@@ -248,7 +263,7 @@
     }
     .p-result-detail__related-body {
         flex: 1 1 calc(155 / 335 * 100%);
-        gap: 1.3rem;
+        gap: 0.393rem;
     }
     .p-result-detail__related-link {
         gap: 2rem;
@@ -260,7 +275,7 @@
         overflow: hidden;
     }
     .p-result-detail__related-date {
-        margin-top: 0.39rem;
+        padding-left: 0;
     }
     .p-result-detail__related-category {
         width: 8rem;

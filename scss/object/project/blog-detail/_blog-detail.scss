@@ -1,6 +1,6 @@
 @use"../../../foundation/variable" as*;
 .p-blog-detail {
-    margin-top: 7rem;
+    padding-top: 7rem;
 }
 .p-blog-detail__layout {
     max-width: 88.1rem;
@@ -33,9 +33,11 @@
     position: relative;
     order: -1;
     width: 100%;
+    aspect-ratio: 600 / 350;
 }
 .p-blog-detail__img-wrapper img {
-    aspect-ratio: 600 / 350;
+    height: 100%;
+    object-fit: cover;
 }
 .p-blog-detail__category {
     position: absolute;
@@ -169,6 +171,7 @@
 }
 .p-blog-detail__post-nav {
     margin-top: 5.5rem;
+    padding-bottom: 9.1rem;
 }
 .p-blog-detail__post-nav-list {
     display: flex;
@@ -221,7 +224,6 @@
     font-weight: bold;
 }
 .p-blog-detail__related {
-    padding-top: 9.1rem;
     padding-bottom: 18.7rem;
 }
 .p-blog-detail__related-title {
@@ -285,12 +287,13 @@
 }
 @media (max-width: 767px) {
     .p-blog-detail {
-        margin-top: 5rem;
+        padding-top: 5rem;
     }
     .p-blog-detail__layout {
         width: 100%;
         display: flex;
         flex-direction: column;
+        gap: 0;
     }
     .p-blog-detail__main {
         max-width: none;
@@ -353,13 +356,15 @@
     .p-blog-detail__body h2 + p {
         margin-top: 1.7rem;
     }
-    .p-blog-detail__img {
-        margin-top: 3.9rem;
-        width: 100%;
-        max-width: none;   
-    }
-    .p-blog-detail__img img {
+    .p-blog-detail__img-wrapper {
         aspect-ratio: 335 / 200;
+    }
+    .p-blog-detail__img {
+        max-width: none;
+        margin-top: 3.9rem;
+    }
+    .p-blog-detail__sns {
+        margin-top: 2.3rem;
     }
     .p-blog-detail__list {
         margin-top: 2.7rem;
@@ -369,9 +374,11 @@
     }
     .p-blog-detail__blockquote  {
         margin-top: 1.95rem;
+        padding: 1.7rem 2rem 1.1rem 7rem;
     }
     .p-blog-detail__post-nav {
         margin-top: 4.5rem;
+        padding-bottom: 6.5rem;
     }
     .p-blog-detail__post-nav-list {
         justify-content: flex-start;
@@ -381,14 +388,14 @@
         flex: 1 1 calc((100% - 2.2rem) / 2);
         max-width: none;
     }
+    .p-blog-detail__related {
+        padding-bottom: 3rem;
+    }
     .p-blog-detail__related-list {
         margin-top: 2.04rem;
         gap: 2.09rem;
     }
     
-    .p-blog-detail__related {
-        margin-top: 7.1rem;
-    }
     .p-blog-detail__related-title {
         text-align: center;
     }
@@ -407,12 +414,16 @@
     .p-blog-detail__related-body {
         flex: 1 1  calc(155 / 335 * 100%);
         gap: 0.39rem;
+        padding-top: 0.854rem;
     }
     .p-blog-detail__related-subtitle {
         font-size: 1.7rem;
         line-height: calc(28 / 17);
         max-height: calc((28 / 17) * 2 * 1em);
         overflow: hidden;
+    }
+    .p-blog-detail__related-date {
+        padding-left: 0;
     }
     
     

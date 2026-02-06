@@ -5,7 +5,7 @@
 }
 .c-breadcrumb__list {
     display: flex;
-    gap: 1.8rem;
+    column-gap: 2rem;
     padding-left: 8.1rem;
 }
 .c-breadcrumb__item {
@@ -39,9 +39,14 @@
         display: flex;
         flex-wrap: wrap;
         padding-left: 0;
-        gap: 2rem;
+        column-gap: 1.9rem;
     }
     .c-breadcrumb__item {
-        // white-space: nowrap;
-    }    
+        &:not(:last-child)::after {
+            margin-left: 2.2rem;
+        }
+    }
+    .c-breadcrumb__item--title {
+        line-height: calc(20 / 16);
+    }
 }

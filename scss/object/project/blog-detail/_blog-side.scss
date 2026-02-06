@@ -126,6 +126,9 @@
     .p-blog-detail__side {
         max-width: none;
     }
+    .p-sidebar {
+        gap: 2.8rem;
+    }    
     .p-widget__body {
         aspect-ratio: 335 / 268;
         padding: 2rem;    
@@ -159,6 +162,10 @@
     }
     .p-widget__subtitle {
         flex: 1 1 calc(155 / 335 * 100%);
+        padding-top: 0.854rem;
+    }
+    .p-widget--category {
+        padding-bottom: 19.7rem;
     }
      
 
