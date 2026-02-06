@@ -18,8 +18,8 @@
     flex-direction: row-reverse;
 }
 .p-reasons__img {
-    width: 33.5rem;
-    aspect-ratio: 335 / 247;
+    width: 35rem;
+    aspect-ratio: 350 / 247;
 
     img {
         height: 100%;
@@ -43,7 +43,7 @@
     line-height: calc(33 / 22);
     font-weight: bold;
     position: relative;
-    padding-bottom: 1.2rem;
+    padding-bottom: 1rem;
     
     &::after {
         content: "";

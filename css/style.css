@@ -1192,8 +1192,8 @@ img {
 }
 
 .p-reasons__img {
-  width: 33.5rem;
-  aspect-ratio: 335/247;
+  width: 35rem;
+  aspect-ratio: 350/247;
 }
 .p-reasons__img img {
   height: 100%;
@@ -1227,7 +1227,7 @@ img {
   line-height: 1.5;
   font-weight: bold;
   position: relative;
-  padding-bottom: 1.2rem;
+  padding-bottom: 1rem;
 }
 .p-reasons__heading::after {
   content: "";
@@ -1443,7 +1443,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-right: 1rem;
+  padding-right: 2rem;
   padding-bottom: 1.8rem;
 }
 
