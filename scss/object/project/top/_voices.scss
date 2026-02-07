@@ -93,10 +93,9 @@
         padding-bottom: 5rem;
     }
     .p-voices__container {
-        padding-inline: 0;
+        margin-top: 3.9rem;
     }
     .p-voices__swiper {
-        margin-top: 3.9rem;
         max-width: none;
     }
     .p-voices__card {
@@ -112,18 +111,8 @@
     }
     .p-voices__prev,
     .p-voices__next {
-        top: 37% !important;
-    }
-
-    .p-voices__prev {
-        left: 0 !important;
-        right: auto !important;
-    }
-    .p-voices__next {
-        right: 0 !important;
-        left: auto !important;
-    }
-       
+        top: 42% !important;
+    }       
 }
 
 
