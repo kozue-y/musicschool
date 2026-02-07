@@ -1,0 +1,47 @@
+@use"../../../foundation/variable" as*;
+
+.p-fv {
+    position: relative;
+    z-index: 10;
+    
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(80, 80, 80, 0.502);
+        z-index: 20;
+    }
+
+}
+.p-fv__text {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    padding-top: min(vw(20), 2rem);
+    z-index: 30;
+
+}
+.p-fv__title {
+    font-size: min(vw(40), 4rem);
+    font-weight: bold;
+    line-height: calc(60 / 40);
+    color: $color-white;
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .p-fv__text {
+        padding-top: 1.6rem;
+    }
+    .p-fv__title {
+        font-size: 3rem;
+        line-height: calc(50 / 30);
+    }
+
+    
+}
+
+

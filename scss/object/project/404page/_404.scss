@@ -1,0 +1,31 @@
+@use"../../../foundation/variable" as*;
+.p-404 {
+    padding-top: 6.8rem;
+    padding-bottom: 9rem;
+}
+.p-404__text {
+    font-size: 1.8rem;
+    line-height: calc(30 / 18);
+    text-align: center;
+}
+.p-404__btn {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 767px) {
+    .p-404 {
+        padding-top: 4.286rem;
+        padding-bottom: 5rem;
+    }
+    .p-404__text {
+        font-size: 1.6rem;
+        line-height: calc(30 / 16);
+        text-align: start;
+    }
+    .p-404__btn {
+        margin-top: 0.9rem;
+    }    
+    
+}

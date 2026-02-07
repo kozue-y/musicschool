@@ -1,0 +1,37 @@
+// Foundation
+@use "./foundation/normalize";
+@use "./foundation/variable" as *;
+@use "./foundation/base";
+
+// layout
+@use"./layout/l-header";
+@use"./layout/l-inner";
+
+// object
+@use"./object/component/site-title";
+@use"./object/component/global-nav";
+@use"./object/component/section-title";
+@use"./object/component/btn";
+@use"./object/component/footer";
+@use"./object/component/breadcrumb";
+@use"./object/component/mv";
+@use"./object/component/pagination";
+@use"./object/project/top/fv";
+@use"./object/project/top/concept";
+@use"./object/project/top/future";
+@use"./object/project/top/reasons";
+@use"./object/project/top/voices";
+@use"./object/project/top/flow";
+@use"./object/project/top/faq";
+@use"./object/project/top/blog";
+@use"./object/project/plan/system";
+@use"./object/project/plan/table";
+@use"./object/project/blog/blog-list";
+@use"./object/project/blog/search";
+@use"./object/project/blog-detail/blog-detail";
+@use"./object/project/blog-detail/blog-side";
+@use"./object/project/contact-form/contact-form";
+@use"./object/project/contact-form/contact-send";
+@use"./object/project/404page/404" as *;
+@use"./object/project/result-list/result";
+@use"./object/project/result-list/result-details";

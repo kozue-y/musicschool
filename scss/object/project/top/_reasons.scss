@@ -1,0 +1,119 @@
+@use"../../../foundation/variable" as*;
+
+.p-reasons {
+    padding-top: 6.4rem;
+    padding-bottom: 9rem;
+}
+.p-reasons__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2.8rem;
+    gap: 5rem;
+    max-width: 88.2rem;
+    margin-inline: auto;
+}
+.p-reasons__item {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.p-reasons__img {
+    flex: 0 0 clamp(28rem, 35vw, 35rem);
+    width: auto;
+    aspect-ratio: 350 / 247;
+
+    img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.p-reasons__textarea {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    flex: 1;
+    --indent: 5rem;
+    padding-left: var(--indent);
+    max-width: 53.2rem;
+}
+.p-reasons__item:first-child .p-reasons__textarea {
+    padding-top: 0.9rem;
+}
+.p-reasons__heading {
+    width: 100%;
+    font-size: 2.2rem;
+    line-height: calc(33 / 22);
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 1rem;
+    
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: calc(-1 * var(--indent));
+        width: calc(100% + var(--indent));
+        height: 0.2rem;
+        background-color: $main-color;
+    }
+}
+.p-reasons__text {
+    font-size: 1.8rem;
+    line-height: calc(33 / 18);
+    margin-top: 3.7rem;
+}
+@media (max-width: 767px) {
+    .p-reasons {
+        padding-top: 4.9rem;
+        padding-bottom: 3.9rem;
+    }
+    .p-reasons__list {
+        margin-top: 3.6rem;
+        gap: 3.9rem;
+        max-width: none;
+    }
+    .p-reasons__item {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .p-reasons__item:first-child .p-reasons__textarea {
+        padding-top: 3rem;
+    }
+    
+    .p-reasons__textarea {
+        padding-top: 3rem;
+        padding-left: 0;
+        max-width: none;
+        --indent: 0;
+
+    }
+    .p-reasons__heading {
+        font-size: 2rem;
+        line-height: calc(30 / 20);
+        padding-bottom: 1rem;
+
+        &::after {
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+    }
+    .p-reasons__text {
+        font-size: 1.6rem;
+        line-height: calc(30 / 16);
+        margin-top: 1.7rem;
+    }
+    .p-reasons__img {
+        width: 100%;
+        aspect-ratio: 335 / 200;
+        flex: none;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    
+}
+  

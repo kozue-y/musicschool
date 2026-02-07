@@ -1,0 +1,44 @@
+@use "./variable" as *;
+html {
+    font-size: 62.5%;
+}
+@font-face {
+  font-family: 'YuGothicCustom';
+  src: local('Helvetica Neue'), local('Arial');
+  unicode-range: U+0030-0039;
+}
+@font-face {
+  font-family: 'CustomAlphabet';
+  src: local('Helvetica Neue'), local('Arial');
+  unicode-range: U+0041-005A, U+0061-007A; /* A-Z, a-z */
+}
+
+body {
+    font-family: 'YuGothicCustom', $font-base;
+    scroll-behavior: smooth;
+    line-height: 1.6;
+    letter-spacing: normal;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.u-pc-only {
+    display: block !important;
+  }
+  
+  .u-sp-only {
+    display: none !important;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .u-pc-only {
+      display: none !important;
+    }
+    .u-sp-only {
+      display: block !important;
+    }
+  }

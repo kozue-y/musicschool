@@ -1,0 +1,121 @@
+@use"../../../foundation/variable" as*;
+
+.p-voices {
+    padding-top: 4.4rem;
+    padding-bottom: 8rem;
+    background-color: $main-color;
+}
+.p-voices__title {
+    color: $color-white;
+}
+.p-voices__container {
+    margin-top: 3.6rem;
+    max-width: 96.2rem;
+    width: 100%;
+    margin-inline: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.p-voices__swiper {
+    max-width: calc(100% - 8.2rem);
+    margin-inline: auto;
+}
+.p-voices__card {
+    width: 100%;
+    max-width: 27rem;
+}
+.p-voices__img {
+    width: 100%;
+    height: 19rem;
+
+    img,
+    picture {
+        pointer-events: none;
+        user-select: none;
+    }
+
+    img {
+        height: 100%;
+        aspect-ratio: 270 / 190;
+        object-fit: cover;
+    }
+}
+.p-voices__name {
+    font-size: 2.2rem;
+    line-height: calc(33 / 22);
+    font-weight: bold;
+    color: $color-white;
+    text-align: center;
+    margin-top: 1.7rem;
+}
+.p-voices__job {
+    margin-right: 1.2rem;
+}
+.p-voices__text {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    line-height: calc(30 /18);
+    color: $color-white;
+    text-align: left;
+}
+.p-voices__prev,
+.p-voices__next {
+    width: 2.9rem;
+    height: 3.9rem;
+    position: absolute;
+    top: 44% !important;
+    transform: translateY(-50%) !important;
+    margin-top: 0 !important;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    svg {
+        display: none;
+    }    
+}
+.p-voices__prev {
+    left: 0 !important;
+    right: auto !important;
+    &:hover {
+        transform: translateY(-50%)translateX(-0.7rem) !important;
+    } 
+}
+.p-voices__next {
+    right: 0 !important;
+    left: auto !important;
+    &:hover {
+        transform: translateY(-50%)translateX(0.7rem) !important;
+    } 
+}
+@media (max-width: 767px) {
+    .p-voices {
+        padding-top: 4.6rem;
+        padding-bottom: 5rem;
+    }
+    .p-voices__container {
+        margin-top: 3.9rem;
+    }
+    .p-voices__swiper {
+        max-width: none;
+    }
+    .p-voices__card {
+        max-width: none;
+    }
+    .p-voices__img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 335 / 200;
+    }
+    .p-voices__name {
+        margin-top: 2.7rem;
+    }
+    .p-voices__prev,
+    .p-voices__next {
+        top: 42% !important;
+    }       
+}
+
+
+
+
+
