@@ -1328,24 +1328,21 @@ img {
 
 .p-voices__container {
   margin-top: 3.6rem;
-  max-width: 104.4rem;
+  max-width: 96.2rem;
   width: 100%;
   margin-inline: auto;
-  padding-inline: 6rem;
   position: relative;
   overflow: hidden;
 }
 
 .p-voices__swiper {
-  max-width: 88rem;
+  max-width: calc(100% - 8.2rem);
   margin-inline: auto;
 }
 
 .p-voices__card {
   width: 100%;
   max-width: 27rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .p-voices__img {
@@ -1401,7 +1398,7 @@ img {
 }
 
 .p-voices__prev {
-  left: 4rem !important;
+  left: 0 !important;
   right: auto !important;
 }
 .p-voices__prev:hover {
@@ -1410,7 +1407,7 @@ img {
 }
 
 .p-voices__next {
-  right: 4rem !important;
+  right: 0 !important;
   left: auto !important;
 }
 .p-voices__next:hover {
