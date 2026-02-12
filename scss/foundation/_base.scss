@@ -26,6 +26,9 @@ img {
     width: 100%;
     height: auto;
 }
+a, button {
+  transition: opacity 0.4s ease;
+}
 
 .u-pc-only {
     display: block !important;
