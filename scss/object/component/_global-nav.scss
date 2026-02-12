@@ -34,11 +34,8 @@
             line-height: calc(33 / 17);
             font-weight: bold;
             position: relative;
-            transition: opacity 0.3s ease, text-decoration 0.3s ease;
+            transition: text-decoration 0.3s ease;
 
-            &:hover {
-                opacity: 0.7;
-            }
 
             @media (min-width: 769px) {
                 &:hover {
