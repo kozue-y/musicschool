@@ -1332,7 +1332,6 @@ img {
   width: 100%;
   margin-inline: auto;
   position: relative;
-  overflow: hidden;
 }
 
 .p-voices__swiper {
