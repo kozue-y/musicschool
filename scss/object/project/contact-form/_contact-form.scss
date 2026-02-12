@@ -47,7 +47,8 @@
 .p-contact-form__textarea {
     height: 30rem;
     padding-top: 1.3rem;
-    resize: vertical;
+    resize: none;
+    word-break: break-word;
 }
 .p-contact-form__input::placeholder,
 .p-contact-form__textarea::placeholder {

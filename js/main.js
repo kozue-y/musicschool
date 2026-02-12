@@ -34,9 +34,10 @@ const swiper = new Swiper(".js-voices-swiper", {
 
 // アコーディオンメニュー
 $(function() {
-    $('.p-accordion__question').on('click', function() {
-      $(this).next('.p-accordion__answer').slideToggle(300);
-      $(this).parent('.p-accordion__item').toggleClass('is-open');
+    $('.p-accordion__answer').hide();
+    $('.p-accordion__item').on('click', function() {
+      $(this).find('.p-accordion__answer').slideToggle(400);
+      $(this).toggleClass('is-open');
     });
   });
 

@@ -1612,6 +1612,7 @@ img {
 
 .p-accordion__item {
   border-top: 0.05rem solid #000000;
+  cursor: pointer;
 }
 
 .p-accordion__item:last-child {
@@ -3246,7 +3247,8 @@ img {
 .p-contact-form__textarea {
   height: 30rem;
   padding-top: 1.3rem;
-  resize: vertical;
+  resize: none;
+  word-break: break-word;
 }
 
 .p-contact-form__input::-webkit-input-placeholder, .p-contact-form__textarea::-webkit-input-placeholder {

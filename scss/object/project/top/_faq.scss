@@ -6,6 +6,7 @@
 }
 .p-accordion__item {
     border-top: 0.05rem solid $color-black;
+    cursor: pointer;
 }
 .p-accordion__item:last-child {
     border-bottom: 0.05rem solid $color-black;
