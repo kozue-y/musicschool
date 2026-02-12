@@ -1787,6 +1787,11 @@ img {
 
 .p-blog__item {
   width: 100%;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+.p-blog__item:hover {
+  opacity: 0.7;
 }
 
 .p-blog__img-wrapper {
