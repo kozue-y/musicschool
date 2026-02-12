@@ -91,7 +91,7 @@
 }
 .p-result-detail__post-nav-link {
     display: block;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.4s ease;
 
     &:hover {
         opacity: 0.7;
@@ -160,7 +160,7 @@
 .p-result-detail__related-link {
     display: flex;
     gap: 3rem;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.4s ease;
 
     &:hover {
         opacity: 0.7;

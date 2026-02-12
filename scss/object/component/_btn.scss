@@ -14,7 +14,7 @@
         height: min(vw(45), 4.5rem);
 
         border: solid 1px $main-color;
-        transition: background-color 0.3s ease, color 0.3s ease;
+        transition: background-color 0.4s ease, color 0.4s ease;
       
         &:hover {
             background-color: $color-white;
@@ -32,7 +32,7 @@
     z-index: 999;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
     background-color: rgba(0,0,0,0.502);
     border-radius: 50%;
     display: flex;
@@ -83,7 +83,7 @@
     opacity: 0;
     visibility: hidden;
     border: 1px solid $main-color;
-    transition: opacity 0.3s ease, visibility 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    transition: opacity 0.4s ease, visibility 0.4s ease, background-color 0.4s ease, color 0.4s ease;
 
     &.is-show {
         opacity: 1;
@@ -119,7 +119,7 @@
     background-color: $main-color;
     color: $color-white;
     border: solid 1px $main-color;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.4s ease, color 0.4s ease;
 
     &:hover {
         background-color: $color-white;

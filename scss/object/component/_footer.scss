@@ -20,19 +20,24 @@
         align-items: center;
         height: 100%;
         position: relative;
-        transition: opacity 0.3s ease, text-decoration 0.3s ease;
+        transition: opacity 0.4s ease;
 
         &:hover {
             opacity: 0.7;
-            text-decoration: underline;
         }
     }
 }
 .c-footer__logo {
+    display: block;
     width: 3.203rem;
     height: 4.935rem;
     margin-inline: auto;
     margin-top: 2.174rem;
+    transition: opacity 0.4s ease;
+
+    &:hover {
+        opacity: 0.7;
+    }
 }
 .c-footer__copyright {
     font-size: 1.5rem;
@@ -51,7 +56,7 @@
         justify-content: center;
         width: 2.5rem;
         height: 2.5rem;
-        transition: opacity 0.3s ease;
+        transition: opacity 0.4s ease;
 
         &:hover {
             opacity: 0.8;

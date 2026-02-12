@@ -238,8 +238,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
 }
 .c-site-title h1:hover {
   opacity: 0.7;
@@ -332,10 +332,10 @@ img {
   line-height: 1.9411764706;
   font-weight: bold;
   position: relative;
-  -webkit-transition: -webkit-text-decoration 0.3s ease;
-  transition: -webkit-text-decoration 0.3s ease;
-  transition: text-decoration 0.3s ease;
-  transition: text-decoration 0.3s ease, -webkit-text-decoration 0.3s ease;
+  -webkit-transition: -webkit-text-decoration 0.4s ease;
+  transition: -webkit-text-decoration 0.4s ease;
+  transition: text-decoration 0.4s ease;
+  transition: text-decoration 0.4s ease, -webkit-text-decoration 0.4s ease;
 }
 @media (min-width: 769px) {
   .c-global-nav__list li a:hover {
@@ -380,10 +380,10 @@ img {
     height: 0.4rem;
     border-radius: 0.2rem;
     background-color: #ffffff;
-    -webkit-transition: -webkit-transform 0.3s ease;
-    transition: -webkit-transform 0.3s ease;
-    transition: transform 0.3s ease;
-    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+    -webkit-transition: -webkit-transform 0.4s ease;
+    transition: -webkit-transform 0.4s ease;
+    transition: transform 0.4s ease;
+    transition: transform 0.4s ease, -webkit-transform 0.4s ease;
   }
   .c-hamburger__line:nth-of-type(1) {
     top: 0;
@@ -416,10 +416,10 @@ img {
     background-color: #CB0000;
     margin-top: 5rem;
     z-index: 50;
-    -webkit-transition: -webkit-transform 0.3s ease;
-    transition: -webkit-transform 0.3s ease;
-    transition: transform 0.3s ease;
-    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+    -webkit-transition: -webkit-transform 0.4s ease;
+    transition: -webkit-transform 0.4s ease;
+    transition: transform 0.4s ease;
+    transition: transform 0.4s ease, -webkit-transform 0.4s ease;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
   }
@@ -465,8 +465,8 @@ img {
     line-height: 1.8333333333;
     font-weight: bold;
     color: #ffffff;
-    -webkit-transition: background-color 0.3s ease;
-    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.4s ease;
+    transition: background-color 0.4s ease;
   }
   .c-drawer-menu__list a:hover, .c-drawer-menu__list a:focus {
     background-color: #000000;
@@ -503,8 +503,8 @@ img {
   width: min(13.8888888889vw, 15rem);
   height: min(4.1666666667vw, 4.5rem);
   border: solid 1px #CB0000;
-  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  -webkit-transition: background-color 0.4s ease, color 0.4s ease;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 .c-header-btn:hover {
   background-color: #ffffff;
@@ -520,8 +520,8 @@ img {
   z-index: 999;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: opacity 0.3s ease, visibility 0.3s ease;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
+  -webkit-transition: opacity 0.4s ease, visibility 0.4s ease;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
   background-color: rgba(0, 0, 0, 0.502);
   border-radius: 50%;
   display: -webkit-box;
@@ -580,8 +580,8 @@ img {
   opacity: 0;
   visibility: hidden;
   border: 1px solid #CB0000;
-  -webkit-transition: opacity 0.3s ease, visibility 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-  transition: opacity 0.3s ease, visibility 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  -webkit-transition: opacity 0.4s ease, visibility 0.4s ease, background-color 0.4s ease, color 0.4s ease;
+  transition: opacity 0.4s ease, visibility 0.4s ease, background-color 0.4s ease, color 0.4s ease;
 }
 .c-contact-btn__link.is-show {
   opacity: 1;
@@ -621,8 +621,8 @@ img {
   background-color: #CB0000;
   color: #ffffff;
   border: solid 1px #CB0000;
-  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  -webkit-transition: background-color 0.4s ease, color 0.4s ease;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 .c-btn:hover {
   background-color: #ffffff;
@@ -668,21 +668,24 @@ img {
           align-items: center;
   height: 100%;
   position: relative;
-  -webkit-transition: opacity 0.3s ease, -webkit-text-decoration 0.3s ease;
-  transition: opacity 0.3s ease, -webkit-text-decoration 0.3s ease;
-  transition: opacity 0.3s ease, text-decoration 0.3s ease;
-  transition: opacity 0.3s ease, text-decoration 0.3s ease, -webkit-text-decoration 0.3s ease;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
 }
 .c-footer__nav a:hover {
   opacity: 0.7;
-  text-decoration: underline;
 }
 
 .c-footer__logo {
+  display: block;
   width: 3.203rem;
   height: 4.935rem;
   margin-inline: auto;
   margin-top: 2.174rem;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+.c-footer__logo:hover {
+  opacity: 0.7;
 }
 
 .c-footer__copyright {
@@ -715,8 +718,8 @@ img {
           justify-content: center;
   width: 2.5rem;
   height: 2.5rem;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
 }
 .c-footer__sns li a:hover {
   opacity: 0.8;
@@ -781,10 +784,10 @@ img {
 }
 .c-breadcrumb__item a {
   color: inherit;
-  -webkit-transition: opacity 0.3s ease, -webkit-text-decoration 0.3s ease;
-  transition: opacity 0.3s ease, -webkit-text-decoration 0.3s ease;
-  transition: opacity 0.3s ease, text-decoration 0.3s ease;
-  transition: opacity 0.3s ease, text-decoration 0.3s ease, -webkit-text-decoration 0.3s ease;
+  -webkit-transition: opacity 0.4s ease, -webkit-text-decoration 0.4s ease;
+  transition: opacity 0.4s ease, -webkit-text-decoration 0.4s ease;
+  transition: opacity 0.4s ease, text-decoration 0.4s ease;
+  transition: opacity 0.4s ease, text-decoration 0.4s ease, -webkit-text-decoration 0.4s ease;
 }
 .c-breadcrumb__item a:hover {
   opacity: 0.7;
@@ -894,8 +897,8 @@ img {
   font-size: 1.8rem;
   line-height: 1.6666666667;
   font-weight: bold;
-  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  -webkit-transition: background-color 0.4s ease, color 0.4s ease;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 .c-pagination__link:hover {
   background-color: #000000;
@@ -1396,10 +1399,10 @@ img {
   -webkit-transform: translateY(-50%) !important;
           transform: translateY(-50%) !important;
   margin-top: 0 !important;
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
   cursor: pointer;
 }
 .p-voices__prev svg,
@@ -1663,10 +1666,10 @@ img {
   border-bottom: 0.1rem solid #000000;
   -webkit-transform: translateY(-50%) rotate(45deg);
           transform: translateY(-50%) rotate(45deg);
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
 }
 
 .p-accordion__question-text {
@@ -2516,8 +2519,8 @@ img {
 
 .p-blog-detail__sns-item a {
   display: inline-block;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
 }
 .p-blog-detail__sns-item a:hover {
   opacity: 0.7;
@@ -3517,8 +3520,8 @@ img {
 
 .p-result-list__link {
   display: block;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
 }
 .p-result-list__link:hover {
   opacity: 0.7;
@@ -3705,8 +3708,8 @@ img {
 
 .p-result-detail__post-nav-link {
   display: block;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
 }
 .p-result-detail__post-nav-link:hover {
   opacity: 0.7;
@@ -3803,8 +3806,8 @@ img {
   display: -ms-flexbox;
   display: flex;
   gap: 3rem;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
 }
 .p-result-detail__related-link:hover {
   opacity: 0.7;
