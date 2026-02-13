@@ -15,6 +15,10 @@
     height: 5rem;
     border: solid 1px $color-black;
 }
+.c-pagination__link--current {
+    background-color: $color-black;
+    color: $color-white;
+}
 .c-pagination__link {
     display: flex;
     align-items: center;

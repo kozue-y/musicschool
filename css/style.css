@@ -226,7 +226,8 @@ a, button {
   height: 100%;
   gap: min(0.9166666667vw, 0.99rem);
 }
-.c-site-title h1 {
+.c-site-title h1,
+.c-site-title p {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -235,7 +236,8 @@ a, button {
       -ms-flex-align: center;
           align-items: center;
 }
-.c-site-title h1 a {
+.c-site-title h1 a,
+.c-site-title p a {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -246,10 +248,12 @@ a, button {
   -webkit-transition: opacity 0.4s ease;
   transition: opacity 0.4s ease;
 }
-.c-site-title h1:hover {
+.c-site-title h1:hover,
+.c-site-title p:hover {
   opacity: 0.7;
 }
-.c-site-title h1 img {
+.c-site-title h1 img,
+.c-site-title p img {
   width: min(2.9657407407vw, 3.203rem);
   height: min(4.5694444444vw, 4.935rem);
 }
@@ -884,6 +888,11 @@ a, button {
   width: 5rem;
   height: 5rem;
   border: solid 1px #000000;
+}
+
+.c-pagination__link--current {
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .c-pagination__link {
