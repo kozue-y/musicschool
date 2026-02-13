@@ -1,7 +1,7 @@
 @use"../../../foundation/variable" as*;
 .p-result-detail {
     padding-top: 7rem;
-    // padding-bottom: 15.7rem;
+    padding-bottom: 15.7rem;
 }
 .p-result-detail__inner {
     max-width: 88rem;
@@ -137,7 +137,6 @@
 }
 .p-result-detail__related {
     margin-top: 10.1rem;
-    padding-bottom: 15.7rem;
 }
 .p-result-detail__related-inner {
     max-width: 88rem;
@@ -210,6 +209,7 @@
 @media (max-width: 767px) {
     .p-result-detail {
         padding-top: 5rem;
+        padding-bottom: 19.7rem;
     }
     .p-result-detail__title {
         margin-top: 3rem;
@@ -241,7 +241,6 @@
     }
     .p-result-detail__related {
         margin-top: 6.1rem;
-        padding-bottom: 19.7rem;
     }
     .p-result-detail__related-title {
         text-align: center;

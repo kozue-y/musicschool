@@ -3609,6 +3609,7 @@ a, button {
 }
 .p-result-detail {
   padding-top: 7rem;
+  padding-bottom: 15.7rem;
 }
 
 .p-result-detail__inner {
@@ -3797,7 +3798,6 @@ a, button {
 
 .p-result-detail__related {
   margin-top: 10.1rem;
-  padding-bottom: 15.7rem;
 }
 
 .p-result-detail__related-inner {
@@ -3898,6 +3898,7 @@ a, button {
 @media (max-width: 767px) {
   .p-result-detail {
     padding-top: 5rem;
+    padding-bottom: 19.7rem;
   }
   .p-result-detail__title {
     margin-top: 3rem;
@@ -3929,7 +3930,6 @@ a, button {
   }
   .p-result-detail__related {
     margin-top: 6.1rem;
-    padding-bottom: 19.7rem;
   }
   .p-result-detail__related-title {
     text-align: center;
