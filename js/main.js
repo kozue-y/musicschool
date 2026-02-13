@@ -41,7 +41,6 @@ $(function() {
     });
   });
 
-  
 // お問合せ・トップへ戻るボタン
 $(function () {
   // お問合せボタンが存在しない時のクラス追加
@@ -86,25 +85,19 @@ $(function () {
 
     if (scrollBottom >= footerTop) {
       const overlap = scrollBottom - footerTop;
-      const adjustedOverlap = Math.ceil(overlap) + 1;
+      const adjustedOverlap = Math.ceil(overlap);
 
       $pageTop.css("transform", `translateY(-${adjustedOverlap}px)`);
 
       if (hasContactBtn) {
-        $contactBtn.css({
-          "transform": "none",
-          "bottom": `${footerHeight}px` 
-        });
+        $contactBtn.css("transform", `translateY(-${adjustedOverlap}px)`);
       }
     } else {
       $pageTop.css("transform", "translateY(0)");
       
       if (hasContactBtn) {
-        $contactBtn.css({
-          "transform": "none",
-          "bottom": "0"
-        });
-      }
+        $contactBtn.css("transform", "translateY(0)");
+      } 
     }
   }
 
@@ -119,7 +112,7 @@ $(function () {
 
   // 初期表示で反映
   updateFloatBtns();
-});
+});  
 
 // スクロールバー
 $(function() {
