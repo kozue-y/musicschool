@@ -184,6 +184,10 @@
 }
 .p-blog-detail__post-nav-link {
     display: block;
+
+    &:hover {
+        opacity: 0.7;
+    }
 }
 .p-blog-detail__post-nav-label {
     display: flex;
@@ -243,6 +247,10 @@
 .p-blog-detail__related-link {
     display: flex;
     gap: 3rem;
+
+    &:hover {
+        opacity: 0.7;
+    }
 }
 .p-blog-detail__related-thumb {
     display: block;

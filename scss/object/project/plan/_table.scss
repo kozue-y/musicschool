@@ -52,12 +52,18 @@
 .p-plan-table__td--recommend {
     color: $main-color;
 }
+.p-plan-table__list tbody th,
+.p-plan-table__list tbody td {
+  padding-top: 0.6rem;
+}
 .p-plan-table__mark-border {
     display: inline-block;
     width: 3rem;
     height: 0.1rem;
     background-color: #707070;
     vertical-align: middle;
+    position: relative;
+    top: -0.5rem;
 
 }
 .p-plan-table__mark {
@@ -124,7 +130,7 @@
         padding-bottom: 18.6rem;    
     }
     .p-plan-table__wrapper {
-        margin-top: 2.2rem;
+        margin-top: 2rem;
         max-width: none;
     }
     .p-plan-table__head {
@@ -135,7 +141,7 @@
     }
     .p-plan-table__head-text {
         display: block;
-        transform: translateY(-0.5em);
+        transform: translateY(-0.3em);
     }
     .p-plan-table__scroll-area {
         overflow-x: auto;
