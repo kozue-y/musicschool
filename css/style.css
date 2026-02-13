@@ -149,7 +149,15 @@ body {
   scroll-behavior: smooth;
   line-height: 1.6;
   letter-spacing: normal;
-  margin-top: 8rem;
+}
+
+main {
+  padding-top: 8rem;
+}
+@media (max-width: 767px) {
+  main {
+    padding-top: 5rem;
+  }
 }
 
 img {
@@ -363,9 +371,6 @@ a, button {
 }
 
 @media (max-width: 767px) {
-  .l-header {
-    position: relative;
-  }
   .c-hamburger {
     position: absolute;
     right: 0;
@@ -572,6 +577,7 @@ a, button {
   position: fixed;
   right: 0;
   bottom: 0;
+  bottom: env(safe-area-inset-bottom);
   z-index: 999;
   background-color: #CB0000;
   width: 30rem;
@@ -760,7 +766,7 @@ a, button {
 }
 .c-breadcrumb {
   background-color: #e8e8e8;
-  padding-top: 0.9rem;
+  padding-top: 1rem;
   padding-bottom: 0.7rem;
 }
 
@@ -1466,7 +1472,7 @@ a, button {
 }
 .p-flow {
   padding-top: 3.4rem;
-  padding-bottom: 9.5rem;
+  padding-bottom: 9rem;
 }
 
 .p-flow__list-wrapper {
@@ -1614,7 +1620,7 @@ a, button {
   }
 }
 .p-accordion {
-  margin-top: 3rem;
+  margin-top: 3.6rem;
   max-width: 88rem;
   margin-inline: auto;
 }
@@ -1779,20 +1785,20 @@ a, button {
   }
 }
 .p-blog {
-  padding-top: 7.045rem;
+  padding-top: 6.8rem;
   padding-bottom: 20.5rem;
 }
 
 .p-blog__list {
-  margin-top: 3rem;
+  margin-top: 3.4rem;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 26rem));
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-column-gap: 5rem;
-     -moz-column-gap: 5rem;
-          column-gap: 5rem;
+  -webkit-column-gap: 4.7892720307%;
+     -moz-column-gap: 4.7892720307%;
+          column-gap: 4.7892720307%;
 }
 
 .p-blog__item {

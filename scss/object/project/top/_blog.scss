@@ -1,14 +1,14 @@
 @use"../../../foundation/variable" as*;
 .p-blog {
-    padding-top: 7.045rem;
+    padding-top: 6.8rem;
     padding-bottom: 20.5rem;
 }
 .p-blog__list {
-    margin-top: 3rem;
+    margin-top: 3.4rem;
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 26rem));
     justify-content: center;
-    column-gap: 5rem;
+    column-gap: calc(50 / 1044 * 100%);
 }
 .p-blog__item {
     width: 100%;
