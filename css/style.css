@@ -1354,13 +1354,7 @@ a, button {
   max-width: 27rem;
   position: relative;
 }
-
-.p-voices__link {
-  display: block;
-  position: relative;
-  z-index: 1;
-}
-.p-voices__link:hover {
+.p-voices__card:hover {
   opacity: 0.7;
 }
 
