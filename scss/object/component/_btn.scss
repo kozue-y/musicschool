@@ -85,6 +85,7 @@
     visibility: hidden;
     border: 1px solid $main-color;
     transition: opacity 0.4s ease, visibility 0.4s ease, background-color 0.4s ease, color 0.4s ease;
+   
 
     &.is-show {
         opacity: 1;

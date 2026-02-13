@@ -282,7 +282,8 @@ a, button {
   .l-header-inner {
     padding-inline: 2rem;
   }
-  .c-site-title h1, .c-site-title p img {
+  .c-site-title h1 img,
+  .c-site-title p img {
     width: 2.031rem;
     height: 3.129rem;
   }
@@ -2422,7 +2423,7 @@ a, button {
 }
 
 .p-search-list__list {
-  margin-top: 4.2rem;
+  margin-top: 4.1rem;
 }
 
 .p-search-pagination {
@@ -3229,7 +3230,7 @@ a, button {
   }
 }
 .p-contact {
-  padding-top: 6.8rem;
+  padding-top: 6.7rem;
   padding-bottom: 10rem;
 }
 
@@ -3278,51 +3279,83 @@ a, button {
   width: 100%;
 }
 
-.p-contact-form__input,
-.p-contact-form__textarea {
+.p-contact-form__input {
   width: 100%;
-  padding: 0.6rem 2rem 0.2rem;
+  height: 4rem;
+  padding-inline: 2rem;
   border: 0.5px solid #000000;
   font-size: 1.8rem;
-  line-height: 1.6666666667;
+  line-height: 4rem;
+}
+
+.p-contact-form__input::-webkit-input-placeholder {
+  color: #b2b2b2;
+  font-size: 1.5rem;
+  line-height: inherit;
+}
+
+.p-contact-form__input::-moz-placeholder {
+  color: #b2b2b2;
+  font-size: 1.5rem;
+  line-height: inherit;
+}
+
+.p-contact-form__input:-ms-input-placeholder {
+  color: #b2b2b2;
+  font-size: 1.5rem;
+  line-height: inherit;
+}
+
+.p-contact-form__input::-ms-input-placeholder {
+  color: #b2b2b2;
+  font-size: 1.5rem;
+  line-height: inherit;
+}
+
+.p-contact-form__input::placeholder {
+  color: #b2b2b2;
+  font-size: 1.5rem;
+  line-height: inherit;
 }
 
 .p-contact-form__textarea {
+  width: 100%;
   height: 30rem;
-  padding-top: 1.3rem;
+  padding: 1.3rem 2rem;
+  font-size: 1.8rem;
+  border: 0.5px solid #000000;
   resize: none;
   word-break: break-word;
 }
 
-.p-contact-form__input::-webkit-input-placeholder, .p-contact-form__textarea::-webkit-input-placeholder {
+.p-contact-form__textarea::-webkit-input-placeholder {
   color: #b2b2b2;
   font-size: 1.5rem;
-  line-height: 2.2;
+  line-height: inherit;
 }
 
-.p-contact-form__input::-moz-placeholder, .p-contact-form__textarea::-moz-placeholder {
+.p-contact-form__textarea::-moz-placeholder {
   color: #b2b2b2;
   font-size: 1.5rem;
-  line-height: 2.2;
+  line-height: inherit;
 }
 
-.p-contact-form__input:-ms-input-placeholder, .p-contact-form__textarea:-ms-input-placeholder {
+.p-contact-form__textarea:-ms-input-placeholder {
   color: #b2b2b2;
   font-size: 1.5rem;
-  line-height: 2.2;
+  line-height: inherit;
 }
 
-.p-contact-form__input::-ms-input-placeholder, .p-contact-form__textarea::-ms-input-placeholder {
+.p-contact-form__textarea::-ms-input-placeholder {
   color: #b2b2b2;
   font-size: 1.5rem;
-  line-height: 2.2;
+  line-height: inherit;
 }
 
-.p-contact-form__input::placeholder,
 .p-contact-form__textarea::placeholder {
   color: #b2b2b2;
   font-size: 1.5rem;
-  line-height: 2.2;
+  line-height: inherit;
 }
 
 .p-contact-form__checkbox {
@@ -3333,7 +3366,7 @@ a, button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 0.9rem;
+  gap: 0.8rem;
 }
 
 .p-contact-form__check {
@@ -3382,7 +3415,7 @@ a, button {
 }
 
 .p-contact-form__btn {
-  margin-top: 5rem;
+  margin-top: 4.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3407,7 +3440,7 @@ a, button {
     text-align: start;
   }
   .p-contact-form__list {
-    margin-top: 3.2rem;
+    margin-top: 3.5rem;
     display: grid;
     gap: 1.4rem;
   }
