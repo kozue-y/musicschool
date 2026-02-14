@@ -526,6 +526,12 @@ a, button {
   color: #CB0000;
 }
 
+:root {
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --contact-h: 6rem;
+  --gap: 1.9rem;
+}
+
 .c-page-top__link {
   position: fixed;
   bottom: 9.1rem;
@@ -557,7 +563,7 @@ a, button {
   opacity: 0.7;
 }
 .no-contact-btn .c-page-top__link {
-  bottom: 3.1rem;
+  bottom: calc(3.1rem + var(--safe-bottom));
 }
 
 .c-page-top {
@@ -568,17 +574,16 @@ a, button {
 @media (max-width: 767px) {
   .c-page-top__link {
     right: 2rem;
-    bottom: 7.9rem;
+    bottom: calc(var(--contact-h) + var(--gap) + var(--safe-bottom));
   }
   .no-contact-btn .c-page-top__link {
-    bottom: 1.8rem;
+    bottom: calc(1.8rem + var(--safe-bottom));
   }
 }
 .c-contact-btn__link {
   position: fixed;
   right: 0;
-  bottom: 0;
-  bottom: env(safe-area-inset-bottom);
+  bottom: var(--safe-bottom);
   z-index: 999;
   background-color: #CB0000;
   width: 30rem;
