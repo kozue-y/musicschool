@@ -29,7 +29,7 @@
     right: 11.6rem;
     width: 6.8rem;
     height: 6.8rem;
-    z-index: 999;
+    z-index: 1000;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.4s ease, visibility 0.4s ease;
@@ -112,6 +112,9 @@
     }
     
 }
+
+
+
 // 送信・ホームへ戻るボタン
 .c-btn {
     display: inline-flex;

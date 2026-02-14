@@ -87,24 +87,41 @@ $(function () {
       const overlap = scrollBottom - footerTop;
       const adjustedOverlap = Math.ceil(overlap);
 
-      $pageTop.css("transform", `translateY(-${adjustedOverlap}px)`);
+      // 両方とも同じ値で移動（明示的に設定）
+      $pageTop.css({
+        "transform": `translateY(-${adjustedOverlap}px)`,
+        "transition": "transform 0.1s ease-out"
+      });
 
       if (hasContactBtn) {
-        $contactBtn.css("transform", `translateY(-${adjustedOverlap}px)`);
+        $contactBtn.css({
+          "transform": `translateY(-${adjustedOverlap}px)`,
+          "transition": "transform 0.1s ease-out"
+        });
       }
     } else {
-      $pageTop.css("transform", "translateY(0)");
+      // 明示的にtransformをリセット
+      $pageTop.css({
+        "transform": "translateY(0)",
+        "transition": "transform 0.1s ease-out"
+      });
       
       if (hasContactBtn) {
-        $contactBtn.css("transform", "translateY(0)");
-      } 
+        $contactBtn.css({
+          "transform": "translateY(0)",
+          "transition": "transform 0.1s ease-out"
+        });
+      }
     }
   }
-
+  
   // scroll で更新
-  $(window).on("scroll", updateFloatBtns);
+  $(window).on("scroll", function() {
+    clearTimeout(scrollTimer);
+    scrollTimer = setTimeout(updateFloatBtns, 10);
+  });
 
-  // iPhone下バー出る・消える用
+  // iPhone下バー出る・消える用（即座に反映）
   if (window.visualViewport) {
     window.visualViewport.addEventListener("resize", updateFloatBtns);
     window.visualViewport.addEventListener("scroll", updateFloatBtns);
@@ -112,7 +129,8 @@ $(function () {
 
   // 初期表示で反映
   updateFloatBtns();
-});  
+});
+
 
 // スクロールバー
 $(function() {
