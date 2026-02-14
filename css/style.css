@@ -1877,6 +1877,9 @@ a, button {
   line-height: 1.6666666667;
   text-decoration: underline;
 }
+.p-blog__link-text:hover {
+  opacity: 0.7;
+}
 
 @media (max-width: 767px) {
   .p-blog {
@@ -2282,6 +2285,9 @@ a, button {
      -moz-column-gap: 5rem;
           column-gap: 5rem;
 }
+.p-blog-list__link:hover {
+  opacity: 0.7;
+}
 
 .p-blog-list__img-wrapper {
   position: relative;
@@ -2656,6 +2662,9 @@ a, button {
   text-decoration: underline;
   text-decoration-color: #CB0000;
   text-decoration-thickness: 0.1rem;
+}
+.p-blog-detail__text-link a:hover {
+  opacity: 0.7;
 }
 
 .p-blog-detail__post-nav {
