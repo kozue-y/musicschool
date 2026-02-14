@@ -6,7 +6,8 @@
     height: 100%;
     gap: min(vw(9.9), 0.99rem);
   
-    h1 {
+    h1,
+    p {
       height: 100%;
       display: flex;
       align-items: center;
@@ -15,7 +16,7 @@
         height: 100%;
         display: flex;
         align-items: center;
-        transition: opacity 0.3s ease;
+        transition: opacity 0.4s ease;
 
       }
       &:hover {
@@ -44,7 +45,8 @@
       padding-inline: 2rem;
     }
     .c-site-title {
-      h1 img {
+      h1 img,
+      p img {
         width: 2.031rem;
         height: 3.129rem;
       }

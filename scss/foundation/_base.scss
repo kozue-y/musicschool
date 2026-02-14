@@ -19,11 +19,20 @@ body {
     line-height: 1.6;
     letter-spacing: normal;
 }
+main {
+  padding-top: 8rem;
+  @media (max-width: 767px) {
+    padding-top: 5rem;  
+  }
+}
 
 img {
     display: block;
     width: 100%;
     height: auto;
+}
+a, button {
+  transition: opacity 0.4s ease;
 }
 
 .u-pc-only {

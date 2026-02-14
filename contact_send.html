@@ -10,7 +10,7 @@
   <meta name="description" content="ミュージックスクールご紹介サイトです">
   <meta name="keywords" content="ミュージックスクール, レッスン">
   <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -20,16 +20,16 @@
       <div class="l-header" id="header">
         <div class="l-header-inner">
           <div class="c-site-title">
-            <h1>
+            <p>
               <a href="index.html">
                 <img src="images/sitetitle_icon.svg" alt="きたむらミュージックスクール">
                 <span class="c-site-title__text">きたむら<br class="u-pc-only"><span class="c-site-title__text--sub">ミュージックスクール</span></span>
               </a>
-            </h1>
+            </p>
           </div>
           <!-- PC用ナビ -->
            <div class="c-global-nav u-pc-only">
-            <nav>
+            <nav aria-label="ヘッダーナビゲーション">
               <ul class="c-global-nav__list">
                 <li><a href="plan.html">料金</a></li>
                 <li><a href="blog.html">ブログ</a></li>
@@ -53,7 +53,7 @@
 
          <!-- ハンバーガーナビゲーションSP用 -->
           <div class="c-drawer-menu u-sp-only" id="js-drawer">
-            <nav>
+            <nav aria-label="ヘッダーナビゲーション">
               <ul class="c-drawer-menu__list">
                 <li><a href="plan.html">料金</a></li>
                 <li><a href="blog.html">ブログ</a></li>
@@ -70,24 +70,25 @@
       <section class="c-page-mv" id="mv">
         <div class="c-page-mv__image">
           <picture>
-            <source media="(min-width: 768px)" srcset="images/contact.jpg" />
-            <img src="images/contact_sp.jpg" alt="楽譜画像" />
+            <source media="(min-width: 768px)" srcset="images/contact.jpg">
+            <img src="images/contact_sp.jpg" alt="お問い合わせ">
           </picture>
-          <h2 class="c-page-mv__title">お問い合わせ</h2>
+          <h1 class="c-page-mv__title">お問い合わせ</h1>
         </div>
-        <nav class="c-breadcrumb" aria-label="breadcrumb">
-          <div class="l-inner">
-            <ol class="c-breadcrumb__list">
-              <li class="c-breadcrumb__item">
-                <a href="index.html">ホーム</a>
-              </li>
-              <li class="c-breadcrumb__item">送信完了</li>
-            </ol>
-          </div>
-        </nav>
       </section>
+      <!-- breadcrumb -->
+      <nav class="c-breadcrumb" aria-label="breadcrumb">
+        <div class="l-inner">
+          <ol class="c-breadcrumb__list">
+            <li class="c-breadcrumb__item">
+              <a href="index.html">ホーム</a>
+            </li>
+            <li class="c-breadcrumb__item">送信完了</li>
+          </ol>
+        </div>
+      </nav>
 
-      <section class="p-contact-complete">
+      <div class="p-contact-complete">
         <div class="l-inner">
           <p class="p-contact-complete__text">
             お問い合わせいただきありがとうございました。<br>内容確認後、担当者よりメールにてご連絡いたします。
@@ -96,14 +97,14 @@
             <a href="index.html" class="c-btn c-btn--block">ホームへ戻る</a>
           </div>
         </div>
-      </section>
+      </div>
 
       </main>
 
            <!-- footer -->
             <footer id="footer" class="c-footer">
               <div class="l-inner">
-                <nav>
+                <nav aria-label="フッターナビゲーション">
                   <ul class="c-footer__nav">
                     <li><a href="index.html">ホーム</a></li>
                     <li><a href="plan.html">料金</a></li>
@@ -111,17 +112,17 @@
                     <li><a href="result_list.html">卒業実績</a></li>
                   </ul>
                 </nav>
-                <div class="c-footer__logo">
+                <a href="index.html" class="c-footer__logo">
                   <img src="images/logo_white.svg" alt="サイトロゴ">
-                </div>
+                </a>
                 <div class="c-footer__copyright">
                   <small>Copyright &copy; 0000 KITAMURA music school Inc. All Rights</small>
                 </div>
                 <ul class="c-footer__sns">
-                  <li><a href=""><img src="images/icon_twitter.svg" alt="twitterアイコン"></a></li>
-                  <li><a href=""><img src="images/icon_facebook.svg" alt="facebookアイコン"></a></li>
-                  <li><a href=""><img src="images/icon_youtube.svg" alt="youtubeアイコン"></a></li>
-                  <li><a href=""><img src="images/icon_instagram.svg" alt="instagramアイコン"></a></li>
+                  <li><a href=""><img src="images/icon_twitter.svg" alt="twitterへのリンク（別タブで開きます）"></a></li>
+                  <li><a href=""><img src="images/icon_facebook.svg" alt="facebookへのリンク（別タブで開きます）"></a></li>
+                  <li><a href=""><img src="images/icon_youtube.svg" alt="youtubeへのリンク（別タブで開きます）"></a></li>
+                  <li><a href=""><img src="images/icon_instagram.svg" alt="instagramへのリンク（別タブで開きます）"></a></li>
                 </ul>
               </div>
             </footer>

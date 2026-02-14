@@ -34,11 +34,8 @@
             line-height: calc(33 / 17);
             font-weight: bold;
             position: relative;
-            transition: opacity 0.3s ease, text-decoration 0.3s ease;
+            transition: text-decoration 0.4s ease;
 
-            &:hover {
-                opacity: 0.7;
-            }
 
             @media (min-width: 769px) {
                 &:hover {
@@ -58,9 +55,9 @@
 }
 // ハンバーガーメニュー
 @media (max-width: 767px) {
-    .l-header {
-        position: relative;
-    }
+    // .l-header {
+    //     position: relative;
+    // }
     .c-hamburger {
         position: absolute;
         right: 0;
@@ -84,7 +81,7 @@
         height: 0.4rem;
         border-radius: 0.2rem;
         background-color: $color-white;
-        transition: transform 0.3s ease;
+        transition: transform 0.4s ease;
 
         &:nth-of-type(1) {
             top: 0;
@@ -119,7 +116,7 @@
         background-color: $main-color;
         margin-top: 5rem;
         z-index: 50;
-        transition: transform 0.3s ease;
+        transition: transform 0.4s ease;
         transform: translateX(100%);
     }
     .c-drawer-menu.active {
@@ -149,7 +146,7 @@
             line-height: calc(33 / 18);
             font-weight: bold;
             color: $color-white;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.4s ease;
 
             &:hover,
             &:focus {

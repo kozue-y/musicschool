@@ -10,7 +10,7 @@
   <meta name="description" content="ミュージックスクールご紹介サイトです">
   <meta name="keywords" content="ミュージックスクール, レッスン">
   <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -20,16 +20,16 @@
       <div class="l-header" id="header">
         <div class="l-header-inner">
           <div class="c-site-title">
-            <h1>
+            <p>
               <a href="index.html">
                 <img src="images/sitetitle_icon.svg" alt="きたむらミュージックスクール">
                 <span class="c-site-title__text">きたむら<br class="u-pc-only"><span class="c-site-title__text--sub">ミュージックスクール</span></span>
               </a>
-            </h1>
+            </p>
           </div>
           <!-- PC用ナビ -->
            <div class="c-global-nav u-pc-only">
-            <nav>
+            <nav aria-label="ヘッダーナビゲーション">
               <ul class="c-global-nav__list">
                 <li><a href="plan.html">料金</a></li>
                 <li><a href="blog.html">ブログ</a></li>
@@ -53,7 +53,7 @@
 
          <!-- ハンバーガーナビゲーションSP用 -->
           <div class="c-drawer-menu u-sp-only" id="js-drawer">
-            <nav>
+            <nav aria-label="ヘッダーナビゲーション">
               <ul class="c-drawer-menu__list">
                 <li><a href="plan.html">料金</a></li>
                 <li><a href="blog.html">ブログ</a></li>
@@ -66,6 +66,7 @@
 
      <!-- メイン -->
      <main class="main">
+      <!-- breadcrumb -->
         <nav class="c-breadcrumb" aria-label="breadcrumb">
           <div class="l-inner">
             <ol class="c-breadcrumb__list">
@@ -86,7 +87,7 @@
                     <h1 class="p-blog-detail__title">アルペジオが劇的に向上する3つの習慣</h1>
                     <time class="p-blog-detail__date" datetime="2026-01-15">0000.00.00</time>
                     <div class="p-blog-detail__img-wrapper">
-                      <img src="images/blog-details.png" alt="ギター練習画像">
+                      <img src="images/blog-details.png" alt="アルペジオが劇的に向上する3つの習慣">
                       <span class="p-blog-detail__category">ギター</span>
                     </div>
                     <nav class="p-blog-detail__sns" aria-label="SNSでシェア">
@@ -95,7 +96,7 @@
                           <a href="#" aria-label="facebookでシェア">
                             <picture>
                               <source srcset="images/facebook_icon_sp.svg" media="(max-width: 767px)">
-                              <img src="images/facebook_color.svg" alt="">
+                              <img src="images/facebook_color.svg" alt="facebookへのリンク">
                             </picture>
                           </a>
                         </li>
@@ -103,7 +104,7 @@
                           <a href="#" aria-label="Xでシェア">
                             <picture>
                               <source srcset="images/twitter_icon_sp.svg" media="(max-width: 767px)">
-                              <img src="images/twitter_color.svg" alt="">
+                              <img src="images/twitter_color.svg" alt="Xへのリンク">
                             </picture>
                           </a>
                         </li>
@@ -111,7 +112,7 @@
                           <a href="#" aria-label="hatenaでシェア">
                             <picture>
                               <source srcset="images/hatena_icon_sp.svg" media="(max-width: 767px)">
-                              <img src="images/hatena_color.svg" alt="">
+                              <img src="images/hatena_color.svg" alt="hatenaへのリンク">
                             </picture>
                           </a>
                         </li>
@@ -119,7 +120,7 @@
                           <a href="#" aria-label="LINEでシェア">
                             <picture>
                               <source srcset="images/line_icon_sp.svg" media="(max-width: 767px)">
-                              <img src="images/line_color.svg" alt="">
+                              <img src="images/line_color.svg" alt="LINEへのリンク">
                             </picture>
                           </a>
                         </li>
@@ -127,7 +128,7 @@
                           <a href="#" aria-label="pocketでシェア">
                             <picture>
                               <source srcset="images/pocket_icon_sp.svg" media="(max-width: 767px)">
-                              <img src="images/pocket_color.svg" alt="">
+                              <img src="images/pocket_color.svg" alt="pocketへのリンク">
                             </picture>
                           </a>
                         </li>
@@ -136,13 +137,11 @@
                   </div>
                   <div class="p-blog-detail__body">
                     <p>
-                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
                     </p>
                     <h2>H2見出しが入ります。H2見出しが入ります。</h2>
                     <p>
-                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                      本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
                     </p>
                     <figure class="p-blog-detail__img">
                       <img src="images/blog-details02.jpg" alt="レッスン画像">
@@ -155,11 +154,10 @@
                     <h3>H3見出しが入ります。H3見出しが入ります。</h3>
                     <blockquote class="p-blog-detail__blockquote">
                       <div class="p-blog-detail__blockquote-icon">
-                        <img src="images/icon-blockquote.svg" alt="">
+                        <img src="images/icon-blockquote.svg" alt="''">
                       </div>
                       <p>
-                        本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                        本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                        本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
                       </p>
 
                     </blockquote>
@@ -176,7 +174,7 @@
                           </span>
                           <span class="p-blog-detail__post-nav-body">
                             <span class="p-blog-detail__post-nav-thumb u-pc-only">
-                              <img src="images/blog-details03.jpg" alt="">
+                              <img src="images/blog-details03.jpg" alt="記事画像">
                             </span>
                             <span class="p-blog-detail__post-nav-title">
                               タイトルが入ります。タイトルが入ります。タイトルが入ります。
@@ -191,7 +189,7 @@
                           </span>
                           <span class="p-blog-detail__post-nav-body">
                             <span class="p-blog-detail__post-nav-thumb u-pc-only">
-                              <img src="images/blog-details03.jpg" alt="">
+                              <img src="images/blog-details03.jpg" alt="記事画像">
                             </span>
                             <span class="p-blog-detail__post-nav-title">
                               タイトルが入ります。タイトルが入ります。タイトルが入ります。
@@ -207,7 +205,7 @@
                       <li class="p-blog-detail__related-item">
                         <a href="#" class="p-blog-detail__related-link">
                           <span class="p-blog-detail__related-thumb">
-                            <img src="images/blog-details03.jpg" alt="">
+                            <img src="images/blog-details03.jpg" alt="記事画像">
                             <span class="p-blog-detail__related-category">ギター</span>
                           </span>
                           <span class="p-blog-detail__related-body">
@@ -221,7 +219,7 @@
                       <li class="p-blog-detail__related-item">
                         <a href="#" class="p-blog-detail__related-link">
                           <span class="p-blog-detail__related-thumb">
-                            <img src="images/blog-details03.jpg" alt="">
+                            <img src="images/blog-details03.jpg" alt="記事画像">
                             <span class="p-blog-detail__related-category">ギター</span>
                           </span>
                           <span class="p-blog-detail__related-body">
@@ -235,7 +233,7 @@
                       <li class="p-blog-detail__related-item">
                         <a href="#" class="p-blog-detail__related-link">
                           <span class="p-blog-detail__related-thumb">
-                            <img src="images/blog-details03.jpg" alt="">
+                            <img src="images/blog-details03.jpg" alt="記事画像">
                             <span class="p-blog-detail__related-category">ギター</span>
                           </span>
                           <span class="p-blog-detail__related-body">
@@ -255,7 +253,7 @@
               <aside class="p-blog-detail__side">
                 <div class="p-sidebar">
                   <section class="p-widget p-widget--magazine">
-                    <h3 class="p-widget__title">無料メールマガジン</h3>
+                    <h2 class="p-widget__title">無料メールマガジン</h2>
                     <div class="p-widget__body">
                       <a href="#" class="p-widget__body-inner" aria-label="無料メールマガジンのバナー">
                         <span class="p-widget__text">バナー広告</span>
@@ -264,24 +262,24 @@
                   </section>
 
                   <section class="p-widget p-widget--search">
-                    <h3 class="p-widget__title">ブログ内を検索</h3>
-                    <form class="p-widget__search-form" action="#" method="get">
+                    <h2 class="p-widget__title">ブログ内を検索</h2>
+                    <form class="p-widget__search-form" action="search.html">
                       <label class="p-widget__search-label">
                         <input type="search"
                         name="s"
                         class="p-widget__search-input"
-                        />
+                        >
                       </label>
                       <button type="submit" class="p-widget__search-button" aria-label="検索">
                         <span class="p-widget__search-icon">
-                          <img src="images/icon-search.svg" alt="">
+                          <img src="images/icon-search.svg" alt="検索">
                         </span>
                       </button>
                     </form>
                   </section>
 
                   <section class="p-widget p-widget--recommend">
-                    <h3 class="p-widget__title">おすすめの記事</h3>
+                    <h2 class="p-widget__title">おすすめの記事</h2>
                     <ul class="p-widget__list">
                       <li class="p-widget__item">
                         <a href="#" class="p-widget__link">
@@ -305,7 +303,7 @@
                   </section>
                   
                   <section class="p-widget p-widget--category">
-                    <h3 class="p-widget__title">カテゴリー</h3>
+                    <h2 class="p-widget__title">カテゴリー</h2>
                     <ul class="p-widget__category-list">
                       <li class="p-widget__category-item">
                         <a href="#" class="p-widget__category-link">
@@ -344,7 +342,7 @@
            <!-- footer -->
             <footer id="footer" class="c-footer">
               <div class="l-inner">
-                <nav>
+                <nav aria-label="フッターナビゲーション">
                   <ul class="c-footer__nav">
                     <li><a href="index.html">ホーム</a></li>
                     <li><a href="plan.html">料金</a></li>
@@ -352,17 +350,17 @@
                     <li><a href="result_list.html">卒業実績</a></li>
                   </ul>
                 </nav>
-                <div class="c-footer__logo">
+                <a href="index.html" class="c-footer__logo">
                   <img src="images/logo_white.svg" alt="サイトロゴ">
-                </div>
+                </a>
                 <div class="c-footer__copyright">
                   <small>Copyright &copy; 0000 KITAMURA music school Inc. All Rights</small>
                 </div>
                 <ul class="c-footer__sns">
-                  <li><a href=""><img src="images/icon_twitter.svg" alt="twitterアイコン"></a></li>
-                  <li><a href=""><img src="images/icon_facebook.svg" alt="facebookアイコン"></a></li>
-                  <li><a href=""><img src="images/icon_youtube.svg" alt="youtubeアイコン"></a></li>
-                  <li><a href=""><img src="images/icon_instagram.svg" alt="instagramアイコン"></a></li>
+                  <li><a href=""><img src="images/icon_twitter.svg" alt="twitterへのリンク（別タブで開きます）"></a></li>
+                  <li><a href=""><img src="images/icon_facebook.svg" alt="facebookへのリンク（別タブで開きます）"></a></li>
+                  <li><a href=""><img src="images/icon_youtube.svg" alt="youtubeへのリンク（別タブで開きます）"></a></li>
+                  <li><a href=""><img src="images/icon_instagram.svg" alt="instagramへのリンク（別タブで開きます）"></a></li>
                 </ul>
               </div>
             </footer>

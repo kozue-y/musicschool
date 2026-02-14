@@ -34,78 +34,85 @@ const swiper = new Swiper(".js-voices-swiper", {
 
 // アコーディオンメニュー
 $(function() {
-    $('.p-accordion__question').on('click', function() {
-      $(this).next('.p-accordion__answer').slideToggle(300);
-      $(this).parent('.p-accordion__item').toggleClass('is-open');
+    $('.p-accordion__answer').hide();
+    $('.p-accordion__item').on('click', function() {
+      $(this).find('.p-accordion__answer').slideToggle(400);
+      $(this).toggleClass('is-open');
     });
   });
-
 
 // お問合せ・トップへ戻るボタン
 $(function () {
-    // お問合せボタンが存在しない時のクラス追加
-    if ($("#js-contact-btn").length === 0) {
-      $("body").addClass("no-contact-btn");
-    }
-  
-    // TOPに戻るスムース
-    $("#js-page-top").on("click", function (e) {
-      e.preventDefault();
-      $("html, body").animate({ scrollTop: 0 }, 500, "swing");
-      return false;
-    });
-  
-    function getWinHeight() {
-      // iPhone対策 visualViewport の高さ
-      return window.visualViewport ? window.visualViewport.height : $(window).height();
-    }
-  
-    function updateFloatBtns() {
-      const scrollPos = $(window).scrollTop();
-      const winHeight = getWinHeight();
-      const docHeight = $(document).height();
-      const fvHeight = $(".p-fv").outerHeight() || 0;
-      const footerHeight = $(".c-footer").outerHeight() || 0;
-  
-      const $pageTop = $("#js-page-top");
-      const $contactBtn = $("#js-contact-btn");
-      const hasContactBtn = $contactBtn.length > 0;
-  
-      // FV超えたら表示
-      if (scrollPos > fvHeight) {
-        $pageTop.addClass("is-show");
-        if (hasContactBtn) $contactBtn.addClass("is-show");
-      } else {
-        $pageTop.removeClass("is-show");
-        if (hasContactBtn) $contactBtn.removeClass("is-show");
-      }
-  
-      // Footerで止める
-      const scrollBottom = scrollPos + winHeight;
-      const footerTop = docHeight - footerHeight;
-  
-      if (scrollBottom > footerTop) {
-        const overlap = scrollBottom - footerTop;
-        $pageTop.css("transform", `translateY(-${overlap}px)`);
-        if (hasContactBtn) $contactBtn.css("transform", `translateY(-${overlap}px)`);
-      } else {
-        $pageTop.css("transform", "translateY(0)");
-        if (hasContactBtn) $contactBtn.css("transform", "translateY(0)");
-      }
-    }
-  
-    // scroll で更新
-    $(window).on("scroll", updateFloatBtns);
-  
-    // iPhone下バー出る・消える用
-    if (window.visualViewport) {
-      window.visualViewport.addEventListener("resize", updateFloatBtns);
-      window.visualViewport.addEventListener("scroll", updateFloatBtns);
-    }
-  
-    // 初期表示で反映
-    updateFloatBtns();
+  // お問合せボタンが存在しない時のクラス追加
+  if ($("#js-contact-btn").length === 0) {
+    $("body").addClass("no-contact-btn");
+  }
+
+  // TOPに戻るスムース
+  $("#js-page-top").on("click", function (e) {
+    e.preventDefault();
+    $("html, body").animate({ scrollTop: 0 }, 500, "swing");
+    return false;
   });
+
+  function getWinHeight() {
+    // iPhone対策 visualViewport の高さ
+    return window.visualViewport ? window.visualViewport.height : $(window).height();
+  }
+
+  function updateFloatBtns() {
+    const scrollPos = $(window).scrollTop();
+    const winHeight = getWinHeight();
+    const docHeight = $(document).height();
+    const footerHeight = $(".c-footer").outerHeight() || 0;
+
+    const $pageTop = $("#js-page-top");
+    const $contactBtn = $("#js-contact-btn");
+    const hasContactBtn = $contactBtn.length > 0;
+
+    // 100px超えたら表示
+    if (scrollPos > 100) {
+      $pageTop.addClass("is-show");
+      if (hasContactBtn) $contactBtn.addClass("is-show");
+    } else {
+      $pageTop.removeClass("is-show");
+      if (hasContactBtn) $contactBtn.removeClass("is-show");
+    }
+
+    // Footerで止める
+    const scrollBottom = scrollPos + winHeight;
+    const footerTop = docHeight - footerHeight;
+
+    if (scrollBottom >= footerTop) {
+      const overlap = scrollBottom - footerTop;
+      const adjustedOverlap = Math.ceil(overlap);
+
+      $pageTop.css("transform", `translateY(-${adjustedOverlap}px)`);
+
+      if (hasContactBtn) {
+        $contactBtn.css("transform", `translateY(-${adjustedOverlap}px)`);
+      }
+    } else {
+      $pageTop.css("transform", "translateY(0)");
+      
+      if (hasContactBtn) {
+        $contactBtn.css("transform", "translateY(0)");
+      } 
+    }
+  }
+
+  // scroll で更新
+  $(window).on("scroll", updateFloatBtns);
+
+  // iPhone下バー出る・消える用
+  if (window.visualViewport) {
+    window.visualViewport.addEventListener("resize", updateFloatBtns);
+    window.visualViewport.addEventListener("scroll", updateFloatBtns);
+  }
+
+  // 初期表示で反映
+  updateFloatBtns();
+});  
 
 // スクロールバー
 $(function() {

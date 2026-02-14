@@ -1,11 +1,12 @@
 @use"../../../foundation/variable" as*;
 .p-accordion {
-   margin-top: 3rem;
+   margin-top: 3.6rem;
    max-width: 88rem;
    margin-inline: auto; 
 }
 .p-accordion__item {
     border-top: 0.05rem solid $color-black;
+    cursor: pointer;
 }
 .p-accordion__item:last-child {
     border-bottom: 0.05rem solid $color-black;
@@ -45,7 +46,7 @@
     border-right: 0.1rem solid $color-black;
     border-bottom: 0.1rem solid $color-black;
     transform: translateY(-50%) rotate(45deg);
-    transition: transform 0.3s ease;
+    transition: transform 0.4s ease;
 }
 .p-accordion__question-text {
     display: block;

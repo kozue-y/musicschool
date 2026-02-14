@@ -2,17 +2,16 @@
 
 .p-fv {
     position: relative;
-    z-index: 10;
+    isolation: isolate;
     
     &::after {
         content: "";
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(80, 80, 80, 0.502);
-        z-index: 20;
+        inset: 0;
+        background-color: $color-black;
+        opacity: 0.52;
+        mix-blend-mode: multiply;
+        z-index: 10;
     }
 
 }
@@ -22,7 +21,7 @@
     display: grid;
     place-items: center;
     padding-top: min(vw(20), 2rem);
-    z-index: 30;
+    z-index: 20;
 
 }
 .p-fv__title {
