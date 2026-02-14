@@ -541,8 +541,11 @@ a, button {
   z-index: 1000;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: opacity 0.4s ease, visibility 0.4s ease;
-  transition: opacity 0.4s ease, visibility 0.4s ease;
+  -webkit-transition: opacity 0.4s ease, visibility 0.4s ease, -webkit-transform 0.15s ease-out;
+  transition: opacity 0.4s ease, visibility 0.4s ease, -webkit-transform 0.15s ease-out;
+  transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.15s ease-out;
+  transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.15s ease-out, -webkit-transform 0.15s ease-out;
+  will-change: transform;
   background-color: rgba(0, 0, 0, 0.502);
   border-radius: 50%;
   display: -webkit-box;
@@ -601,8 +604,11 @@ a, button {
   opacity: 0;
   visibility: hidden;
   border: 1px solid #CB0000;
-  -webkit-transition: opacity 0.4s ease, visibility 0.4s ease, background-color 0.4s ease, color 0.4s ease;
-  transition: opacity 0.4s ease, visibility 0.4s ease, background-color 0.4s ease, color 0.4s ease;
+  -webkit-transition: opacity 0.4s ease, visibility 0.4s ease, background-color 0.4s ease, color 0.4s ease, -webkit-transform 0.15s ease-out;
+  transition: opacity 0.4s ease, visibility 0.4s ease, background-color 0.4s ease, color 0.4s ease, -webkit-transform 0.15s ease-out;
+  transition: opacity 0.4s ease, visibility 0.4s ease, background-color 0.4s ease, color 0.4s ease, transform 0.15s ease-out;
+  transition: opacity 0.4s ease, visibility 0.4s ease, background-color 0.4s ease, color 0.4s ease, transform 0.15s ease-out, -webkit-transform 0.15s ease-out;
+  will-change: transform;
 }
 .c-contact-btn__link.is-show {
   opacity: 1;
