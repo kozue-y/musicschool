@@ -65,10 +65,10 @@
     margin-top: 3.7rem;
     max-width: 88rem;
     margin-inline: auto;
+    text-align: right;
 }
 .p-blog__link-text {
-    display: block;
-    text-align: right;
+    display: inline-block;
     font-size: 1.8rem;
     line-height: calc(30 / 18);
     text-decoration: underline;
@@ -107,7 +107,7 @@
     .p-blog__subtitle {
         line-height: calc(30 / 20);
     }
-    .p-blog__link-text {
+    .p-blog__link {
         text-align: center;
     }
     .p-blog__date {
